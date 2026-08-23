@@ -61,8 +61,7 @@ deinen Browser nicht und enthält keine personenbezogenen Daten.
 	Loensweg 31<br />
 	37085 Göttingen<br />
 	Deutschland<br />
-	E-Mail: <a href="mailto:kontakt@example.de">kontakt@example.de</a>
-	<!-- TODO: Echte E-Mail-Adresse eintragen -->
+	E-Mail: <a href="mailto:popeliese@gmail.com">popeliese@gmail.com</a>
 </p>
 
 <p class="muted small">

@@ -21,8 +21,7 @@
 
 <h2>Kontakt</h2>
 <p>
-	E-Mail: <a href="mailto:kontakt@example.de">kontakt@example.de</a>
-	<!-- TODO: Echte E-Mail-Adresse eintragen (nach § 5 DDG Pflicht) -->
+	E-Mail: <a href="mailto:popeliese@gmail.com">popeliese@gmail.com</a>
 </p>
 
 <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
@@ -38,7 +37,7 @@
 </p>
 
 <p class="muted small">
-	Angaben gemäß § 5 DDG. Die E-Mail-Adresse ist noch ein Platzhalter — bitte die echte Adresse eintragen.
+	Angaben gemäß § 5 DDG.
 </p>
 
 <style>
