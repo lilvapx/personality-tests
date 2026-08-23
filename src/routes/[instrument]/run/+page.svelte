@@ -31,11 +31,12 @@
 	});
 
 	const translation = $derived(bundle ? getTranslation(bundle, localeStore.current) : null);
-	const items = $derived(
-		bundle?.randomize_order !== false && sessionStore.seed
+	const items = $derived.by(() => {
+		if (!bundle) return [];
+		return bundle.randomize_order !== false && sessionStore.seed
 			? seededShuffle(bundle.items, sessionStore.seed)
-			: (bundle?.items ?? [])
-	);
+			: bundle.items;
+	});
 	const answeredCount = $derived(sessionStore.responses.length);
 	const complete = $derived(bundle ? isComplete(bundle.items.length) : false);
 
