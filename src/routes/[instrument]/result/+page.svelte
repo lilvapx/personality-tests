@@ -46,6 +46,17 @@
 		{resultStore.result.instrument_id} · {resultStore.result.locale} · {new Date(resultStore.result.completed_at).toLocaleString()}
 	</p>
 
+	<!-- ⚠️ WICHTIG: Perzentil-Kontext transparent kommunizieren -->
+	<div class="norm-warning">
+		<p class="norm-warning-title">⚠️ <strong>Wichtig zur Einordnung der Perzentile (P-Werte)</strong></p>
+		<ul>
+			<li>Die P-Werte vergleichen dich mit der <strong>ESCS-Referenzstichprobe</strong> (Eugene-Springfield, Oregon, USA — erhoben 1993–2007, überwiegend weiße Bevölkerung, n≈850).</li>
+			<li>Diese Stichprobe ist <strong>nicht repräsentativ</strong> für dich, dein Land oder deine Altersgruppe — die Perzentile sind daher nur eine <strong>grobe Orientierung</strong>, keine exakte Aussage.</li>
+			<li>Die Perzentile wurden aus Mittelwert + Standardabweichung unter <strong>Normalverteilungsannahme</strong> berechnet (statistisches Modell, keine direkten Vergleichsdaten).</li>
+			<li>Dieser Test ist ein <strong>Selbstauskunfts-Instrument ohne klinische Validierung</strong> — er ersetzt keine professionelle psychologische Diagnostik.</li>
+		</ul>
+	</div>
+
 	<DisclaimerBanner message={t('result.disclaimer')} />
 
 	<!-- Domains mit Facetten + Balken -->
@@ -90,7 +101,7 @@
 	</div>
 
 	<p class="norm-hint">
-		P = Perzentil im Vergleich zur ESCS-Referenzstichprobe (Eugene-Springfield, n≈850). Werte 1–5 = Mittelwert der Antworten.
+		Werte 1–5 = Mittelwert der Antworten pro Skala. Perzentile (P) = Einordnung gegenüber der ESCS-Referenzstichprobe — siehe Hinweis oben.
 	</p>
 
 	<div class="actions">
@@ -107,6 +118,29 @@
 
 <style>
 	.meta { color: #888; font-size: 0.85rem; }
+
+	/* ⚠️ Norm-Warnung — prominent */
+	.norm-warning {
+		background: #fff8e1;
+		border: 2px solid #f0c040;
+		border-left: 6px solid #e6a800;
+		border-radius: 10px;
+		padding: 1rem 1.25rem;
+		margin: 1.25rem 0;
+	}
+	.norm-warning-title {
+		margin: 0 0 0.5rem 0;
+		font-size: 0.95rem;
+		color: #6d4c00;
+	}
+	.norm-warning ul {
+		margin: 0;
+		padding-left: 1.25rem;
+		color: #6d4c00;
+		font-size: 0.85rem;
+		line-height: 1.55;
+	}
+	.norm-warning li { margin-bottom: 0.35rem; }
 
 	.domains { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem; }
 
