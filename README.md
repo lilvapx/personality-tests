@@ -40,3 +40,16 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## Deploy auf Cloudflare Pages
+
+1. Cloudflare Dashboard → **Workers & Pages → Create → Pages → Connect to Git**
+2. Repo `lilvapx/personality-tests` auswählen
+3. Build-Einstellungen:
+   - **Build command:** `npm run build`
+   - **Output directory:** `.svelte-kit/cloudflare`
+4. Deploy — bei jedem Push auf `main` wird neu gebaut
+
+Lokal testen:
+- Dev: `npm run dev`
+- Production-Build lokal: `npm run build && npm run preview`
