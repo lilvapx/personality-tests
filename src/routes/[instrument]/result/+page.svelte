@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currentResult } from '$lib/stores/results.svelte';
+	import { resultStore } from '$lib/stores/results.svelte';
 	import { resetSession } from '$lib/stores/testSession.svelte';
 	import ResultChart from '$lib/components/ResultChart.svelte';
 	import FacetBreakdown from '$lib/components/FacetBreakdown.svelte';
@@ -14,19 +14,19 @@
 	<title>Auswertung — personality-tests</title>
 </svelte:head>
 
-{#if currentResult}
+{#if resultStore.result}
 	<h1>Dein Ergebnis</h1>
 	<p class="meta">
-		{currentResult.instrument_id} · {currentResult.locale} · {new Date(currentResult.completed_at).toLocaleString()}
+		{resultStore.result.instrument_id} · {resultStore.result.locale} · {new Date(currentResult.completed_at).toLocaleString()}
 	</p>
 
 	<DisclaimerBanner message="Interpretiere die Werte mit Vorsicht — dies ist kein klinisches Instrument." />
 
 	<h2>Domains</h2>
-	<ResultChart domains={currentResult.domains} max={5} />
+	<ResultChart domains={resultStore.result.domains} max={5} />
 
 	<h2>Facetten</h2>
-	<FacetBreakdown domains={currentResult.domains} max={5} />
+	<FacetBreakdown domains={resultStore.result.domains} max={5} />
 
 	<div class="actions">
 		<a href="/" class="btn" onclick={restart}>Zur Übersicht</a>

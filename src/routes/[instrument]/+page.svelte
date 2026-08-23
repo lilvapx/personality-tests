@@ -3,7 +3,7 @@
 	import { loadInstrument, getTranslation } from '$lib/data-loader/loadInstrument';
 	import type { InstrumentBundle } from '$lib/data-loader/loadInstrument';
 	import { startSession } from '$lib/stores/testSession.svelte';
-	import { currentLocale } from '$lib/stores/locale.svelte';
+	import { localeStore } from '$lib/stores/locale.svelte';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
 
 	let bundle = $state<InstrumentBundle | null>(null);
@@ -20,7 +20,7 @@
 		}
 	});
 
-	const translation = $derived(bundle ? getTranslation(bundle, currentLocale) : null);
+	const translation = $derived(bundle ? getTranslation(bundle, localeStore.current) : null);
 </script>
 
 <svelte:head>
@@ -52,7 +52,7 @@
 	<a
 		class="start-btn"
 		href="/{bundle?.id}/run"
-		onclick={() => bundle && startSession(bundle.id, currentLocale)}
+		onclick={() => bundle && startSession(bundle.id, localeStore.current)}
 	>
 		Test starten →
 	</a>

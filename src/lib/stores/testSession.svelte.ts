@@ -6,34 +6,40 @@
  */
 import type { ItemResponse } from '$lib/scoring/types';
 
-export let instrumentId = $state<string | null>(null);
-export let locale = $state<string>('de');
-export let responses = $state<ItemResponse[]>([]);
+export const sessionStore = $state<{
+	instrumentId: string | null;
+	locale: string;
+	responses: ItemResponse[];
+}>({
+	instrumentId: null,
+	locale: 'de',
+	responses: []
+});
 
 export function startSession(id: string, loc: string) {
-	instrumentId = id;
-	locale = loc;
-	responses.length = 0;
+	sessionStore.instrumentId = id;
+	sessionStore.locale = loc;
+	sessionStore.responses.length = 0;
 }
 
 export function setResponse(itemId: string, value: number) {
-	const existing = responses.find(r => r.item_id === itemId);
+	const existing = sessionStore.responses.find(r => r.item_id === itemId);
 	if (existing) {
 		existing.value = value;
 	} else {
-		responses.push({ item_id: itemId, value });
+		sessionStore.responses.push({ item_id: itemId, value });
 	}
 }
 
 export function getResponse(itemId: string): number | undefined {
-	return responses.find(r => r.item_id === itemId)?.value;
+	return sessionStore.responses.find(r => r.item_id === itemId)?.value;
 }
 
 export function isComplete(itemCount: number): boolean {
-	return responses.length >= itemCount;
+	return sessionStore.responses.length >= itemCount;
 }
 
 export function resetSession() {
-	responses.length = 0;
-	instrumentId = null;
+	sessionStore.responses.length = 0;
+	sessionStore.instrumentId = null;
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currentLocale, setLocale } from '$lib/stores/locale.svelte';
+	import { localeStore, setLocale } from '$lib/stores/locale.svelte';
 
 	const locales = ['de', 'en', 'lt'];
 </script>
@@ -7,7 +7,7 @@
 <div class="lang-switcher">
 	{#each locales as loc}
 		<button
-			class:active={currentLocale === loc}
+			class:active={localeStore.current === loc}
 			onclick={() => setLocale(loc)}
 		>
 			{loc.toUpperCase()}

@@ -2,8 +2,8 @@
 	import { page } from '$app/state';
 	import { loadInstrument, getTranslation } from '$lib/data-loader/loadInstrument';
 	import type { InstrumentBundle } from '$lib/data-loader/loadInstrument';
-	import { currentLocale } from '$lib/stores/locale.svelte';
-	import { responses, setResponse, getResponse, startSession, isComplete } from '$lib/stores/testSession.svelte';
+	import { localeStore } from '$lib/stores/locale.svelte';
+	import { sessionStore, setResponse, getResponse, startSession, isComplete } from '$lib/stores/testSession.svelte';
 	import { setResult } from '$lib/stores/results.svelte';
 	import { scoreTest } from '$lib/scoring';
 	import QuestionCard from '$lib/components/QuestionCard.svelte';
@@ -21,7 +21,7 @@
 				if (b) {
 					bundle = b;
 					// Session sicherstellen
-					if (!responses.length) startSession(b.id, currentLocale);
+					if (!sessionStore.responses.length) startSession(b.id, localeStore.current);
 				} else {
 					notFound = true;
 				}
@@ -29,9 +29,9 @@
 		}
 	});
 
-	const translation = $derived(bundle ? getTranslation(bundle, currentLocale) : null);
+	const translation = $derived(bundle ? getTranslation(bundle, localeStore.current) : null);
 	const items = $derived(bundle?.items ?? []);
-	const answeredCount = $derived(responses.length);
+	const answeredCount = $derived(sessionStore.responses.length);
 	const complete = $derived(bundle ? isComplete(bundle.items.length) : false);
 
 	function handleSelect(itemId: string, value: number) {
@@ -42,11 +42,11 @@
 		if (!bundle || !translation) return;
 		const result = scoreTest({
 			instrumentId: bundle.id,
-			locale: currentLocale,
+			locale: localeStore.current,
 			items: bundle.items,
 			domains: bundle.domains,
 			scoring: bundle.scoring!,
-			responses: responses.map(r => ({ ...r })),
+			responses: sessionStore.responses.map(r => ({ ...r })),
 			min: bundle.response_scale.min,
 			max: bundle.response_scale.max
 		});

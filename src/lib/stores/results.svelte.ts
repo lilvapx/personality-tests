@@ -5,12 +5,12 @@
  */
 import type { TestResult } from '$lib/scoring/types';
 
-export let currentResult = $state<TestResult | null>(null);
+export const resultStore = $state<{ result: TestResult | null }>({ result: null });
 
 export function setResult(result: TestResult) {
-	currentResult = result;
+	resultStore.result = result;
 }
 
 export function clearResult() {
-	currentResult = null;
+	resultStore.result = null;
 }
