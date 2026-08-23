@@ -6,6 +6,7 @@
 	import { sessionStore, setResponse, getResponse, startSession, isComplete } from '$lib/stores/testSession.svelte';
 	import { setResult } from '$lib/stores/results.svelte';
 	import { scoreTest } from '$lib/scoring';
+	import { seededShuffle } from '$lib/scoring/shuffle';
 	import QuestionCard from '$lib/components/QuestionCard.svelte';
 	import ProgressBar from '$lib/components/ProgressBar.svelte';
 	import { goto } from '$app/navigation';
@@ -30,7 +31,11 @@
 	});
 
 	const translation = $derived(bundle ? getTranslation(bundle, localeStore.current) : null);
-	const items = $derived(bundle?.items ?? []);
+	const items = $derived(
+		bundle?.randomize_order && sessionStore.seed
+			? seededShuffle(bundle.items, sessionStore.seed)
+			: (bundle?.items ?? [])
+	);
 	const answeredCount = $derived(sessionStore.responses.length);
 	const complete = $derived(bundle ? isComplete(bundle.items.length) : false);
 

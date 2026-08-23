@@ -5,21 +5,25 @@
  * Ergebnis wird client-seitig berechnet, nie an einen Server geschickt.
  */
 import type { ItemResponse } from '$lib/scoring/types';
+import { randomSeed } from '$lib/scoring/shuffle';
 
 export const sessionStore = $state<{
 	instrumentId: string | null;
 	locale: string;
 	responses: ItemResponse[];
+	seed: string | null;
 }>({
 	instrumentId: null,
 	locale: 'de',
-	responses: []
+	responses: [],
+	seed: null
 });
 
-export function startSession(id: string, loc: string) {
+export function startSession(id: string, loc: string, seed?: string) {
 	sessionStore.instrumentId = id;
 	sessionStore.locale = loc;
 	sessionStore.responses.length = 0;
+	sessionStore.seed = seed ?? randomSeed();
 }
 
 export function setResponse(itemId: string, value: number) {

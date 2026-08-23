@@ -14,6 +14,7 @@ export interface InstrumentBundle {
 	source_url?: string;
 	domains: InstrumentMeta['domains'];
 	response_scale: InstrumentMeta['response_scale'];
+	randomize_order: boolean;
 	items: Item[];
 	scoring: ScoringConfig | null;
 	i18n: Record<string, Translation>;
