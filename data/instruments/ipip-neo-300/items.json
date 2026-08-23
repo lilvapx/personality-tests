@@ -1,0 +1,1802 @@
+[
+	{
+		"item_id": "ipip-neo-300-001",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-002",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-003",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-004",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-005",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-006",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-007",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-008",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-009",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-010",
+		"domain": "N",
+		"facet": "N1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-011",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-012",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-013",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-014",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-015",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-016",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-017",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-018",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-019",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-020",
+		"domain": "N",
+		"facet": "N2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-021",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-022",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-023",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-024",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-025",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-026",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-027",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-028",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-029",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-030",
+		"domain": "N",
+		"facet": "N3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-031",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-032",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-033",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-034",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-035",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-036",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-037",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-038",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-039",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-040",
+		"domain": "N",
+		"facet": "N4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-041",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-042",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-043",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-044",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-045",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-046",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-047",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-048",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-049",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-050",
+		"domain": "N",
+		"facet": "N5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-051",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-052",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-053",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-054",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-055",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-056",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-057",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-058",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-059",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-060",
+		"domain": "N",
+		"facet": "N6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-061",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-062",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-063",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-064",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-065",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-066",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-067",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-068",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-069",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-070",
+		"domain": "E",
+		"facet": "E1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-071",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-072",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-073",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-074",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-075",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-076",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-077",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-078",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-079",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-080",
+		"domain": "E",
+		"facet": "E2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-081",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-082",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-083",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-084",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-085",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-086",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-087",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-088",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-089",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-090",
+		"domain": "E",
+		"facet": "E3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-091",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-092",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-093",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-094",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-095",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-096",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-097",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-098",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-099",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-100",
+		"domain": "E",
+		"facet": "E4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-101",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-102",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-103",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-104",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-105",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-106",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-107",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-108",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-109",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-110",
+		"domain": "E",
+		"facet": "E5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-111",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-112",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-113",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-114",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-115",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-116",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-117",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-118",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-119",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-120",
+		"domain": "E",
+		"facet": "E6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-121",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-122",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-123",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-124",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-125",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-126",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-127",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-128",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-129",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-130",
+		"domain": "O",
+		"facet": "O1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-131",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-132",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-133",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-134",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-135",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-136",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-137",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-138",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-139",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-140",
+		"domain": "O",
+		"facet": "O2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-141",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-142",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-143",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-144",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-145",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-146",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-147",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-148",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-149",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-150",
+		"domain": "O",
+		"facet": "O3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-151",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-152",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-153",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-154",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-155",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-156",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-157",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-158",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-159",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-160",
+		"domain": "O",
+		"facet": "O4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-161",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-162",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-163",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-164",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-165",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-166",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-167",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-168",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-169",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-170",
+		"domain": "O",
+		"facet": "O5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-171",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-172",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-173",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-174",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-175",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-176",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-177",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-178",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-179",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-180",
+		"domain": "O",
+		"facet": "O6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-181",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-182",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-183",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-184",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-185",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-186",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-187",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-188",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-189",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-190",
+		"domain": "A",
+		"facet": "A1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-191",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-192",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-193",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-194",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-195",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-196",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-197",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-198",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-199",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-200",
+		"domain": "A",
+		"facet": "A2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-201",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-202",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-203",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-204",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-205",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-206",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-207",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-208",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-209",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-210",
+		"domain": "A",
+		"facet": "A3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-211",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-212",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-213",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-214",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-215",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-216",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-217",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-218",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-219",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-220",
+		"domain": "A",
+		"facet": "A4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-221",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-222",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-223",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-224",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-225",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-226",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-227",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-228",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-229",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-230",
+		"domain": "A",
+		"facet": "A5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-231",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-232",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-233",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-234",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-235",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-236",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-237",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-238",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-239",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-240",
+		"domain": "A",
+		"facet": "A6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-241",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-242",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-243",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-244",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-245",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-246",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-247",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-248",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-249",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-250",
+		"domain": "C",
+		"facet": "C1",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-251",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-252",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-253",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-254",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-255",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-256",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-257",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-258",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-259",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-260",
+		"domain": "C",
+		"facet": "C2",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-261",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-262",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-263",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-264",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-265",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-266",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-267",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-268",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-269",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-270",
+		"domain": "C",
+		"facet": "C3",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-271",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-272",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-273",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-274",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-275",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-276",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-277",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-278",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-279",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-280",
+		"domain": "C",
+		"facet": "C4",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-281",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-282",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-283",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-284",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-285",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-286",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-287",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-288",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-289",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-290",
+		"domain": "C",
+		"facet": "C5",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-291",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-292",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-293",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "plus"
+	},
+	{
+		"item_id": "ipip-neo-300-294",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-295",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-296",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-297",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-298",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-299",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "minus"
+	},
+	{
+		"item_id": "ipip-neo-300-300",
+		"domain": "C",
+		"facet": "C6",
+		"keying": "minus"
+	}
+]

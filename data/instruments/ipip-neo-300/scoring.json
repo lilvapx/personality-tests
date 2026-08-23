@@ -1,0 +1,467 @@
+{
+	"instrument_id": "ipip-neo-300",
+	"version": "1.0.0",
+	"response_range": {
+		"min": 1,
+		"max": 5
+	},
+	"keying": "in-items-json",
+	"notes": "Offizielle IPIP-NEO-300 Items (Goldberg, 1999), Quelle: https://ipip-api.ipsyc.io/api/v1/instruments/ipip-neo-300",
+	"aggregation": {
+		"facet_score": "mean of items in facet",
+		"domain_score": "mean of facet scores in domain",
+		"missing_handling": "mindestens 8 von 10 Items pro Facet nötig, sonst Facet = null; Domain braucht mindestens 4 von 6 Facetten"
+	},
+	"facets": {
+		"N1": {
+			"domain": "N",
+			"items": [
+				"ipip-neo-300-001",
+				"ipip-neo-300-002",
+				"ipip-neo-300-003",
+				"ipip-neo-300-004",
+				"ipip-neo-300-005",
+				"ipip-neo-300-006",
+				"ipip-neo-300-007",
+				"ipip-neo-300-008",
+				"ipip-neo-300-009",
+				"ipip-neo-300-010"
+			]
+		},
+		"N2": {
+			"domain": "N",
+			"items": [
+				"ipip-neo-300-011",
+				"ipip-neo-300-012",
+				"ipip-neo-300-013",
+				"ipip-neo-300-014",
+				"ipip-neo-300-015",
+				"ipip-neo-300-016",
+				"ipip-neo-300-017",
+				"ipip-neo-300-018",
+				"ipip-neo-300-019",
+				"ipip-neo-300-020"
+			]
+		},
+		"N3": {
+			"domain": "N",
+			"items": [
+				"ipip-neo-300-021",
+				"ipip-neo-300-022",
+				"ipip-neo-300-023",
+				"ipip-neo-300-024",
+				"ipip-neo-300-025",
+				"ipip-neo-300-026",
+				"ipip-neo-300-027",
+				"ipip-neo-300-028",
+				"ipip-neo-300-029",
+				"ipip-neo-300-030"
+			]
+		},
+		"N4": {
+			"domain": "N",
+			"items": [
+				"ipip-neo-300-031",
+				"ipip-neo-300-032",
+				"ipip-neo-300-033",
+				"ipip-neo-300-034",
+				"ipip-neo-300-035",
+				"ipip-neo-300-036",
+				"ipip-neo-300-037",
+				"ipip-neo-300-038",
+				"ipip-neo-300-039",
+				"ipip-neo-300-040"
+			]
+		},
+		"N5": {
+			"domain": "N",
+			"items": [
+				"ipip-neo-300-041",
+				"ipip-neo-300-042",
+				"ipip-neo-300-043",
+				"ipip-neo-300-044",
+				"ipip-neo-300-045",
+				"ipip-neo-300-046",
+				"ipip-neo-300-047",
+				"ipip-neo-300-048",
+				"ipip-neo-300-049",
+				"ipip-neo-300-050"
+			]
+		},
+		"N6": {
+			"domain": "N",
+			"items": [
+				"ipip-neo-300-051",
+				"ipip-neo-300-052",
+				"ipip-neo-300-053",
+				"ipip-neo-300-054",
+				"ipip-neo-300-055",
+				"ipip-neo-300-056",
+				"ipip-neo-300-057",
+				"ipip-neo-300-058",
+				"ipip-neo-300-059",
+				"ipip-neo-300-060"
+			]
+		},
+		"E1": {
+			"domain": "E",
+			"items": [
+				"ipip-neo-300-061",
+				"ipip-neo-300-062",
+				"ipip-neo-300-063",
+				"ipip-neo-300-064",
+				"ipip-neo-300-065",
+				"ipip-neo-300-066",
+				"ipip-neo-300-067",
+				"ipip-neo-300-068",
+				"ipip-neo-300-069",
+				"ipip-neo-300-070"
+			]
+		},
+		"E2": {
+			"domain": "E",
+			"items": [
+				"ipip-neo-300-071",
+				"ipip-neo-300-072",
+				"ipip-neo-300-073",
+				"ipip-neo-300-074",
+				"ipip-neo-300-075",
+				"ipip-neo-300-076",
+				"ipip-neo-300-077",
+				"ipip-neo-300-078",
+				"ipip-neo-300-079",
+				"ipip-neo-300-080"
+			]
+		},
+		"E3": {
+			"domain": "E",
+			"items": [
+				"ipip-neo-300-081",
+				"ipip-neo-300-082",
+				"ipip-neo-300-083",
+				"ipip-neo-300-084",
+				"ipip-neo-300-085",
+				"ipip-neo-300-086",
+				"ipip-neo-300-087",
+				"ipip-neo-300-088",
+				"ipip-neo-300-089",
+				"ipip-neo-300-090"
+			]
+		},
+		"E4": {
+			"domain": "E",
+			"items": [
+				"ipip-neo-300-091",
+				"ipip-neo-300-092",
+				"ipip-neo-300-093",
+				"ipip-neo-300-094",
+				"ipip-neo-300-095",
+				"ipip-neo-300-096",
+				"ipip-neo-300-097",
+				"ipip-neo-300-098",
+				"ipip-neo-300-099",
+				"ipip-neo-300-100"
+			]
+		},
+		"E5": {
+			"domain": "E",
+			"items": [
+				"ipip-neo-300-101",
+				"ipip-neo-300-102",
+				"ipip-neo-300-103",
+				"ipip-neo-300-104",
+				"ipip-neo-300-105",
+				"ipip-neo-300-106",
+				"ipip-neo-300-107",
+				"ipip-neo-300-108",
+				"ipip-neo-300-109",
+				"ipip-neo-300-110"
+			]
+		},
+		"E6": {
+			"domain": "E",
+			"items": [
+				"ipip-neo-300-111",
+				"ipip-neo-300-112",
+				"ipip-neo-300-113",
+				"ipip-neo-300-114",
+				"ipip-neo-300-115",
+				"ipip-neo-300-116",
+				"ipip-neo-300-117",
+				"ipip-neo-300-118",
+				"ipip-neo-300-119",
+				"ipip-neo-300-120"
+			]
+		},
+		"O1": {
+			"domain": "O",
+			"items": [
+				"ipip-neo-300-121",
+				"ipip-neo-300-122",
+				"ipip-neo-300-123",
+				"ipip-neo-300-124",
+				"ipip-neo-300-125",
+				"ipip-neo-300-126",
+				"ipip-neo-300-127",
+				"ipip-neo-300-128",
+				"ipip-neo-300-129",
+				"ipip-neo-300-130"
+			]
+		},
+		"O2": {
+			"domain": "O",
+			"items": [
+				"ipip-neo-300-131",
+				"ipip-neo-300-132",
+				"ipip-neo-300-133",
+				"ipip-neo-300-134",
+				"ipip-neo-300-135",
+				"ipip-neo-300-136",
+				"ipip-neo-300-137",
+				"ipip-neo-300-138",
+				"ipip-neo-300-139",
+				"ipip-neo-300-140"
+			]
+		},
+		"O3": {
+			"domain": "O",
+			"items": [
+				"ipip-neo-300-141",
+				"ipip-neo-300-142",
+				"ipip-neo-300-143",
+				"ipip-neo-300-144",
+				"ipip-neo-300-145",
+				"ipip-neo-300-146",
+				"ipip-neo-300-147",
+				"ipip-neo-300-148",
+				"ipip-neo-300-149",
+				"ipip-neo-300-150"
+			]
+		},
+		"O4": {
+			"domain": "O",
+			"items": [
+				"ipip-neo-300-151",
+				"ipip-neo-300-152",
+				"ipip-neo-300-153",
+				"ipip-neo-300-154",
+				"ipip-neo-300-155",
+				"ipip-neo-300-156",
+				"ipip-neo-300-157",
+				"ipip-neo-300-158",
+				"ipip-neo-300-159",
+				"ipip-neo-300-160"
+			]
+		},
+		"O5": {
+			"domain": "O",
+			"items": [
+				"ipip-neo-300-161",
+				"ipip-neo-300-162",
+				"ipip-neo-300-163",
+				"ipip-neo-300-164",
+				"ipip-neo-300-165",
+				"ipip-neo-300-166",
+				"ipip-neo-300-167",
+				"ipip-neo-300-168",
+				"ipip-neo-300-169",
+				"ipip-neo-300-170"
+			]
+		},
+		"O6": {
+			"domain": "O",
+			"items": [
+				"ipip-neo-300-171",
+				"ipip-neo-300-172",
+				"ipip-neo-300-173",
+				"ipip-neo-300-174",
+				"ipip-neo-300-175",
+				"ipip-neo-300-176",
+				"ipip-neo-300-177",
+				"ipip-neo-300-178",
+				"ipip-neo-300-179",
+				"ipip-neo-300-180"
+			]
+		},
+		"A1": {
+			"domain": "A",
+			"items": [
+				"ipip-neo-300-181",
+				"ipip-neo-300-182",
+				"ipip-neo-300-183",
+				"ipip-neo-300-184",
+				"ipip-neo-300-185",
+				"ipip-neo-300-186",
+				"ipip-neo-300-187",
+				"ipip-neo-300-188",
+				"ipip-neo-300-189",
+				"ipip-neo-300-190"
+			]
+		},
+		"A2": {
+			"domain": "A",
+			"items": [
+				"ipip-neo-300-191",
+				"ipip-neo-300-192",
+				"ipip-neo-300-193",
+				"ipip-neo-300-194",
+				"ipip-neo-300-195",
+				"ipip-neo-300-196",
+				"ipip-neo-300-197",
+				"ipip-neo-300-198",
+				"ipip-neo-300-199",
+				"ipip-neo-300-200"
+			]
+		},
+		"A3": {
+			"domain": "A",
+			"items": [
+				"ipip-neo-300-201",
+				"ipip-neo-300-202",
+				"ipip-neo-300-203",
+				"ipip-neo-300-204",
+				"ipip-neo-300-205",
+				"ipip-neo-300-206",
+				"ipip-neo-300-207",
+				"ipip-neo-300-208",
+				"ipip-neo-300-209",
+				"ipip-neo-300-210"
+			]
+		},
+		"A4": {
+			"domain": "A",
+			"items": [
+				"ipip-neo-300-211",
+				"ipip-neo-300-212",
+				"ipip-neo-300-213",
+				"ipip-neo-300-214",
+				"ipip-neo-300-215",
+				"ipip-neo-300-216",
+				"ipip-neo-300-217",
+				"ipip-neo-300-218",
+				"ipip-neo-300-219",
+				"ipip-neo-300-220"
+			]
+		},
+		"A5": {
+			"domain": "A",
+			"items": [
+				"ipip-neo-300-221",
+				"ipip-neo-300-222",
+				"ipip-neo-300-223",
+				"ipip-neo-300-224",
+				"ipip-neo-300-225",
+				"ipip-neo-300-226",
+				"ipip-neo-300-227",
+				"ipip-neo-300-228",
+				"ipip-neo-300-229",
+				"ipip-neo-300-230"
+			]
+		},
+		"A6": {
+			"domain": "A",
+			"items": [
+				"ipip-neo-300-231",
+				"ipip-neo-300-232",
+				"ipip-neo-300-233",
+				"ipip-neo-300-234",
+				"ipip-neo-300-235",
+				"ipip-neo-300-236",
+				"ipip-neo-300-237",
+				"ipip-neo-300-238",
+				"ipip-neo-300-239",
+				"ipip-neo-300-240"
+			]
+		},
+		"C1": {
+			"domain": "C",
+			"items": [
+				"ipip-neo-300-241",
+				"ipip-neo-300-242",
+				"ipip-neo-300-243",
+				"ipip-neo-300-244",
+				"ipip-neo-300-245",
+				"ipip-neo-300-246",
+				"ipip-neo-300-247",
+				"ipip-neo-300-248",
+				"ipip-neo-300-249",
+				"ipip-neo-300-250"
+			]
+		},
+		"C2": {
+			"domain": "C",
+			"items": [
+				"ipip-neo-300-251",
+				"ipip-neo-300-252",
+				"ipip-neo-300-253",
+				"ipip-neo-300-254",
+				"ipip-neo-300-255",
+				"ipip-neo-300-256",
+				"ipip-neo-300-257",
+				"ipip-neo-300-258",
+				"ipip-neo-300-259",
+				"ipip-neo-300-260"
+			]
+		},
+		"C3": {
+			"domain": "C",
+			"items": [
+				"ipip-neo-300-261",
+				"ipip-neo-300-262",
+				"ipip-neo-300-263",
+				"ipip-neo-300-264",
+				"ipip-neo-300-265",
+				"ipip-neo-300-266",
+				"ipip-neo-300-267",
+				"ipip-neo-300-268",
+				"ipip-neo-300-269",
+				"ipip-neo-300-270"
+			]
+		},
+		"C4": {
+			"domain": "C",
+			"items": [
+				"ipip-neo-300-271",
+				"ipip-neo-300-272",
+				"ipip-neo-300-273",
+				"ipip-neo-300-274",
+				"ipip-neo-300-275",
+				"ipip-neo-300-276",
+				"ipip-neo-300-277",
+				"ipip-neo-300-278",
+				"ipip-neo-300-279",
+				"ipip-neo-300-280"
+			]
+		},
+		"C5": {
+			"domain": "C",
+			"items": [
+				"ipip-neo-300-281",
+				"ipip-neo-300-282",
+				"ipip-neo-300-283",
+				"ipip-neo-300-284",
+				"ipip-neo-300-285",
+				"ipip-neo-300-286",
+				"ipip-neo-300-287",
+				"ipip-neo-300-288",
+				"ipip-neo-300-289",
+				"ipip-neo-300-290"
+			]
+		},
+		"C6": {
+			"domain": "C",
+			"items": [
+				"ipip-neo-300-291",
+				"ipip-neo-300-292",
+				"ipip-neo-300-293",
+				"ipip-neo-300-294",
+				"ipip-neo-300-295",
+				"ipip-neo-300-296",
+				"ipip-neo-300-297",
+				"ipip-neo-300-298",
+				"ipip-neo-300-299",
+				"ipip-neo-300-300"
+			]
+		}
+	}
+}
