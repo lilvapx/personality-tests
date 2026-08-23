@@ -1,25 +1,23 @@
 # Cloudflare Pages Headers
 # https://developers.cloudflare.com/pages/configuration/headers/
 #
-# Hinweis: Der SvelteKit-Adapter (@sveltejs/adapter-cloudflare) kopiert diese
-# Datei in den Build-Output und haengt seine generierten Header an
-# (/_app/immutable/* -> Cache-Control: public, immutable).
-# Header-Regeln gelten nur fuer STATIC assets, nicht fuer die _worker.js (SSR).
-# CSP muss deshalb im Worker selbst gesetzt werden (siehe SRC-Notiz) oder
-# entfaellt fuer SSR-Routen.
+# Diese Regeln gelten nur fuer STATIC assets (nicht fuer SSR-Routen via _worker.js).
+# Die echte CSP (mit Nonces) und Security-Header setzt der Worker:
+#   - vite.config.ts  → csp-Directives (SvelteKit generiert Nonce + Header)
+#   - src/hooks.server.ts → X-Frame-Options, Referrer-Policy, Permissions-Policy, nosniff
 
 # Statische Asset-Dateien (gehashte Immutables + restliche /_app-Dateien)
 /_app/*
   X-Content-Type-Options: nosniff
   Cache-Control: public, max-age=0, must-revalidate
 
-# Alle statischen Pfade
+# Alle statischen Pfade (Fallback für nicht-SSR-Pfade)
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
-# robots.txt spezifisch (kein X-Frame noetig, aber schadet nicht)
+# robots.txt
 /robots.txt
   X-Robots-Tag: noindex
