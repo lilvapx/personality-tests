@@ -45,6 +45,27 @@
 			},
 			"additionalProperties": false
 		},
+		"labels": {
+			"type": "object",
+			"description": "Übersetzte Namen der Domains und Facetten für die Auswertung.",
+			"properties": {
+				"domains": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string",
+						"minLength": 1
+					}
+				},
+				"facets": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string",
+						"minLength": 1
+					}
+				}
+			},
+			"required": ["domains", "facets"]
+		},
 		"translation_status": {
 			"type": "string",
 			"enum": ["official_ipip", "community_verified", "community_draft", "machine_draft"],

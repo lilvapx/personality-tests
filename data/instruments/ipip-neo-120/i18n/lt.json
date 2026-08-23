@@ -11,5 +11,46 @@
 			"4": "Iš dalies tiesa",
 			"5": "Visiškai tiesa"
 		}
+	},
+	"labels": {
+		"domains": {
+			"E": "Ekstraversija",
+			"A": "Sutariamumas",
+			"C": "Sąžiningumas",
+			"N": "Neurotiškumas",
+			"O": "Atvirumas patyrimui"
+		},
+		"facets": {
+			"E1": "Draugiškumas",
+			"E2": "Bendravimas",
+			"E3": "Ryžtingumas",
+			"E4": "Aktyvumas",
+			"E5": "Nuotykių siekimas",
+			"E6": "Linksmumas",
+			"A1": "Pasitikėjimas",
+			"A2": "Moralumas",
+			"A3": "Altruizmas",
+			"A4": "Kooperacija",
+			"A5": "Kuklumas",
+			"A6": "Užuojauta",
+			"C1": "Saviveiksmingumas",
+			"C2": "Tvarkingumas",
+			"C3": "Sąžiningumas",
+			"C4": "Siekimas",
+			"C5": "Savidisciplina",
+			"C6": "Atsargumas",
+			"N1": "Nerimas",
+			"N2": "Pyktis",
+			"N3": "Prislėgtumas",
+			"N4": "Savimonė",
+			"N5": "Nesaikingumas",
+			"N6": "Pažeidžiamumas",
+			"O1": "Vaizduotė",
+			"O2": "Meninis interesas",
+			"O3": "Emocijos",
+			"O4": "Nuotykių troškimas",
+			"O5": "Intelektas",
+			"O6": "Liberalumas"
+		}
 	}
 }

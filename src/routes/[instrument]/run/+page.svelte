@@ -89,7 +89,8 @@
 			scoring: bundle.scoring!,
 			responses: sessionStore.responses.map(r => ({ ...r })),
 			min: bundle.response_scale.min,
-			max: bundle.response_scale.max
+			max: bundle.response_scale.max,
+			i18nLabels: translation.labels ?? null
 		});
 		// Perzentile aus Normdaten berechnen (falls vorhanden)
 		const withNorms = applyNorms(result, bundle.norms ?? null);

@@ -30,9 +30,15 @@
 		O: '#9c27b0'  // Openness lila
 	};
 
-	/** Perzentil-Anzeige: "P72" oder "–" */
+	/** Perzentil-Anzeige: "12%" oder "–" */
 	function pctLabel(p: number | null | undefined): string {
-		return p === null || p === undefined ? '–' : `P${Math.round(p)}`;
+		return p === null || p === undefined ? '–' : `${Math.round(p)}%`;
+	}
+
+	/** Name + Original klein/kursiv dahinter (nur wenn abweichend) */
+	function nameWithOriginal(label: string, labelEn: string | undefined): string {
+		if (!labelEn || labelEn === label) return label;
+		return label;
 	}
 </script>
 
@@ -63,7 +69,12 @@
 	<div class="domains">
 		{#each resultStore.result.domains as domain}
 			<section class="domain-card">
-				<h2>{domain.label}</h2>
+				<h2>
+					{domain.label}
+					{#if domain.label_en && domain.label_en !== domain.label}
+						<span class="orig">({domain.label_en})</span>
+					{/if}
+				</h2>
 
 				<!-- Domain-Balken -->
 				<div class="domain-row">
@@ -83,7 +94,12 @@
 				<div class="facets">
 					{#each domain.facets as facet}
 						<div class="facet-row">
-							<span class="flabel">{facet.label}</span>
+							<span class="flabel">
+								{facet.label}
+								{#if facet.label_en && facet.label_en !== facet.label}
+									<span class="orig">({facet.label_en})</span>
+								{/if}
+							</span>
 							<div class="track small">
 								{#if facet.score !== null}
 									<div class="fill" style="width: {(facet.score / 5) * 100}%; background: {colors[domain.domain_id] ?? '#4a90d9'}"></div>
@@ -155,6 +171,15 @@
 		font-size: 1.1rem;
 	}
 
+	/* Original-Name klein + kursiv hinter der Übersetzung */
+	.orig {
+		font-size: 0.75em;
+		font-weight: 400;
+		font-style: italic;
+		color: #999;
+		margin-left: 0.3em;
+	}
+
 	/* Domain-Zeile */
 	.domain-row { display: flex; align-items: center; gap: 0.6rem; }
 	.dlabel { width: 1.5rem; font-size: 0.8rem; color: #999; font-weight: 700; }
@@ -189,12 +214,13 @@
 	}
 	.facet-row { display: flex; align-items: center; gap: 0.6rem; }
 	.flabel {
-		width: 9rem;
+		width: 10rem;
 		font-size: 0.78rem;
 		color: #555;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		flex-shrink: 0;
 	}
 	.track.small { height: 14px; border-radius: 4px; }
 	.track.small .fill { border-radius: 4px; }
@@ -226,7 +252,7 @@
 	/* Mobile */
 	@media (max-width: 640px) {
 		.domain-card { padding: 1rem; }
-		.flabel { width: 6.5rem; font-size: 0.72rem; }
+		.flabel { width: 7.5rem; font-size: 0.72rem; }
 		.pct.small { min-width: 2.2rem; }
 		.actions { flex-direction: column; width: 100%; }
 		.btn { width: 100%; }

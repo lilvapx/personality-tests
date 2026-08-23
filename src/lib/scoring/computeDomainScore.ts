@@ -9,6 +9,7 @@ export function computeDomainScore(
 	domainId: string,
 	domainLabel: string,
 	facets: FacetResult[],
+	translatedLabel: string | null = null,
 	minFacets = 4
 ): DomainResult {
 	const valid = facets.filter(f => f.score !== null);
@@ -21,7 +22,8 @@ export function computeDomainScore(
 
 	return {
 		domain_id: domainId,
-		label: domainLabel,
+		label: translatedLabel ?? domainLabel,
+		label_en: domainLabel,
 		score,
 		facets
 	};

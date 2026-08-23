@@ -52,6 +52,11 @@ export interface Translation {
 		labels: Record<string, string>;
 	};
 	translation_status?: TranslationStatus;
+	/** Übersetzte Domain-/Facet-Namen für die Auswertung */
+	labels?: {
+		domains?: Record<string, string>;
+		facets?: Record<string, string>;
+	};
 }
 
 /** Vierstufiger Qualitätsstatus einer Übersetzung */
@@ -81,7 +86,8 @@ export interface ItemResponse {
 /** Facet-Ergebnis */
 export interface FacetResult {
 	facet_id: string;
-	label: string;
+	label: string; // übersetzter Name (oder Original, wenn keine Übersetzung)
+	label_en?: string; // Original-IPIP-Name (für Anzeige klein/kursiv)
 	domain_id: string;
 	score: number | null; // Mittelwert, null wenn zu wenige Antworten
 	items_answered: number;
@@ -92,7 +98,8 @@ export interface FacetResult {
 /** Domain-Ergebnis */
 export interface DomainResult {
 	domain_id: string;
-	label: string;
+	label: string; // übersetzter Name
+	label_en?: string; // Original-IPIP-Name
 	score: number | null; // Mittelwert der Facet-Scores
 	facets: FacetResult[];
 	percentile?: number | null; // Perzentil (0-100), wenn Normdaten vorhanden

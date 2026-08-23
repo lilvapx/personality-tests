@@ -15,10 +15,13 @@ export interface ScoringInput {
 	responses: ItemResponse[];
 	min: number;
 	max: number;
+	/** Übersetzte Domain-/Facet-Namen (aus i18n-Datei), optional */
+	i18nLabels?: { domains?: Record<string, string>; facets?: Record<string, string> } | null;
 }
 
 export function scoreTest(input: ScoringInput): TestResult {
 	const respMap = new Map(input.responses.map(r => [r.item_id, r.value]));
+	const labels = input.i18nLabels ?? null;
 
 	const domainResults = input.domains.map(domain => {
 		const facets = (domain.facets ?? []).map(facet => {
@@ -30,10 +33,15 @@ export function scoreTest(input: ScoringInput): TestResult {
 				input.min,
 				input.max
 			);
-			return { ...facetResult, label: facet.label };
+			return {
+				...facetResult,
+				// Übersetzter Name, Fallback: Original
+				label: labels?.facets?.[facet.id] ?? facet.label,
+				label_en: facet.label
+			};
 		});
 
-		return computeDomainScore(domain.id, domain.label, facets);
+		return computeDomainScore(domain.id, domain.label, facets, labels?.domains?.[domain.id] ?? null);
 	});
 
 	return {

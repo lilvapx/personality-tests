@@ -371,5 +371,46 @@
 			"5": "Trifft voll zu"
 		}
 	},
-	"translation_status": "community_draft"
+	"translation_status": "community_draft",
+	"labels": {
+		"domains": {
+			"E": "Extraversion",
+			"A": "Verträglichkeit",
+			"C": "Gewissenhaftigkeit",
+			"N": "Neurotizismus",
+			"O": "Offenheit für Erfahrungen"
+		},
+		"facets": {
+			"E1": "Freundlichkeit",
+			"E2": "Geselligkeit",
+			"E3": "Durchsetzungsfähigkeit",
+			"E4": "Aktivität",
+			"E5": "Erlebnishunger",
+			"E6": "Frohsinn",
+			"A1": "Vertrauen",
+			"A2": "Moral",
+			"A3": "Altruismus",
+			"A4": "Kooperation",
+			"A5": "Bescheidenheit",
+			"A6": "Mitgefühl",
+			"C1": "Selbstwirksamkeit",
+			"C2": "Ordnungsliebe",
+			"C3": "Pflichtbewusstsein",
+			"C4": "Ehrgeiz",
+			"C5": "Selbstdisziplin",
+			"C6": "Bedachtsamkeit",
+			"N1": "Ängstlichkeit",
+			"N2": "Reizbarkeit",
+			"N3": "Niedergeschlagenheit",
+			"N4": "Befangenheit",
+			"N5": "Maßlosigkeit",
+			"N6": "Verletzlichkeit",
+			"O1": "Vorstellungskraft",
+			"O2": "Künstlerisches Interesse",
+			"O3": "Emotionalität",
+			"O4": "Abenteuerlust",
+			"O5": "Intellekt",
+			"O6": "Liberalismus"
+		}
+	}
 }
