@@ -2,11 +2,11 @@
  * shuffle.ts
  * Seeded shuffle für die Item-Reihenfolge im Testlauf.
  *
- * WICHTIG: Nur aktivieren, wenn meta.json "randomize_order": true setzt.
- * Die Antworten sind per item_id mit den Items verknüpft,
- * die Reihenfolge der Präsentation ist also frei mischbar, ohne das
- * Scoring zu beeinflussen. Der Shuffle wird einmal pro Sitzung
- * erzeugt und bleibt stabil (kein Springen bei Re-Render).
+ * STANDARD: Items werden pro Sitzung in zufälliger Reihenfolge präsentiert.
+ * Die Antworten sind per item_id mit den Items verknüpft, die Reihenfolge
+ * ist also frei mischbar, ohne das Scoring zu beeinflussen.
+ * Der Seed wird einmal pro Sitzung erzeugt (sessionStore.seed) und bleibt
+ * stabil — kein Springen bei Re-Render.
  */
 
 /**

@@ -32,7 +32,7 @@
 
 	const translation = $derived(bundle ? getTranslation(bundle, localeStore.current) : null);
 	const items = $derived(
-		bundle?.randomize_order && sessionStore.seed
+		bundle?.randomize_order !== false && sessionStore.seed
 			? seededShuffle(bundle.items, sessionStore.seed)
 			: (bundle?.items ?? [])
 	);

@@ -7,6 +7,12 @@ Wissenschaftliche Persönlichkeitstests — quelloffen, datensparsam, client-sei
 Freie, quelloffene Umsetzung etablierter Persönlichkeitsinventare (IPIP-NEO-120, HEXACO-60).
 Keine Registrierung, keine Datenabgabe — alle Antworten und die Auswertung laufen lokal im Browser.
 
+## Item-Reihenfolge
+
+Items werden pro Sitzung in **zufälliger Reihenfolge** präsentiert (Standard, reduziert
+Reihenfolge-Effekte). Der Seed wird pro Session erzeugt, die Reihenfolge bleibt innerhalb
+der Sitzung stabil. Pro Instrument abschaltbar über `meta.json` → `randomize_order: false`.
+
 ## Quellen
 
 - **IPIP-NEO-120:** Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a

@@ -54,5 +54,5 @@
 		"type": "likert"
 	},
 	"randomize_order": true,
-	"randomize_order_note": "TODO: gegen Originalstudie verifizieren, bevor auf true gesetzt wird"
+	"randomize_order_note": "Standard: Items werden pro Sitzung in zufälliger Reihenfolge präsentiert (reduziert Reihenfolge-Effekte). Seed wird pro Session erzeugt, Reihenfolge bleibt innerhalb der Sitzung stabil."
 }

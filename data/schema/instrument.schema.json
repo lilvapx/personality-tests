@@ -77,7 +77,7 @@
 		},
 		"randomize_order": {
 			"type": "boolean",
-			"description": "true = Items in zufälliger Reihenfolge präsentieren (pro Sitzung stabil)"
+			"description": "Standard true. false = Items in fester Reihenfolge präsentieren (nur für Spezialfälle)"
 		},
 		"randomize_order_note": {
 			"type": "string",

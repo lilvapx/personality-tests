@@ -58,7 +58,7 @@ for (const instId of readdirSync(instrumentsDir)) {
 		source_url: meta.source_url,
 		domains: meta.domains,
 		response_scale: meta.response_scale,
-		randomize_order: meta.randomize_order ?? false,
+		randomize_order: meta.randomize_order ?? true,
 		items,
 		scoring,
 		i18n,
