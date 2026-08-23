@@ -2,14 +2,14 @@
 	"instrument_id": "ipip-neo-120",
 	"translations": {
 		"en": {
-			"status": "draft",
+			"status": "official",
 			"updated": "2026-08-23",
-			"note": "Platzhalter-Texte im IPIP-Stil; finale Fassung aus offizieller IPIP-Item-Liste übernehmen"
+			"note": "Original-Items von https://ipip.ori.org/30FacetNEO-PI-RItems.htm (Johnson, 2014), Public Domain"
 		},
 		"de": {
 			"status": "draft",
 			"updated": "2026-08-23",
-			"note": "Eigene Übersetzung, noch nicht reviewt"
+			"note": "Eigene Übersetzung der Original-Items; validierte IPIP-D-120 ist nicht frei lizenziert"
 		},
 		"lt": {
 			"status": "draft",
