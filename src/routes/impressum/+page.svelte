@@ -13,23 +13,23 @@
 
 <h2>Diensteanbieter</h2>
 <p>
-	<!-- TODO: Echte Daten eintragen -->
-	<strong>Vorname Nachname</strong><br />
-	Musterstraße 1<br />
-	12345 Musterstadt<br />
+	<strong>Zygimantas Grebeniuk</strong><br />
+	Loensweg 31<br />
+	37085 Göttingen<br />
 	Deutschland
 </p>
 
 <h2>Kontakt</h2>
 <p>
 	E-Mail: <a href="mailto:kontakt@example.de">kontakt@example.de</a>
+	<!-- TODO: Echte E-Mail-Adresse eintragen (nach § 5 DDG Pflicht) -->
 </p>
 
 <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
 <p>
-	Vorname Nachname<br />
-	Musterstraße 1<br />
-	12345 Musterstadt
+	Zygimantas Grebeniuk<br />
+	Loensweg 31<br />
+	37085 Göttingen
 </p>
 
 <h2>Hinweis auf Verantwortlichkeit</h2>
@@ -38,7 +38,7 @@
 </p>
 
 <p class="muted small">
-	Dieses Impressum ist ein Platzhalter — bitte die echten Angaben eintragen, bevor die Seite öffentlich beworben wird.
+	Angaben gemäß § 5 DDG. Die E-Mail-Adresse ist noch ein Platzhalter — bitte die echte Adresse eintragen.
 </p>
 
 <style>

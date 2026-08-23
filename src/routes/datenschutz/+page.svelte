@@ -57,15 +57,16 @@ deinen Browser nicht und enthält keine personenbezogenen Daten.
 
 <h2>7. Verantwortliche Stelle</h2>
 <p>
-	<!-- TODO: Echte Daten eintragen -->
-	Vorname Nachname<br />
-	Musterstraße 1<br />
-	12345 Musterstadt<br />
+	Zygimantas Grebeniuk<br />
+	Loensweg 31<br />
+	37085 Göttingen<br />
+	Deutschland<br />
 	E-Mail: <a href="mailto:kontakt@example.de">kontakt@example.de</a>
+	<!-- TODO: Echte E-Mail-Adresse eintragen -->
 </p>
 
 <p class="muted small">
-	Dies ist ein Platzhalter — bitte die echten Angaben eintragen und bei Bedarf rechtlich prüfen lassen.
+	Diese Datenschutzerklärung ist ein Entwurf — bitte bei Bedarf rechtlich prüfen lassen (z.B. durch einen Datenschutzbeauftragten oder Anwalt).
 </p>
 
 <style>
