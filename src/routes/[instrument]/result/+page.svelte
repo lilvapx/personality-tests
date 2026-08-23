@@ -17,7 +17,7 @@
 {#if resultStore.result}
 	<h1>Dein Ergebnis</h1>
 	<p class="meta">
-		{resultStore.result.instrument_id} · {resultStore.result.locale} · {new Date(currentResult.completed_at).toLocaleString()}
+		{resultStore.result.instrument_id} · {resultStore.result.locale} · {new Date(resultStore.result.completed_at).toLocaleString()}
 	</p>
 
 	<DisclaimerBanner message="Interpretiere die Werte mit Vorsicht — dies ist kein klinisches Instrument." />
