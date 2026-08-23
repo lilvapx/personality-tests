@@ -34,9 +34,12 @@
 	als Datei exportieren — der Export verlässt deinen Browser nur, wenn du die heruntergeladene Datei selbst weiterverwendest.
 </p>
 
-<h2>4. Cookies</h2>
+<h2>4. Cookies &amp; lokale Speicherung</h2>
 <p>
-	Diese Website verwendet <strong>keine Cookies</strong> und keine vergleichbaren Technologien.
+	Diese Website verwendet <strong>keine Cookies</strong> und keine vergleichbaren Tracking-Technologien.
+	Ausschließlich deine <strong>Spracheinstellung</strong> wird im lokalen Speicher deines Browsers (localStorage)
+	abgelegt, damit die gewählte Sprache beim nächsten Besuch erhalten bleibt. Diese Information verlässt
+deinen Browser nicht und enthält keine personenbezogenen Daten.
 </p>
 
 <h2>5. Externe Links</h2>
