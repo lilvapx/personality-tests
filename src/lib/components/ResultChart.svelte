@@ -53,4 +53,11 @@
 	.fill { height: 100%; border-radius: 4px; transition: width 0.4s ease; }
 	.value { position: absolute; right: 8px; font-size: 0.8rem; font-weight: 600; }
 	.value.muted { color: #aaa; }
+
+	/* Mobile: kompaktere Labels */
+	@media (max-width: 640px) {
+		.row { gap: 0.5rem; }
+		.label { width: 90px; font-size: 0.8rem; }
+		.value { right: 6px; font-size: 0.75rem; }
+	}
 </style>

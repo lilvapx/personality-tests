@@ -63,15 +63,25 @@
 <style>
 	.meta { color: #888; font-size: 0.85rem; }
 	h2 { margin-top: 2rem; }
-	.actions { display: flex; gap: 1rem; margin-top: 2.5rem; flex-wrap: wrap; }
+	.actions { display: flex; gap: 0.75rem; margin-top: 2.5rem; flex-wrap: wrap; }
 	.btn {
-		padding: 0.75rem 1.5rem;
+		padding: 0.75rem 1.25rem;
 		background: #4a90d9; color: #fff;
 		border-radius: 8px; text-decoration: none; font-weight: 600;
 		border: none;
 		cursor: pointer;
+		min-height: 44px; /* Touch-Target */
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 	}
 	.btn:hover { background: #3a7bc0; }
 	.btn.secondary { background: #eee; color: #333; }
 	.btn.secondary:hover { background: #ddd; }
+
+	/* Mobile: Buttons volle Breite */
+	@media (max-width: 640px) {
+		.actions { flex-direction: column; }
+		.btn { width: 100%; }
+	}
 </style>

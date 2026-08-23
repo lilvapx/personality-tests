@@ -70,4 +70,20 @@
 	button.selected { border-color: #4a90d9; background: #dce9fb; }
 	.value { font-weight: 700; }
 	.label { font-size: 0.7rem; color: #666; text-align: center; }
+
+	/* Mobile: größere Touch-Targets, kompaktere Labels */
+	@media (max-width: 640px) {
+		.question-card { padding: 1rem; gap: 0.75rem; }
+		.text { font-size: 1.05rem; }
+		.scale { grid-template-columns: repeat(5, 1fr); gap: 0.35rem; }
+		button { padding: 0.65rem 0.25rem; }
+		.label {
+			font-size: 0.58rem;
+			line-height: 1.15;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+	}
 </style>

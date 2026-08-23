@@ -44,4 +44,10 @@
 	.fill { height: 100%; background: #4a90d9; border-radius: 3px; }
 	.value { position: absolute; right: 6px; font-size: 0.7rem; font-weight: 600; }
 	.value.muted { color: #aaa; }
+
+	/* Mobile: Labels über der Leiste statt daneben */
+	@media (max-width: 640px) {
+		.facet { flex-direction: column; align-items: stretch; gap: 0.2rem; margin-bottom: 0.6rem; }
+		.name { width: auto; font-size: 0.78rem; }
+	}
 </style>

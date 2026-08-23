@@ -85,6 +85,13 @@
 	.caret { font-size: 0.7rem; color: #888; transition: transform 0.15s; }
 	.caret.rotated { transform: rotate(180deg); }
 
+	/* Mobile: größerer Touch-Target */
+	@media (max-width: 640px) {
+		.trigger { padding: 0.5rem 0.6rem; min-height: 40px; }
+		.name { font-size: 0.8rem; }
+		.menu { right: -0.25rem; min-width: 170px; }
+	}
+
 	/* Unsichtbares Overlay, damit Klick außerhalb das Menü schließt */
 	.backdrop {
 		position: fixed;

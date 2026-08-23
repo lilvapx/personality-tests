@@ -68,8 +68,8 @@
 
 <style>
 	.citation { font-size: 0.85rem; color: #777; font-style: italic; }
-	.facts { list-style: none; padding: 0; display: flex; gap: 1.5rem; flex-wrap: wrap; }
-	.facts li { background: #f7f7f7; padding: 0.5rem 1rem; border-radius: 8px; }
+	.facts { list-style: none; padding: 0; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+	.facts li { background: #f7f7f7; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; }
 	.start-btn {
 		display: inline-block;
 		margin-top: 1.5rem;
@@ -77,6 +77,14 @@
 		background: #4a90d9; color: #fff;
 		border-radius: 8px; text-decoration: none;
 		font-weight: 600;
+		min-height: 44px;
 	}
 	.start-btn:hover { background: #3a7bc0; }
+
+	/* Mobile */
+	@media (max-width: 640px) {
+		.start-btn { width: 100%; text-align: center; }
+		.facts { flex-direction: column; }
+		.facts li { width: 100%; box-sizing: border-box; }
+	}
 </style>

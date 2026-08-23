@@ -103,7 +103,14 @@
 		background: #4caf50; color: #fff;
 		border: none; border-radius: 8px;
 		font-weight: 600; font-size: 1rem; cursor: pointer;
+		min-height: 48px;
 	}
 	.finish-btn:hover { background: #43a047; }
 	.hint { color: #888; font-size: 0.9rem; }
+
+	/* Mobile */
+	@media (max-width: 640px) {
+		.questions { gap: 0.75rem; margin: 1rem 0; }
+		.finish-btn { width: 100%; }
+	}
 </style>
