@@ -1,0 +1,309 @@
+{
+	"instrument_id": "ipip-neo-120",
+	"source": "escs",
+	"scale": "mean-1-5",
+	"sample": "Eugene-Springfield Community Sample (Goldberg, 1993-2007)",
+	"facets": {
+		"N1_ANXIETY": {
+			"mean": 2.2295,
+			"sd": 0.8083,
+			"n": 851,
+			"alpha": 0.8265,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"N2_ANGER": {
+			"mean": 2.3068,
+			"sd": 0.7484,
+			"n": 673,
+			"alpha": 0.8792,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"N3_DEPRESSION": {
+			"mean": 1.943,
+			"sd": 0.8017,
+			"n": 748,
+			"alpha": 0.8763,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"N4_SELF_CONSCIOUSNESS": {
+			"mean": 2.3982,
+			"sd": 0.7373,
+			"n": 795,
+			"alpha": 0.799,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"N5_IMMODERATION": {
+			"mean": 2.407,
+			"sd": 0.6376,
+			"n": 673,
+			"alpha": 0.7514,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"N6_VULNERABILITY": {
+			"mean": 2.1008,
+			"sd": 0.6276,
+			"n": 795,
+			"alpha": 0.8172,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"E1_FRIENDLINESS": {
+			"mean": 3.5301,
+			"sd": 0.7611,
+			"n": 795,
+			"alpha": 0.8655,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"E2_GREGARIOUSNESS": {
+			"mean": 2.7971,
+			"sd": 0.7075,
+			"n": 795,
+			"alpha": 0.7941,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"E3_ASSERTIVENESS": {
+			"mean": 3.2265,
+			"sd": 0.6436,
+			"n": 795,
+			"alpha": 0.8288,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"E4_ACTIVITY_LEVEL": {
+			"mean": 2.6877,
+			"sd": 0.5486,
+			"n": 795,
+			"alpha": 0.6918,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"E5_EXCITEMENT_SEEKING": {
+			"mean": 1.9238,
+			"sd": 0.5266,
+			"n": 795,
+			"alpha": 0.717,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"E6_CHEERFULNESS": {
+			"mean": 3.4655,
+			"sd": 0.6842,
+			"n": 795,
+			"alpha": 0.7878,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"O1_IMAGINATION": {
+			"mean": 3.2848,
+			"sd": 0.7118,
+			"n": 673,
+			"alpha": 0.8251,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"O2_ARTISTIC_INTERESTS": {
+			"mean": 3.548,
+			"sd": 0.6514,
+			"n": 673,
+			"alpha": 0.8249,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"O3_EMOTIONALITY": {
+			"mean": 3.2254,
+			"sd": 0.919,
+			"n": 797,
+			"alpha": 0.7976,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"O4_ADVENTUROUSNESS": {
+			"mean": 2.6574,
+			"sd": 0.7016,
+			"n": 795,
+			"alpha": 0.7334,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"O5_INTELLECT": {
+			"mean": 3.5122,
+			"sd": 0.7865,
+			"n": 673,
+			"alpha": 0.8661,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"O6_LIBERALISM": {
+			"mean": 2.1267,
+			"sd": 0.7083,
+			"n": 673,
+			"alpha": 0.8144,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"A1_TRUST": {
+			"mean": 3.457,
+			"sd": 0.7345,
+			"n": 795,
+			"alpha": 0.8033,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"A2_MORALITY": {
+			"mean": 3.7029,
+			"sd": 0.9058,
+			"n": 795,
+			"alpha": 0.7401,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"A3_ALTRUISM": {
+			"mean": 3.9317,
+			"sd": 0.5602,
+			"n": 795,
+			"alpha": 0.7492,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"A4_COOPERATION": {
+			"mean": 3.7034,
+			"sd": 0.6741,
+			"n": 795,
+			"alpha": 0.7013,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"A5_MODESTY": {
+			"mean": 2.9053,
+			"sd": 0.8084,
+			"n": 795,
+			"alpha": 0.759,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"A6_SYMPATHY": {
+			"mean": 2.8662,
+			"sd": 0.5173,
+			"n": 656,
+			"alpha": 0.6769,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"C1_SELF_EFFICACY": {
+			"mean": 3.981,
+			"sd": 0.4942,
+			"n": 795,
+			"alpha": 0.7818,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"C2_ORDERLINESS": {
+			"mean": 3.226,
+			"sd": 0.9934,
+			"n": 851,
+			"alpha": 0.8187,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"C3_DUTIFULNESS": {
+			"mean": 4.2001,
+			"sd": 0.5853,
+			"n": 795,
+			"alpha": 0.7042,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"C4_ACHIEVEMENT_STRIVING": {
+			"mean": 3.5937,
+			"sd": 0.8001,
+			"n": 795,
+			"alpha": 0.7737,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"C5_SELF_DISCIPLINE": {
+			"mean": 3.462,
+			"sd": 0.726,
+			"n": 795,
+			"alpha": 0.8525,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		},
+		"C6_CAUTIOUSNESS": {
+			"mean": 3.4291,
+			"sd": 0.6724,
+			"n": 795,
+			"alpha": 0.7584,
+			"source": "escs",
+			"citation": "Goldberg, L. R. Eugene-Springfield Community Sample (ESCS). https://ipip.ori.org/",
+			"population": "ESCS Community Sample: recruited 1993–2007 in Eugene-Springfield, Oregon. 98.4% Caucasian. Norms are provided as a historical reference and are not generalizable to diverse or modern populations. Develop your own norms for your target population.",
+			"note": "Normen aus IPIP-Repository (ESCS, Eugene-Springfield, Goldberg). Summenscores auf Mittelwert-Skala 1-5 normalisiert (÷ Item-Anzahl). Historische Referenz, nicht generalisierbar."
+		}
+	},
+	"note": "Abgeleitet aus IPIP-NEO-300 ESCS-Normen (119 von 120 Items identisch; O6 enthält 1 abweichendes Item). Als Näherung zu verstehen."
+}

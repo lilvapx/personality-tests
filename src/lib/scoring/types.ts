@@ -86,6 +86,7 @@ export interface FacetResult {
 	score: number | null; // Mittelwert, null wenn zu wenige Antworten
 	items_answered: number;
 	items_total: number;
+	percentile?: number | null; // Perzentil (0-100), wenn Normdaten vorhanden
 }
 
 /** Domain-Ergebnis */
@@ -94,6 +95,16 @@ export interface DomainResult {
 	label: string;
 	score: number | null; // Mittelwert der Facet-Scores
 	facets: FacetResult[];
+	percentile?: number | null; // Perzentil (0-100), wenn Normdaten vorhanden
+}
+
+/** Normdaten für ein Instrument (z.B. ESCS) */
+export interface NormData {
+	instrument_id: string;
+	source: string;
+	scale: string;
+	sample?: string;
+	facets: Record<string, { mean: number; sd: number; n?: number; alpha?: number | null; source?: string }>;
 }
 
 /** Komplettes Ergebnis */

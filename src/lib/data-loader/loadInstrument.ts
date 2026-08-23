@@ -4,7 +4,7 @@
  * Die generierten JSONs werden von Vite als Assets mitgebündelt —
  * kein Server nötig, funktioniert komplett statisch (Cloudflare Pages).
  */
-import type { InstrumentMeta, Item, ScoringConfig, Translation } from '$lib/scoring/types';
+import type { InstrumentMeta, Item, ScoringConfig, Translation, NormData } from '$lib/scoring/types';
 
 export interface InstrumentBundle {
 	id: string;
@@ -18,6 +18,7 @@ export interface InstrumentBundle {
 	changelog?: Array<{ version: string; date: string; description: string }>;
 	items: Item[];
 	scoring: ScoringConfig | null;
+	norms?: NormData | null;
 	i18n: Record<string, Translation>;
 	locales: string[];
 }

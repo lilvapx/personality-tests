@@ -6,6 +6,7 @@
 	import { sessionStore, setResponse, getResponse, startSession, isComplete } from '$lib/stores/testSession.svelte';
 	import { setResult } from '$lib/stores/results.svelte';
 	import { scoreTest } from '$lib/scoring';
+	import { applyNorms } from '$lib/scoring/percentile';
 	import { seededShuffle } from '$lib/scoring/shuffle';
 	import QuestionCard from '$lib/components/QuestionCard.svelte';
 	import ProgressBar from '$lib/components/ProgressBar.svelte';
@@ -90,7 +91,9 @@
 			min: bundle.response_scale.min,
 			max: bundle.response_scale.max
 		});
-		setResult(result);
+		// Perzentile aus Normdaten berechnen (falls vorhanden)
+		const withNorms = applyNorms(result, bundle.norms ?? null);
+		setResult(withNorms);
 		goto(`/${bundle.id}/result`);
 	}
 </script>

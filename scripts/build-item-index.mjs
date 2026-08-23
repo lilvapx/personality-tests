@@ -21,6 +21,15 @@ const OUT_DIR = join(__dirname, '..', 'src', 'lib', 'data-loader', 'generated');
 const instrumentsDir = join(DATA_DIR, 'instruments');
 const index = [];
 
+/** Lädt die erste Normdatei (norms/*.json) eines Instruments, falls vorhanden */
+function loadNorms(instDir) {
+	const normsDir = join(instDir, 'norms');
+	if (!existsSync(normsDir)) return null;
+	const files = readdirSync(normsDir).filter(f => f.endsWith('.json') && f !== 'SOURCE.md');
+	if (files.length === 0) return null;
+	return JSON.parse(readFileSync(join(normsDir, files[0]), 'utf8'));
+}
+
 mkdirSync(OUT_DIR, { recursive: true });
 
 for (const instId of readdirSync(instrumentsDir)) {
@@ -62,6 +71,7 @@ for (const instId of readdirSync(instrumentsDir)) {
 		changelog: meta.changelog ?? [],
 		items,
 		scoring,
+		norms: loadNorms(instDir),
 		i18n,
 		locales
 	};
