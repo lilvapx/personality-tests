@@ -21,6 +21,7 @@
 				class:selected={selected === value}
 				onclick={() => onSelect(value)}
 				aria-label={labels[String(value)]}
+				aria-pressed={selected === value}
 			>
 				<span class="value">{value}</span>
 				<span class="label">{labels[String(value)]}</span>
@@ -48,6 +49,7 @@
 		font-size: 1.15rem;
 		font-weight: 500;
 		margin: 0;
+		line-height: 1.4;
 	}
 	.scale {
 		display: grid;
@@ -71,19 +73,40 @@
 	.value { font-weight: 700; }
 	.label { font-size: 0.7rem; color: #666; text-align: center; }
 
-	/* Mobile: größere Touch-Targets, kompaktere Labels */
+	/* Mobile: vertikale Antwortliste — große Touch-Targets, keine gequetschten Labels */
 	@media (max-width: 640px) {
-		.question-card { padding: 1rem; gap: 0.75rem; }
+		.question-card { padding: 1.25rem 1rem; gap: 0.85rem; }
 		.text { font-size: 1.05rem; }
-		.scale { grid-template-columns: repeat(5, 1fr); gap: 0.35rem; }
-		button { padding: 0.65rem 0.25rem; }
-		.label {
-			font-size: 0.58rem;
-			line-height: 1.15;
-			display: -webkit-box;
-			-webkit-line-clamp: 2;
-			-webkit-box-orient: vertical;
-			overflow: hidden;
+		.scale {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
 		}
+		button {
+			flex-direction: row;
+			justify-content: flex-start;
+			gap: 0.85rem;
+			padding: 0.8rem 1rem;
+			min-height: 52px; /* großes Touch-Target */
+			text-align: left;
+		}
+		.value {
+			width: 2rem;
+			height: 2rem;
+			flex-shrink: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #fff;
+			border: 2px solid #d5d5d5;
+			border-radius: 50%;
+			font-size: 0.95rem;
+		}
+		button.selected .value {
+			background: #4a90d9;
+			border-color: #4a90d9;
+			color: #fff;
+		}
+		.label { font-size: 0.85rem; color: #444; flex: 1; }
 	}
 </style>

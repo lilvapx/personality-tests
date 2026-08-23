@@ -52,6 +52,9 @@ const ui = {
 		'run.noScoring': 'Für dieses Instrument ist noch keine Scoring-Konfiguration hinterlegt.',
 		'run.finish': 'Auswertung anzeigen →',
 		'run.open': 'Noch {n} Fragen offen.',
+		'run.prev': 'Zurück',
+		'run.next': 'Weiter',
+		'run.selectHint': 'Bitte wähle eine Antwort, um fortzufahren.',
 
 		// Result
 		'result.title': 'Auswertung — personality-tests',
@@ -146,6 +149,9 @@ const ui = {
 		'run.noScoring': 'No scoring configuration exists for this instrument yet.',
 		'run.finish': 'Show results →',
 		'run.open': '{n} questions left.',
+		'run.prev': 'Back',
+		'run.next': 'Next',
+		'run.selectHint': 'Please select an answer to continue.',
 
 		'result.title': 'Results — personality-tests',
 		'result.heading': 'Your results',
@@ -237,6 +243,9 @@ const ui = {
 		'run.noScoring': 'Šiam instrumentui dar nėra vertinimo konfigūracijos.',
 		'run.finish': 'Rodyti rezultatus →',
 		'run.open': 'Liko {n} klausimų.',
+		'run.prev': 'Atgal',
+		'run.next': 'Toliau',
+		'run.selectHint': 'Pasirink atsakymą, kad tęstum.',
 
 		'result.title': 'Rezultatai — personality-tests',
 		'result.heading': 'Tavo rezultatai',

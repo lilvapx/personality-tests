@@ -9,7 +9,9 @@
 </script>
 
 <div class="progress">
-	<div class="bar" style="width: {pct}%"></div>
+	<div class="track">
+		<div class="bar" style="width: {pct}%"></div>
+	</div>
 	<span class="pct">{pct}%</span>
 </div>
 
@@ -19,15 +21,24 @@
 		align-items: center;
 		gap: 0.75rem;
 	}
+	.track {
+		flex: 1;
+		height: 10px;
+		background: #eee;
+		border-radius: 5px;
+		overflow: hidden;
+	}
 	.bar {
-		height: 8px;
+		height: 100%;
 		background: #4a90d9;
-		border-radius: 4px;
-		transition: width 0.2s ease;
+		border-radius: 5px;
+		transition: width 0.25s ease;
 	}
 	.pct {
-		font-size: 0.8rem;
-		color: #666;
-		min-width: 3rem;
+		font-size: 0.95rem;
+		font-weight: 700;
+		color: #4a90d9;
+		min-width: 3.2rem;
+		text-align: right;
 	}
 </style>

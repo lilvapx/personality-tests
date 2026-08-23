@@ -14,6 +14,8 @@
 
 	let bundle = $state<InstrumentBundle | null>(null);
 	let notFound = $state(false);
+	/** Aktuelle Frage (0-basiert) — One-at-a-time */
+	let currentIndex = $state(0);
 
 	const instrumentId = $derived(page.params.instrument);
 
@@ -40,9 +42,32 @@
 	});
 	const answeredCount = $derived(sessionStore.responses.length);
 	const complete = $derived(bundle ? isComplete(bundle.items.length) : false);
+	const total = $derived(items.length);
+	const currentItem = $derived(items[currentIndex]);
+	const isLast = $derived(currentIndex >= total - 1);
+	/** Antwort auf die aktuelle Frage schon gewählt? */
+	const hasAnswer = $derived(currentItem ? getResponse(currentItem.item_id) !== undefined : false);
 
 	function handleSelect(itemId: string, value: number) {
 		setResponse(itemId, value);
+	}
+
+	function next() {
+		if (isLast) {
+			finish();
+			return;
+		}
+		if (currentIndex < total - 1) {
+			currentIndex++;
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+	}
+
+	function prev() {
+		if (currentIndex > 0) {
+			currentIndex--;
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
 	}
 
 	function finish() {
@@ -71,46 +96,91 @@
 	<p><a href="/">{t('run.back')}</a></p>
 {:else if bundle && translation}
 	{#if bundle.scoring}
-		<ProgressBar current={answeredCount} total={bundle.items.length} />
+		<!-- ProgressBar oben: Position im Test + % -->
+		<ProgressBar current={currentIndex + 1} total={total} />
 
-		<div class="questions">
-			{#each items as item (item.item_id)}
+		<div class="question-area">
+			{#if currentItem}
 				<QuestionCard
-					text={translation.items[item.item_id]?.text ?? item.item_id}
-					index={items.indexOf(item)}
-					total={items.length}
-					selected={getResponse(item.item_id)}
+					text={translation.items[currentItem.item_id]?.text ?? currentItem.item_id}
+					index={currentIndex}
+					total={total}
+					selected={getResponse(currentItem.item_id)}
 					labels={translation.response_scale.labels}
-					onSelect={(v) => handleSelect(item.item_id, v)}
+					onSelect={(v) => handleSelect(currentItem.item_id, v)}
 				/>
-			{/each}
-		</div>
+			{/if}
 
-		{#if complete}
-			<button class="finish-btn" onclick={finish}>{t('run.finish')}</button>
-		{:else}
-			<p class="hint">{t('run.open', { n: bundle.items.length - answeredCount })}</p>
-		{/if}
+			<div class="nav">
+				<button class="nav-btn" onclick={prev} disabled={currentIndex === 0}>
+					← {t('run.prev')}
+				</button>
+
+				{#if isLast}
+					<button class="nav-btn primary finish" onclick={next} disabled={!complete && !hasAnswer}>
+						{t('run.finish')}
+					</button>
+				{:else}
+					<button class="nav-btn primary" onclick={next} disabled={!hasAnswer}>
+						{t('run.next')} →
+					</button>
+				{/if}
+			</div>
+
+			{#if !hasAnswer && !isLast}
+				<p class="hint">{t('run.selectHint')}</p>
+			{/if}
+		</div>
 	{:else}
 		<p>{t('run.noScoring')}</p>
 	{/if}
 {/if}
 
 <style>
-	.questions { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
-	.finish-btn {
-		padding: 0.9rem 2rem;
-		background: #4caf50; color: #fff;
-		border: none; border-radius: 8px;
-		font-weight: 600; font-size: 1rem; cursor: pointer;
-		min-height: 48px;
+	.question-area { margin-top: 1.25rem; }
+
+	.nav {
+		display: flex;
+		gap: 0.75rem;
+		margin-top: 1.25rem;
 	}
-	.finish-btn:hover { background: #43a047; }
-	.hint { color: #888; font-size: 0.9rem; }
+	.nav-btn {
+		flex: 1;
+		padding: 0.9rem 1rem;
+		border: 2px solid #e2e2e2;
+		border-radius: 10px;
+		background: #fff;
+		font-weight: 600;
+		font-size: 1rem;
+		cursor: pointer;
+		min-height: 48px;
+		color: #333;
+		transition: all 0.15s;
+	}
+	.nav-btn:hover:not(:disabled) { border-color: #4a90d9; background: #f5f9ff; }
+	.nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+	.nav-btn.primary {
+		background: #4a90d9;
+		border-color: #4a90d9;
+		color: #fff;
+	}
+	.nav-btn.primary:hover:not(:disabled) { background: #3a7bc0; border-color: #3a7bc0; }
+	.nav-btn.primary:disabled { background: #b8d4f2; border-color: #b8d4f2; }
+
+	.nav-btn.finish {
+		background: #4caf50;
+		border-color: #4caf50;
+	}
+	.nav-btn.finish:hover:not(:disabled) { background: #43a047; border-color: #43a047; }
+	.nav-btn.finish:disabled { background: #b9e0bb; border-color: #b9e0bb; }
+
+	.hint { color: #888; font-size: 0.85rem; text-align: center; margin-top: 0.75rem; }
 
 	/* Mobile */
 	@media (max-width: 640px) {
-		.questions { gap: 0.75rem; margin: 1rem 0; }
-		.finish-btn { width: 100%; }
+		.question-area { margin-top: 1rem; }
+		.nav { gap: 0.5rem; }
+		.nav-btn { padding: 0.85rem 0.5rem; font-size: 0.95rem; }
 	}
 </style>
