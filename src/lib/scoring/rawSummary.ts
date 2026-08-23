@@ -11,6 +11,7 @@ import type { Item, TestResult } from '$lib/scoring/types';
 
 export interface RawItemEntry {
 	id: number; // Item-Nummer (1-basiert, Original-Reihenfolge)
+	text: string; // Item-Text in der Test-Sprache
 	response: number | null; // Rohantwort auf der Skala
 	dimension: string; // Domain-Kurz-ID (E, A, C, N, O)
 	facet: string; // Facet-Kurz-ID (z.B. E1)
@@ -43,12 +44,13 @@ export function buildRawJson(params: {
 	result: TestResult;
 	items: Item[];
 	responses: Array<{ item_id: string; value: number }>;
+	itemTexts: Record<string, string>; // item_id → Text in Test-Sprache
 	name: string;
 	version: string;
 	scaleMin: number;
 	scaleMax: number;
 }): RawJson {
-	const { result, items, responses, name, version, scaleMin, scaleMax } = params;
+	const { result, items, responses, itemTexts, name, version, scaleMin, scaleMax } = params;
 
 	// Antwort-Map: item_id → Wert
 	const responseMap = new Map(responses.map(r => [r.item_id, r.value]));
@@ -60,6 +62,7 @@ export function buildRawJson(params: {
 			const response = responseMap.get(item.item_id) ?? null;
 			return {
 				id: Number.isFinite(num) ? num : 0,
+				text: itemTexts[item.item_id] ?? '',
 				response,
 				dimension: item.domain,
 				facet: item.facet ?? '',

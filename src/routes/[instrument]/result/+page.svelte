@@ -27,10 +27,22 @@
 	/** Rohdaten-JSON für die Copy-Textbox */
 	const rawJson = $derived.by(() => {
 		if (!resultStore.result || !bundle) return null;
+
+		// Item-Texte in der Test-Locale (Fallback: erste verfügbare Locale)
+		const locale = resultStore.result.locale;
+		const translation = bundle.i18n[locale] ?? bundle.i18n[bundle.locales[0]];
+		const itemTexts: Record<string, string> = {};
+		if (translation) {
+			for (const [iid, v] of Object.entries(translation.items)) {
+				itemTexts[iid] = v.text;
+			}
+		}
+
 		return buildRawJson({
 			result: resultStore.result,
 			items: bundle.items,
 			responses: sessionStore.responses.map(r => ({ ...r })),
+			itemTexts,
 			name: bundle.name,
 			version: bundle.version,
 			scaleMin: bundle.response_scale.min,

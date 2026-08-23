@@ -48,10 +48,18 @@ const result: TestResult = {
 	]
 };
 
+const itemTexts: Record<string, string> = {
+	'ipip-neo-120-001': 'Ich mache mir Sorgen über Dinge.',
+	'ipip-neo-120-002': 'Ich finde leicht Freunde.',
+	'ipip-neo-120-003': 'Ich habe eine lebhafte Vorstellungskraft.',
+	'ipip-neo-120-010': 'Ich vertraue anderen.'
+};
+
 const base = {
 	result,
 	items,
 	responses,
+	itemTexts,
 	name: 'IPIP-NEO-120',
 	version: '1.0.0',
 	scaleMin: 1,
@@ -71,13 +79,13 @@ describe('buildRawJson', () => {
 		expect(json.participant_context).toEqual({ age: null, sex: null });
 	});
 
-	it('enthält alle Items mit Antwort, Dimension, Facette, Reverse-Flag', () => {
+	it('enthält alle Items mit Text, Antwort, Dimension, Facette, Reverse-Flag', () => {
 		const json = buildRawJson(base);
 		expect(json.items).toHaveLength(4);
 		// sortiert nach ID
-		expect(json.items[0]).toEqual({ id: 1, response: 5, dimension: 'E', facet: 'E1', reverse_scored: false });
-		expect(json.items[1]).toEqual({ id: 2, response: 2, dimension: 'E', facet: 'E1', reverse_scored: true });
-		expect(json.items[3]).toEqual({ id: 10, response: 1, dimension: 'N', facet: 'N1', reverse_scored: true });
+		expect(json.items[0]).toEqual({ id: 1, text: 'Ich mache mir Sorgen über Dinge.', response: 5, dimension: 'E', facet: 'E1', reverse_scored: false });
+		expect(json.items[1]).toEqual({ id: 2, text: 'Ich finde leicht Freunde.', response: 2, dimension: 'E', facet: 'E1', reverse_scored: true });
+		expect(json.items[3]).toEqual({ id: 10, text: 'Ich vertraue anderen.', response: 1, dimension: 'N', facet: 'N1', reverse_scored: true });
 	});
 
 	it('results: raw_score = Summe, mean_score = Mittelwert, percentile', () => {
