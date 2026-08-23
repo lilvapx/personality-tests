@@ -47,8 +47,12 @@
 		},
 		"translation_status": {
 			"type": "string",
-			"enum": ["official", "community", "draft"],
+			"enum": ["official", "community", "draft", "machine_draft"],
 			"description": "Qualitätsstatus der Übersetzung (kann auch in _status.json gepflegt werden)"
+		},
+		"back_translation_checked": {
+			"type": "boolean",
+			"description": "true = Übersetzung wurde per Back-Translation geprüft"
 		}
 	},
 	"additionalProperties": false

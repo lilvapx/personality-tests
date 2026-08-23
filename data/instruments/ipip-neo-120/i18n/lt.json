@@ -1,5 +1,7 @@
 {
 	"locale": "lt",
+	"translation_status": "machine_draft",
+	"back_translation_checked": false,
 	"items": {},
 	"response_scale": {
 		"labels": {
@@ -9,6 +11,5 @@
 			"4": "Iš dalies tiesa",
 			"5": "Visiškai tiesa"
 		}
-	},
-	"translation_status": "draft"
+	}
 }

@@ -4,9 +4,28 @@
 	import ResultChart from '$lib/components/ResultChart.svelte';
 	import FacetBreakdown from '$lib/components/FacetBreakdown.svelte';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
+	import { downloadResultJson, downloadResultCsv, downloadResultAsJson } from '$lib/export/downloadResult';
 
 	function restart() {
 		resetSession();
+	}
+
+	function exportJson() {
+		if (resultStore.result) {
+			downloadResultJson(resultStore.result);
+		}
+	}
+
+	function exportCsv() {
+		if (resultStore.result) {
+			downloadResultCsv(resultStore.result);
+		}
+	}
+
+	function exportSimpleJson() {
+		if (resultStore.result) {
+			downloadResultAsJson(resultStore.result, resultStore.result.instrument_id);
+		}
 	}
 </script>
 
@@ -31,6 +50,8 @@
 	<div class="actions">
 		<a href="/" class="btn" onclick={restart}>Zur Übersicht</a>
 		<a href="/methodology" class="btn secondary">So wird ausgewertet</a>
+		<button class="btn secondary" onclick={exportJson}>JSON exportieren</button>
+		<button class="btn secondary" onclick={exportCsv}>CSV exportieren</button>
 	</div>
 {:else}
 	<h1>Kein Ergebnis</h1>
@@ -41,11 +62,13 @@
 <style>
 	.meta { color: #888; font-size: 0.85rem; }
 	h2 { margin-top: 2rem; }
-	.actions { display: flex; gap: 1rem; margin-top: 2.5rem; }
+	.actions { display: flex; gap: 1rem; margin-top: 2.5rem; flex-wrap: wrap; }
 	.btn {
 		padding: 0.75rem 1.5rem;
 		background: #4a90d9; color: #fff;
 		border-radius: 8px; text-decoration: none; font-weight: 600;
+		border: none;
+		cursor: pointer;
 	}
 	.btn:hover { background: #3a7bc0; }
 	.btn.secondary { background: #eee; color: #333; }

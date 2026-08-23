@@ -52,5 +52,7 @@
 		"min": 1,
 		"max": 5,
 		"type": "likert"
-	}
+	},
+	"randomize_order": false,
+	"randomize_order_note": "TODO: gegen Originalstudie verifizieren, bevor auf true gesetzt wird"
 }

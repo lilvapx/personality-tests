@@ -75,6 +75,14 @@
 			"minimum": 1,
 			"description": "Anzahl Items (Konsistenzcheck gegen items.json)"
 		},
+		"randomize_order": {
+			"type": "boolean",
+			"description": "true = Items in zufälliger Reihenfolge präsentieren (pro Sitzung stabil)"
+		},
+		"randomize_order_note": {
+			"type": "string",
+			"description": "Optionaler Hinweis zum Randomisierungs-Status"
+		},
 		"response_scale": {
 			"type": "object",
 			"required": ["min", "max", "type"],

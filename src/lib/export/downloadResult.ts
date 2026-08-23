@@ -60,3 +60,14 @@ export function downloadResultCsv(result: TestResult) {
 
 	download(filename, csv, 'text/csv;charset=utf-8');
 }
+
+/** Einfacher JSON-Export mit generischem Objekt und instrumentId (wie angefragt) */
+export function downloadResultAsJson(result: object, instrumentId: string) {
+	const blob = new Blob([JSON.stringify(result, null, 2)], { type: 'application/json' });
+	const url = URL.createObjectURL(blob);
+	const a = document.createElement('a');
+	a.href = url;
+	a.download = `${instrumentId}-result-${Date.now()}.json`;
+	a.click();
+	URL.revokeObjectURL(url);
+}
