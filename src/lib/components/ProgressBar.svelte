@@ -5,7 +5,7 @@
 	}
 
 	let { current, total }: Props = $props();
-	const pct = Math.min(100, Math.round((current / total) * 100));
+	const pct = $derived(Math.min(100, Math.round((current / total) * 100)));
 </script>
 
 <div class="progress">

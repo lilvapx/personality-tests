@@ -49,7 +49,15 @@
 	const hasAnswer = $derived(currentItem ? getResponse(currentItem.item_id) !== undefined : false);
 
 	function handleSelect(itemId: string, value: number) {
+		const hadAnswer = getResponse(itemId) !== undefined;
 		setResponse(itemId, value);
+		// Automatisch weiter, außer die Frage wurde schon beantwortet (Korrektur beim Zurückgehen)
+		if (!hadAnswer && !isLast && currentIndex < total - 1) {
+			setTimeout(() => {
+				currentIndex++;
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}, 150);
+		}
 	}
 
 	function next() {
