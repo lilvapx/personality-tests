@@ -7,7 +7,7 @@
 	import { downloadResultJson, downloadResultCsv, downloadResultAsJson } from '$lib/export/downloadResult';
 	import { loadInstrument } from '$lib/data-loader/loadInstrument';
 	import type { InstrumentBundle } from '$lib/data-loader/loadInstrument';
-	import { buildRawJson } from '$lib/scoring/rawSummary';
+	import { buildPrompt } from '$lib/scoring/prompt';
 	import { t } from '$lib/i18n/ui';
 
 	let copied = $state(false);
@@ -38,7 +38,7 @@
 			}
 		}
 
-		return buildRawJson({
+		return buildPrompt({
 			result: resultStore.result,
 			items: bundle.items,
 			responses: sessionStore.responses.map(r => ({ ...r })),
@@ -202,7 +202,7 @@
 			</button>
 		</div>
 		<p class="raw-hint">{t('result.copyHint')}</p>
-		<textarea id="raw-summary" readonly rows="14" spellcheck="false">{rawText}</textarea>
+		<textarea id="raw-summary" readonly rows="22" spellcheck="false">{rawText}</textarea>
 	</div>
 {:else}
 	<h1>{t('result.none')}</h1>

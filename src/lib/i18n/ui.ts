@@ -85,8 +85,8 @@ const ui = {
 		'result.exportCsv': 'CSV exportieren',
 		'result.copy': 'Kopieren',
 		'result.copied': '✓ Kopiert!',
-		'result.copyTitle': 'Rohdaten (für KI/ChatGPT)',
-		'result.copyHint': 'Kurze Zusammenfassung deiner Ergebnisse — zum Einfügen in einen Chatbot oder zur Archivierung.',
+		'result.copyTitle': 'Nachbefragungs-Prompt (für KI/ChatGPT)',
+		'result.copyHint': 'Kompletter Prompt mit deinen Ergebnissen — kopieren und in einen Chatbot einfügen, um dein Testergebnis kritisch zu reflektieren.',
 		'result.none': 'Kein Ergebnis',
 		'result.noneText': 'Du hast noch keinen Test abgeschlossen.',
 
@@ -202,8 +202,8 @@ const ui = {
 		'result.exportCsv': 'Export CSV',
 		'result.copy': 'Copy',
 		'result.copied': '✓ Copied!',
-		'result.copyTitle': 'Raw data (for AI/ChatGPT)',
-		'result.copyHint': 'Short summary of your results — to paste into a chatbot or for archiving.',
+		'result.copyTitle': 'Follow-up prompt (for AI/ChatGPT)',
+		'result.copyHint': 'Complete prompt with your results — copy and paste into a chatbot to critically reflect on your test result.',
 		'result.none': 'No results',
 		'result.noneText': 'You have not completed a test yet.',
 
@@ -317,8 +317,8 @@ const ui = {
 		'result.exportCsv': 'Eksportuoti CSV',
 		'result.copy': 'Kopijuoti',
 		'result.copied': '✓ Nukopijuota!',
-		'result.copyTitle': 'Neapdoroti duomenys (KI/ChatGPT)',
-		'result.copyHint': 'Trumpa tavo rezultatų santrauka — įklijuokite į pokalbių robotą arba archyvavimui.',
+		'result.copyTitle': 'Tolesnės apklausos raginimas (KI/ChatGPT)',
+		'result.copyHint': 'Pilnas raginimas su tavo rezultatais — nukopijuok ir įklijuok į pokalbių robotą, kad kritiškai įvertintum testo rezultatą.',
 		'result.none': 'Nėra rezultatų',
 		'result.noneText': 'Dar nebaigei nė vieno testo.',
 
