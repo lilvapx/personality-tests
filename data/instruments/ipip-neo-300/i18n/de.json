@@ -1,0 +1,957 @@
+{
+	"locale": "de",
+	"translation_status": "community_draft",
+	"back_translation_checked": false,
+	"items": {
+		"ipip-neo-300-001": {
+			"text": "Ich mache mir über vieles Sorgen."
+		},
+		"ipip-neo-300-002": {
+			"text": "Ich befürchte oft, dass das Schlimmste passieren könnte."
+		},
+		"ipip-neo-300-003": {
+			"text": "Ich habe vor vielen Dingen Angst."
+		},
+		"ipip-neo-300-004": {
+			"text": "Ich gerate leicht unter Stress."
+		},
+		"ipip-neo-300-005": {
+			"text": "Ich verliere mich leicht in meinen eigenen Problemen."
+		},
+		"ipip-neo-300-006": {
+			"text": "Ich lasse mich nicht leicht aus der Ruhe bringen."
+		},
+		"ipip-neo-300-007": {
+			"text": "Ich bin die meiste Zeit entspannt."
+		},
+		"ipip-neo-300-008": {
+			"text": "Ereignisse bringen mich nicht so leicht aus der Ruhe."
+		},
+		"ipip-neo-300-009": {
+			"text": "Ich mache mir keine Sorgen über Dinge, die bereits passiert sind."
+		},
+		"ipip-neo-300-010": {
+			"text": "Ich passe mich leicht an neue Situationen an."
+		},
+		"ipip-neo-300-011": {
+			"text": "Ich werde schnell wütend."
+		},
+		"ipip-neo-300-012": {
+			"text": "Ich bin schnell gereizt."
+		},
+		"ipip-neo-300-013": {
+			"text": "Ich rege mich schnell auf."
+		},
+		"ipip-neo-300-014": {
+			"text": "Ich bin oft schlecht gelaunt."
+		},
+		"ipip-neo-300-015": {
+			"text": "Ich verliere schnell die Beherrschung."
+		},
+		"ipip-neo-300-016": {
+			"text": "Ich werde nur selten gereizt."
+		},
+		"ipip-neo-300-017": {
+			"text": "Ich werde nur selten wütend."
+		},
+		"ipip-neo-300-018": {
+			"text": "Ich lasse mich nicht leicht nerven."
+		},
+		"ipip-neo-300-019": {
+			"text": "Ich bewahre auch bei Ärger einen kühlen Kopf."
+		},
+		"ipip-neo-300-020": {
+			"text": "Ich beschwere mich nur selten."
+		},
+		"ipip-neo-300-021": {
+			"text": "Ich fühle mich oft niedergeschlagen."
+		},
+		"ipip-neo-300-022": {
+			"text": "Ich mag mich selbst nicht besonders."
+		},
+		"ipip-neo-300-023": {
+			"text": "Ich bin oft deprimiert oder niedergeschlagen."
+		},
+		"ipip-neo-300-024": {
+			"text": "Ich habe keine besonders hohe Meinung von mir selbst."
+		},
+		"ipip-neo-300-025": {
+			"text": "Meine Stimmung wechselt häufig."
+		},
+		"ipip-neo-300-026": {
+			"text": "Ich fühle mich manchmal verzweifelt."
+		},
+		"ipip-neo-300-027": {
+			"text": "Ich habe manchmal das Gefühl, dass meinem Leben eine klare Richtung fehlt."
+		},
+		"ipip-neo-300-028": {
+			"text": "Ich fühle mich nur selten niedergeschlagen."
+		},
+		"ipip-neo-300-029": {
+			"text": "Ich fühle mich mit mir selbst wohl."
+		},
+		"ipip-neo-300-030": {
+			"text": "Ich bin mit mir selbst sehr zufrieden."
+		},
+		"ipip-neo-300-031": {
+			"text": "Ich lasse mich leicht einschüchtern."
+		},
+		"ipip-neo-300-032": {
+			"text": "Ich habe Angst, etwas falsch zu machen."
+		},
+		"ipip-neo-300-033": {
+			"text": "Es fällt mir schwer, auf andere Menschen zuzugehen."
+		},
+		"ipip-neo-300-034": {
+			"text": "Ich vermeide es, Aufmerksamkeit auf mich zu ziehen."
+		},
+		"ipip-neo-300-035": {
+			"text": "Ich fühle mich nur im vertrauten Freundeskreis wirklich wohl."
+		},
+		"ipip-neo-300-036": {
+			"text": "Ich verhaspele mich beim Sprechen leicht."
+		},
+		"ipip-neo-300-037": {
+			"text": "Ich bin nicht leicht zu verlegen."
+		},
+		"ipip-neo-300-038": {
+			"text": "Ich fühle mich auch in ungewohnten Situationen wohl."
+		},
+		"ipip-neo-300-039": {
+			"text": "Schwierige Situationen im Umgang mit anderen machen mir wenig aus."
+		},
+		"ipip-neo-300-040": {
+			"text": "Ich kann mich gut behaupten und für mich selbst einstehen."
+		},
+		"ipip-neo-300-041": {
+			"text": "Ich esse oft mehr, als eigentlich nötig wäre."
+		},
+		"ipip-neo-300-042": {
+			"text": "Manchmal weiß ich selbst nicht, warum ich bestimmte Dinge tue."
+		},
+		"ipip-neo-300-043": {
+			"text": "Ich tue manchmal Dinge, die ich später bereue."
+		},
+		"ipip-neo-300-044": {
+			"text": "Ich neige dazu, bei bestimmten Dingen maßlos zu werden."
+		},
+		"ipip-neo-300-045": {
+			"text": "Ich esse sehr gerne."
+		},
+		"ipip-neo-300-046": {
+			"text": "Ich übertreibe nur selten."
+		},
+		"ipip-neo-300-047": {
+			"text": "Versuchungen kann ich leicht widerstehen."
+		},
+		"ipip-neo-300-048": {
+			"text": "Ich kann meine Wünsche und Gelüste gut kontrollieren."
+		},
+		"ipip-neo-300-049": {
+			"text": "Ich gebe nie mehr Geld aus, als ich mir leisten kann."
+		},
+		"ipip-neo-300-050": {
+			"text": "Ich gebe nur selten spontan oder übermäßig viel Geld aus."
+		},
+		"ipip-neo-300-051": {
+			"text": "Ich gerate leicht in Panik."
+		},
+		"ipip-neo-300-052": {
+			"text": "Ereignisse können mich schnell überfordern."
+		},
+		"ipip-neo-300-053": {
+			"text": "Ich habe manchmal das Gefühl, mit einer Situation nicht zurechtzukommen."
+		},
+		"ipip-neo-300-054": {
+			"text": "Ich kann mich nur schwer entscheiden."
+		},
+		"ipip-neo-300-055": {
+			"text": "Meine Gefühle können mich manchmal überwältigen."
+		},
+		"ipip-neo-300-056": {
+			"text": "Auch unter Druck bleibe ich ruhig."
+		},
+		"ipip-neo-300-057": {
+			"text": "Ich kann mit komplexen Problemen gut umgehen."
+		},
+		"ipip-neo-300-058": {
+			"text": "Ich weiß, wie ich mit schwierigen Situationen umgehen kann."
+		},
+		"ipip-neo-300-059": {
+			"text": "Nach Rückschlägen finde ich schnell wieder zurück."
+		},
+		"ipip-neo-300-060": {
+			"text": "Auch in angespannten Situationen bleibe ich ruhig."
+		},
+		"ipip-neo-300-061": {
+			"text": "Ich finde leicht neue Freunde."
+		},
+		"ipip-neo-300-062": {
+			"text": "Ich fasse schnell Vertrauen zu anderen Menschen."
+		},
+		"ipip-neo-300-063": {
+			"text": "Ich fühle mich in Gesellschaft anderer wohl."
+		},
+		"ipip-neo-300-064": {
+			"text": "Im Umgang mit anderen bin ich locker und ungezwungen."
+		},
+		"ipip-neo-300-065": {
+			"text": "Ich kann andere Menschen aufmuntern."
+		},
+		"ipip-neo-300-066": {
+			"text": "Es dauert lange, bis andere mich wirklich kennenlernen."
+		},
+		"ipip-neo-300-067": {
+			"text": "In Gegenwart anderer Menschen fühle ich mich oft unwohl."
+		},
+		"ipip-neo-300-068": {
+			"text": "Ich vermeide häufig den Kontakt zu anderen Menschen."
+		},
+		"ipip-neo-300-069": {
+			"text": "Ich interessiere mich nicht besonders für andere Menschen."
+		},
+		"ipip-neo-300-070": {
+			"text": "Ich halte andere Menschen eher auf Abstand."
+		},
+		"ipip-neo-300-071": {
+			"text": "Ich liebe große Partys."
+		},
+		"ipip-neo-300-072": {
+			"text": "Auf Partys unterhalte ich mich mit vielen verschiedenen Menschen."
+		},
+		"ipip-neo-300-073": {
+			"text": "Ich bin gerne Teil einer Gruppe."
+		},
+		"ipip-neo-300-074": {
+			"text": "Ich beziehe andere gerne in meine Aktivitäten ein."
+		},
+		"ipip-neo-300-075": {
+			"text": "Ich liebe Überraschungspartys."
+		},
+		"ipip-neo-300-076": {
+			"text": "Ich bin lieber allein."
+		},
+		"ipip-neo-300-077": {
+			"text": "Ich möchte oft einfach meine Ruhe haben."
+		},
+		"ipip-neo-300-078": {
+			"text": "Ich mag keine überfüllten Veranstaltungen."
+		},
+		"ipip-neo-300-079": {
+			"text": "Ich meide Menschenmengen."
+		},
+		"ipip-neo-300-080": {
+			"text": "Ich suche gerne Ruhe und Abgeschiedenheit."
+		},
+		"ipip-neo-300-081": {
+			"text": "Ich übernehme gerne die Führung."
+		},
+		"ipip-neo-300-082": {
+			"text": "Ich versuche häufig, andere anzuleiten."
+		},
+		"ipip-neo-300-083": {
+			"text": "Ich kann andere leicht davon überzeugen, etwas zu tun."
+		},
+		"ipip-neo-300-084": {
+			"text": "Ich versuche, Einfluss auf andere zu nehmen."
+		},
+		"ipip-neo-300-085": {
+			"text": "Ich übernehme gerne die Kontrolle."
+		},
+		"ipip-neo-300-086": {
+			"text": "Ich warte lieber darauf, dass andere den ersten Schritt machen."
+		},
+		"ipip-neo-300-087": {
+			"text": "Ich halte mich eher im Hintergrund."
+		},
+		"ipip-neo-300-088": {
+			"text": "Ich habe in Gesprächen oft wenig zu sagen."
+		},
+		"ipip-neo-300-089": {
+			"text": "Ich stehe nicht gerne im Mittelpunkt."
+		},
+		"ipip-neo-300-090": {
+			"text": "Ich halte meine Meinung oft zurück."
+		},
+		"ipip-neo-300-091": {
+			"text": "Ich bin fast immer beschäftigt."
+		},
+		"ipip-neo-300-092": {
+			"text": "Ich bin ständig aktiv und unterwegs."
+		},
+		"ipip-neo-300-093": {
+			"text": "Auch in meiner Freizeit unternehme ich viel."
+		},
+		"ipip-neo-300-094": {
+			"text": "Ich kann viele Dinge gleichzeitig bewältigen."
+		},
+		"ipip-neo-300-095": {
+			"text": "Ich reagiere schnell."
+		},
+		"ipip-neo-300-096": {
+			"text": "Ich lasse die Dinge gerne ruhig angehen."
+		},
+		"ipip-neo-300-097": {
+			"text": "Ich nehme mir gerne Zeit für Dinge."
+		},
+		"ipip-neo-300-098": {
+			"text": "Ich bevorzuge einen entspannten Lebensstil."
+		},
+		"ipip-neo-300-099": {
+			"text": "Ich lasse Dinge gerne in ihrem eigenen Tempo geschehen."
+		},
+		"ipip-neo-300-100": {
+			"text": "Ich reagiere eher langsam."
+		},
+		"ipip-neo-300-101": {
+			"text": "Ich liebe Aufregung und Spannung."
+		},
+		"ipip-neo-300-102": {
+			"text": "Ich suche gerne Abenteuer."
+		},
+		"ipip-neo-300-103": {
+			"text": "Ich liebe Action und aufregende Aktivitäten."
+		},
+		"ipip-neo-300-104": {
+			"text": "Ich bin gerne Teil einer lauten, ausgelassenen Menge."
+		},
+		"ipip-neo-300-105": {
+			"text": "Ich habe Spaß daran, manchmal etwas unvorsichtig zu sein."
+		},
+		"ipip-neo-300-106": {
+			"text": "Ich verhalte mich manchmal wild und verrückt."
+		},
+		"ipip-neo-300-107": {
+			"text": "Ich bin bereit, fast alles einmal auszuprobieren."
+		},
+		"ipip-neo-300-108": {
+			"text": "Ich suche bewusst Situationen mit einem gewissen Risiko."
+		},
+		"ipip-neo-300-109": {
+			"text": "Ich würde niemals Gleitschirmfliegen oder Bungee-Jumping ausprobieren."
+		},
+		"ipip-neo-300-110": {
+			"text": "Ich mag keine laute Musik."
+		},
+		"ipip-neo-300-111": {
+			"text": "Ich strahle Lebensfreude aus."
+		},
+		"ipip-neo-300-112": {
+			"text": "Ich habe viel Spaß im Leben."
+		},
+		"ipip-neo-300-113": {
+			"text": "Ich kann mich auf eine kindlich-unbeschwerte Art freuen."
+		},
+		"ipip-neo-300-114": {
+			"text": "Ich gehe mit viel Humor durchs Leben."
+		},
+		"ipip-neo-300-115": {
+			"text": "Ich liebe das Leben."
+		},
+		"ipip-neo-300-116": {
+			"text": "Ich sehe meistens die positive Seite des Lebens."
+		},
+		"ipip-neo-300-117": {
+			"text": "Ich lache laut und ausgelassen."
+		},
+		"ipip-neo-300-118": {
+			"text": "Ich bringe meine Freunde gerne zum Lachen."
+		},
+		"ipip-neo-300-119": {
+			"text": "Ich lasse mich nicht leicht zum Lachen bringen."
+		},
+		"ipip-neo-300-120": {
+			"text": "Ich mache nur selten Witze oder scherze herum."
+		},
+		"ipip-neo-300-121": {
+			"text": "Ich habe eine lebhafte Vorstellungskraft."
+		},
+		"ipip-neo-300-122": {
+			"text": "Ich lasse meiner Fantasie gerne freien Lauf."
+		},
+		"ipip-neo-300-123": {
+			"text": "Ich träume gerne vor mich hin."
+		},
+		"ipip-neo-300-124": {
+			"text": "Ich verliere mich gerne in meinen Gedanken."
+		},
+		"ipip-neo-300-125": {
+			"text": "Ich gebe mich gerne meinen Fantasien hin."
+		},
+		"ipip-neo-300-126": {
+			"text": "Ich verbringe gerne Zeit damit, über Dinge nachzudenken."
+		},
+		"ipip-neo-300-127": {
+			"text": "Ich träume nur selten vor mich hin."
+		},
+		"ipip-neo-300-128": {
+			"text": "Ich habe keine besonders ausgeprägte Fantasie."
+		},
+		"ipip-neo-300-129": {
+			"text": "Ich verliere mich nur selten in meinen Gedanken."
+		},
+		"ipip-neo-300-130": {
+			"text": "Es fällt mir schwer, mir Dinge bildlich vorzustellen."
+		},
+		"ipip-neo-300-131": {
+			"text": "Ich halte Kunst für einen wichtigen Teil des Lebens."
+		},
+		"ipip-neo-300-132": {
+			"text": "Ich mag Musik."
+		},
+		"ipip-neo-300-133": {
+			"text": "Ich erkenne Schönheit in Dingen, die andere vielleicht übersehen."
+		},
+		"ipip-neo-300-134": {
+			"text": "Ich liebe Blumen."
+		},
+		"ipip-neo-300-135": {
+			"text": "Ich genieße die Schönheit der Natur."
+		},
+		"ipip-neo-300-136": {
+			"text": "Ich interessiere mich nicht besonders für Kunst."
+		},
+		"ipip-neo-300-137": {
+			"text": "Ich mag keine Gedichte."
+		},
+		"ipip-neo-300-138": {
+			"text": "Ich gehe nicht gerne in Kunstmuseen."
+		},
+		"ipip-neo-300-139": {
+			"text": "Ich gehe nicht gerne auf Konzerte."
+		},
+		"ipip-neo-300-140": {
+			"text": "Ich schaue mir nicht gerne Tanzaufführungen an."
+		},
+		"ipip-neo-300-141": {
+			"text": "Ich erlebe meine Gefühle sehr intensiv."
+		},
+		"ipip-neo-300-142": {
+			"text": "Ich kann die Gefühle anderer Menschen gut nachempfinden."
+		},
+		"ipip-neo-300-143": {
+			"text": "Für Dinge, die mir wichtig sind, kann ich mich stark begeistern."
+		},
+		"ipip-neo-300-144": {
+			"text": "Ich denke gerne über mich selbst und mein Leben nach."
+		},
+		"ipip-neo-300-145": {
+			"text": "Ich versuche, mich selbst besser zu verstehen."
+		},
+		"ipip-neo-300-146": {
+			"text": "Ich werde nur selten emotional."
+		},
+		"ipip-neo-300-147": {
+			"text": "Meine Gefühle beeinflussen mich nicht besonders leicht."
+		},
+		"ipip-neo-300-148": {
+			"text": "Ich bemerke meine eigenen emotionalen Reaktionen nur selten."
+		},
+		"ipip-neo-300-149": {
+			"text": "Meine Stimmung schwankt nur wenig zwischen starken Höhen und Tiefen."
+		},
+		"ipip-neo-300-150": {
+			"text": "Ich kann Menschen, die sehr emotional reagieren, nur schwer verstehen."
+		},
+		"ipip-neo-300-151": {
+			"text": "Ich bevorzuge Abwechslung gegenüber Routine."
+		},
+		"ipip-neo-300-152": {
+			"text": "Ich besuche gerne neue Orte."
+		},
+		"ipip-neo-300-153": {
+			"text": "Ich interessiere mich für viele verschiedene Dinge."
+		},
+		"ipip-neo-300-154": {
+			"text": "Ich fange gerne neue Dinge an."
+		},
+		"ipip-neo-300-155": {
+			"text": "Ich bleibe lieber bei Dingen, die ich bereits kenne."
+		},
+		"ipip-neo-300-156": {
+			"text": "Ich mag Veränderungen nicht besonders."
+		},
+		"ipip-neo-300-157": {
+			"text": "Der Gedanke an Veränderungen gefällt mir nicht."
+		},
+		"ipip-neo-300-158": {
+			"text": "Ich bin ein Gewohnheitsmensch."
+		},
+		"ipip-neo-300-159": {
+			"text": "Ich probiere ungern unbekannte Speisen aus."
+		},
+		"ipip-neo-300-160": {
+			"text": "Ich halte gerne an traditionellen Vorgehensweisen fest."
+		},
+		"ipip-neo-300-161": {
+			"text": "Ich löse gerne komplexe Probleme."
+		},
+		"ipip-neo-300-162": {
+			"text": "Ich lese gerne anspruchsvolle Texte."
+		},
+		"ipip-neo-300-163": {
+			"text": "Ich habe einen großen und vielfältigen Wortschatz."
+		},
+		"ipip-neo-300-164": {
+			"text": "Ich kann große Mengen an Informationen gut verarbeiten."
+		},
+		"ipip-neo-300-165": {
+			"text": "Ich denke gerne ausführlich über Dinge nach."
+		},
+		"ipip-neo-300-166": {
+			"text": "Abstrakte Ideen interessieren mich nicht besonders."
+		},
+		"ipip-neo-300-167": {
+			"text": "Ich vermeide philosophische Diskussionen."
+		},
+		"ipip-neo-300-168": {
+			"text": "Es fällt mir schwer, abstrakte Ideen zu verstehen."
+		},
+		"ipip-neo-300-169": {
+			"text": "Theoretische Diskussionen interessieren mich nicht besonders."
+		},
+		"ipip-neo-300-170": {
+			"text": "Ich vermeide schwierige oder anspruchsvolle Texte."
+		},
+		"ipip-neo-300-171": {
+			"text": "Ich neige dazu, eher liberale politische Kandidaten zu wählen."
+		},
+		"ipip-neo-300-172": {
+			"text": "Ich glaube, dass es kein absolut richtig oder falsch gibt."
+		},
+		"ipip-neo-300-173": {
+			"text": "Ich finde, dass Straftäter eher Hilfe als Bestrafung erhalten sollten."
+		},
+		"ipip-neo-300-174": {
+			"text": "Ich glaube, dass es nur eine einzig wahre Religion gibt."
+		},
+		"ipip-neo-300-175": {
+			"text": "Ich neige dazu, eher konservative politische Kandidaten zu wählen."
+		},
+		"ipip-neo-300-176": {
+			"text": "Ich finde, dass zu viel Steuergeld zur Unterstützung von Künstlern ausgegeben wird."
+		},
+		"ipip-neo-300-177": {
+			"text": "Ich finde, dass Gesetze strikt durchgesetzt werden sollten."
+		},
+		"ipip-neo-300-178": {
+			"text": "Ich finde, dass wir Straftäter zu nachsichtig behandeln."
+		},
+		"ipip-neo-300-179": {
+			"text": "Ich finde, dass wir bei Kriminalität härter durchgreifen sollten."
+		},
+		"ipip-neo-300-180": {
+			"text": "Ich stehe bei der Nationalhymne gerne auf."
+		},
+		"ipip-neo-300-181": {
+			"text": "Ich vertraue anderen Menschen."
+		},
+		"ipip-neo-300-182": {
+			"text": "Ich glaube, dass andere Menschen meistens gute Absichten haben."
+		},
+		"ipip-neo-300-183": {
+			"text": "Ich glaube meistens, was andere Menschen sagen."
+		},
+		"ipip-neo-300-184": {
+			"text": "Ich glaube, dass Menschen grundsätzlich moralisch handeln wollen."
+		},
+		"ipip-neo-300-185": {
+			"text": "Ich glaube an das Gute im Menschen."
+		},
+		"ipip-neo-300-186": {
+			"text": "Ich gehe grundsätzlich davon aus, dass alles gut ausgehen wird."
+		},
+		"ipip-neo-300-187": {
+			"text": "Ich misstraue anderen Menschen."
+		},
+		"ipip-neo-300-188": {
+			"text": "Ich vermute bei anderen oft verborgene Absichten."
+		},
+		"ipip-neo-300-189": {
+			"text": "Ich bin anderen Menschen gegenüber vorsichtig und misstrauisch."
+		},
+		"ipip-neo-300-190": {
+			"text": "Ich glaube, dass Menschen im Grunde schlecht sind."
+		},
+		"ipip-neo-300-191": {
+			"text": "Ich würde niemals bei meiner Steuererklärung betrügen."
+		},
+		"ipip-neo-300-192": {
+			"text": "Ich halte mich an Regeln."
+		},
+		"ipip-neo-300-193": {
+			"text": "Ich setze Schmeichelei ein, um meine Ziele zu erreichen."
+		},
+		"ipip-neo-300-194": {
+			"text": "Ich nutze andere Menschen für meine eigenen Zwecke aus."
+		},
+		"ipip-neo-300-195": {
+			"text": "Ich weiß, wie man Regeln umgehen kann."
+		},
+		"ipip-neo-300-196": {
+			"text": "Ich betrüge, wenn ich mir dadurch einen Vorteil verschaffen kann."
+		},
+		"ipip-neo-300-197": {
+			"text": "Ich setze andere Menschen unter Druck."
+		},
+		"ipip-neo-300-198": {
+			"text": "Ich tue manchmal so, als würde ich mich um andere kümmern."
+		},
+		"ipip-neo-300-199": {
+			"text": "Ich nutze andere Menschen zu meinem Vorteil aus."
+		},
+		"ipip-neo-300-200": {
+			"text": "Ich durchkreuze manchmal die Pläne anderer."
+		},
+		"ipip-neo-300-201": {
+			"text": "Ich gebe anderen Menschen das Gefühl, willkommen zu sein."
+		},
+		"ipip-neo-300-202": {
+			"text": "Ich erkenne oft, was andere Menschen brauchen, bevor sie es sagen."
+		},
+		"ipip-neo-300-203": {
+			"text": "Ich helfe anderen Menschen sehr gerne."
+		},
+		"ipip-neo-300-204": {
+			"text": "Ich mache mir Gedanken darüber, wie es anderen geht."
+		},
+		"ipip-neo-300-205": {
+			"text": "Ich finde meistens etwas Positives über andere Menschen zu sagen."
+		},
+		"ipip-neo-300-206": {
+			"text": "Ich schaue auf andere Menschen herab."
+		},
+		"ipip-neo-300-207": {
+			"text": "Die Gefühle anderer Menschen sind mir oft gleichgültig."
+		},
+		"ipip-neo-300-208": {
+			"text": "Ich bringe andere Menschen manchmal in unangenehme Situationen."
+		},
+		"ipip-neo-300-209": {
+			"text": "Ich lasse andere Menschen oft im Stich, wenn sie mich brauchen."
+		},
+		"ipip-neo-300-210": {
+			"text": "Ich nehme mir nur selten Zeit für andere Menschen."
+		},
+		"ipip-neo-300-211": {
+			"text": "Ich bin leicht zufriedenzustellen."
+		},
+		"ipip-neo-300-212": {
+			"text": "Ich kann Konfrontationen nicht ausstehen."
+		},
+		"ipip-neo-300-213": {
+			"text": "Ich möchte auf keinen Fall aufdringlich wirken."
+		},
+		"ipip-neo-300-214": {
+			"text": "Ich kann sehr scharf oder bissig formulieren."
+		},
+		"ipip-neo-300-215": {
+			"text": "Ich widerspreche anderen häufig."
+		},
+		"ipip-neo-300-216": {
+			"text": "Ich habe nichts gegen einen heftigen Streit."
+		},
+		"ipip-neo-300-217": {
+			"text": "Ich schreie andere Menschen an."
+		},
+		"ipip-neo-300-218": {
+			"text": "Ich beleidige andere Menschen."
+		},
+		"ipip-neo-300-219": {
+			"text": "Ich zahle es anderen heim, wenn sie mich verletzt haben."
+		},
+		"ipip-neo-300-220": {
+			"text": "Ich trage anderen Dinge lange nach."
+		},
+		"ipip-neo-300-221": {
+			"text": "Ich stehe nicht gerne im Mittelpunkt."
+		},
+		"ipip-neo-300-222": {
+			"text": "Ich spreche nicht gerne über mich selbst."
+		},
+		"ipip-neo-300-223": {
+			"text": "Ich sehe mich als einen ganz normalen Menschen."
+		},
+		"ipip-neo-300-224": {
+			"text": "Ich stelle meine eigenen Leistungen nur selten heraus."
+		},
+		"ipip-neo-300-225": {
+			"text": "Ich glaube, dass ich besser bin als andere."
+		},
+		"ipip-neo-300-226": {
+			"text": "Ich halte viel von mir selbst."
+		},
+		"ipip-neo-300-227": {
+			"text": "Ich habe eine hohe Meinung von mir selbst."
+		},
+		"ipip-neo-300-228": {
+			"text": "Ich kenne die Antworten auf viele Fragen."
+		},
+		"ipip-neo-300-229": {
+			"text": "Ich prahle gerne mit meinen Stärken und Vorzügen."
+		},
+		"ipip-neo-300-230": {
+			"text": "Ich sorge gerne dafür, dass ich im Mittelpunkt stehe."
+		},
+		"ipip-neo-300-231": {
+			"text": "Ich empfinde Mitgefühl mit obdachlosen Menschen."
+		},
+		"ipip-neo-300-232": {
+			"text": "Ich empfinde Mitgefühl für Menschen, denen es schlechter geht als mir."
+		},
+		"ipip-neo-300-233": {
+			"text": "Ich halte Zusammenarbeit für wichtiger als Konkurrenz."
+		},
+		"ipip-neo-300-234": {
+			"text": "Das Leid anderer Menschen belastet mich."
+		},
+		"ipip-neo-300-235": {
+			"text": "Die Probleme anderer Menschen interessieren mich nicht besonders."
+		},
+		"ipip-neo-300-236": {
+			"text": "Ich mag übermäßig gutmütige oder empfindsame Menschen eher nicht."
+		},
+		"ipip-neo-300-237": {
+			"text": "Ich glaube an das Prinzip „Wie du mir, so ich dir“."
+		},
+		"ipip-neo-300-238": {
+			"text": "Ich versuche, nicht über Menschen nachzudenken, denen es schlecht geht."
+		},
+		"ipip-neo-300-239": {
+			"text": "Ich finde, dass jeder in erster Linie selbst für sich sorgen sollte."
+		},
+		"ipip-neo-300-240": {
+			"text": "Ich kann schwache Menschen nur schwer ertragen."
+		},
+		"ipip-neo-300-241": {
+			"text": "Ich erledige Aufgaben erfolgreich."
+		},
+		"ipip-neo-300-242": {
+			"text": "Ich bin in dem, was ich tue, besonders gut."
+		},
+		"ipip-neo-300-243": {
+			"text": "Ich kann Aufgaben problemlos bewältigen."
+		},
+		"ipip-neo-300-244": {
+			"text": "Ich weiß normalerweise, was ich tue."
+		},
+		"ipip-neo-300-245": {
+			"text": "Ich finde gute Lösungen für Probleme."
+		},
+		"ipip-neo-300-246": {
+			"text": "Ich weiß, wie ich Dinge erfolgreich erledige."
+		},
+		"ipip-neo-300-247": {
+			"text": "Ich schätze Situationen manchmal falsch ein."
+		},
+		"ipip-neo-300-248": {
+			"text": "Ich verstehe manche Dinge nur schwer."
+		},
+		"ipip-neo-300-249": {
+			"text": "Ich habe oft wenig beizutragen."
+		},
+		"ipip-neo-300-250": {
+			"text": "Ich erkenne manchmal nicht, welche Folgen mein Handeln haben wird."
+		},
+		"ipip-neo-300-251": {
+			"text": "Ich mag Ordnung."
+		},
+		"ipip-neo-300-252": {
+			"text": "Ich räume gerne auf."
+		},
+		"ipip-neo-300-253": {
+			"text": "Ich möchte, dass alles genau richtig und an seinem Platz ist."
+		},
+		"ipip-neo-300-254": {
+			"text": "Ich liebe Ordnung und feste Strukturen."
+		},
+		"ipip-neo-300-255": {
+			"text": "Ich erledige Dinge nach einem festen Plan."
+		},
+		"ipip-neo-300-256": {
+			"text": "Ich vergesse oft, Dinge wieder an ihren Platz zu legen."
+		},
+		"ipip-neo-300-257": {
+			"text": "Ich hinterlasse mein Zimmer oft unordentlich."
+		},
+		"ipip-neo-300-258": {
+			"text": "Ich lasse meine Sachen oft irgendwo liegen."
+		},
+		"ipip-neo-300-259": {
+			"text": "Unordentliche Menschen stören mich nicht besonders."
+		},
+		"ipip-neo-300-260": {
+			"text": "Unordnung stört mich nicht besonders."
+		},
+		"ipip-neo-300-261": {
+			"text": "Ich versuche, mich an Regeln zu halten."
+		},
+		"ipip-neo-300-262": {
+			"text": "Ich halte meine Versprechen."
+		},
+		"ipip-neo-300-263": {
+			"text": "Ich bezahle meine Rechnungen pünktlich."
+		},
+		"ipip-neo-300-264": {
+			"text": "Ich sage die Wahrheit."
+		},
+		"ipip-neo-300-265": {
+			"text": "Ich höre auf mein Gewissen."
+		},
+		"ipip-neo-300-266": {
+			"text": "Ich breche Regeln."
+		},
+		"ipip-neo-300-267": {
+			"text": "Ich halte meine Versprechen manchmal nicht ein."
+		},
+		"ipip-neo-300-268": {
+			"text": "Ich lasse andere meine Aufgaben für mich erledigen."
+		},
+		"ipip-neo-300-269": {
+			"text": "Ich tue manchmal absichtlich das Gegenteil von dem, was von mir verlangt wird."
+		},
+		"ipip-neo-300-270": {
+			"text": "Ich stelle Tatsachen manchmal anders dar, als sie tatsächlich sind."
+		},
+		"ipip-neo-300-271": {
+			"text": "Ich arbeite direkt auf meine Ziele hin."
+		},
+		"ipip-neo-300-272": {
+			"text": "Ich arbeite hart."
+		},
+		"ipip-neo-300-273": {
+			"text": "Ich setze meine Pläne in die Tat um."
+		},
+		"ipip-neo-300-274": {
+			"text": "Ich stürze mich mit vollem Einsatz in meine Aufgaben."
+		},
+		"ipip-neo-300-275": {
+			"text": "Ich leiste mehr, als von mir erwartet wird."
+		},
+		"ipip-neo-300-276": {
+			"text": "Ich stelle hohe Ansprüche an mich und andere."
+		},
+		"ipip-neo-300-277": {
+			"text": "Ich lege großen Wert auf Qualität."
+		},
+		"ipip-neo-300-278": {
+			"text": "Es ist mir nicht besonders wichtig, erfolgreich zu sein."
+		},
+		"ipip-neo-300-279": {
+			"text": "Ich mache nur so viel, wie unbedingt nötig ist."
+		},
+		"ipip-neo-300-280": {
+			"text": "Ich investiere wenig Zeit und Mühe in meine Arbeit."
+		},
+		"ipip-neo-300-281": {
+			"text": "Ich erledige unangenehme Aufgaben sofort."
+		},
+		"ipip-neo-300-282": {
+			"text": "Ich bin immer gut vorbereitet."
+		},
+		"ipip-neo-300-283": {
+			"text": "Ich beginne Aufgaben sofort."
+		},
+		"ipip-neo-300-284": {
+			"text": "Ich fange ohne Verzögerung mit der Arbeit an."
+		},
+		"ipip-neo-300-285": {
+			"text": "Ich setze meine Pläne konsequent um."
+		},
+		"ipip-neo-300-286": {
+			"text": "Es fällt mir schwer, mich zur Arbeit aufzuraffen."
+		},
+		"ipip-neo-300-287": {
+			"text": "Ich verschwende häufig meine Zeit."
+		},
+		"ipip-neo-300-288": {
+			"text": "Ich brauche oft einen Anstoß, um anzufangen."
+		},
+		"ipip-neo-300-289": {
+			"text": "Es fällt mir schwer, mit Aufgaben anzufangen."
+		},
+		"ipip-neo-300-290": {
+			"text": "Ich schiebe Entscheidungen gerne auf."
+		},
+		"ipip-neo-300-291": {
+			"text": "Ich versuche, Fehler zu vermeiden."
+		},
+		"ipip-neo-300-292": {
+			"text": "Ich wähle meine Worte sorgfältig."
+		},
+		"ipip-neo-300-293": {
+			"text": "Ich bleibe bei dem Weg, den ich einmal gewählt habe."
+		},
+		"ipip-neo-300-294": {
+			"text": "Ich stürze mich manchmal in Dinge, ohne vorher nachzudenken."
+		},
+		"ipip-neo-300-295": {
+			"text": "Ich treffe manchmal vorschnelle Entscheidungen."
+		},
+		"ipip-neo-300-296": {
+			"text": "Ich handle gerne spontan aus dem Bauch heraus."
+		},
+		"ipip-neo-300-297": {
+			"text": "Ich gehe Dinge manchmal überstürzt an."
+		},
+		"ipip-neo-300-298": {
+			"text": "Ich tue manchmal verrückte oder unvernünftige Dinge."
+		},
+		"ipip-neo-300-299": {
+			"text": "Ich handle manchmal, ohne vorher nachzudenken."
+		},
+		"ipip-neo-300-300": {
+			"text": "Ich mache häufig erst in letzter Minute Pläne."
+		}
+	},
+	"response_scale": {
+		"labels": {
+			"1": "Stimme gar nicht zu",
+			"2": "Stimme eher nicht zu",
+			"3": "Weder noch",
+			"4": "Stimme eher zu",
+			"5": "Stimme voll zu"
+		}
+	},
+	"labels": {
+		"domains": {
+			"E": "Extraversion",
+			"A": "Verträglichkeit",
+			"C": "Gewissenhaftigkeit",
+			"N": "Neurotizismus",
+			"O": "Offenheit für Erfahrungen"
+		},
+		"facets": {
+			"E1": "Freundlichkeit",
+			"E2": "Geselligkeit",
+			"E3": "Durchsetzungsfähigkeit",
+			"E4": "Aktivität",
+			"E5": "Erlebnishunger",
+			"E6": "Frohsinn",
+			"A1": "Vertrauen",
+			"A2": "Moral",
+			"A3": "Altruismus",
+			"A4": "Kooperation",
+			"A5": "Bescheidenheit",
+			"A6": "Mitgefühl",
+			"C1": "Selbstwirksamkeit",
+			"C2": "Ordnungsliebe",
+			"C3": "Pflichtbewusstsein",
+			"C4": "Ehrgeiz",
+			"C5": "Selbstdisziplin",
+			"C6": "Bedachtsamkeit",
+			"N1": "Ängstlichkeit",
+			"N2": "Reizbarkeit",
+			"N3": "Niedergeschlagenheit",
+			"N4": "Befangenheit",
+			"N5": "Maßlosigkeit",
+			"N6": "Verletzlichkeit",
+			"O1": "Vorstellungskraft",
+			"O2": "Künstlerisches Interesse",
+			"O3": "Emotionalität",
+			"O4": "Abenteuerlust",
+			"O5": "Intellekt",
+			"O6": "Liberalismus"
+		}
+	}
+}

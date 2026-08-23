@@ -5,6 +5,11 @@
 			"status": "official_ipip",
 			"updated": "2026-08-23",
 			"note": "Original-Items aus IPIP Repository (Goldberg, 1999), Public Domain"
+		},
+		"de": {
+			"status": "community_draft",
+			"updated": "2026-08-23",
+			"note": "Deutsche Übersetzung (Zygis), synchronisiert mit den Original-Items, ungeprüft"
 		}
 	}
 }
