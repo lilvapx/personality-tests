@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { currentResult } from '$lib/stores/results';
-	import { resetSession } from '$lib/stores/testSession';
+	import { currentResult } from '$lib/stores/results.svelte';
+	import { resetSession } from '$lib/stores/testSession.svelte';
 	import ResultChart from '$lib/components/ResultChart.svelte';
 	import FacetBreakdown from '$lib/components/FacetBreakdown.svelte';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';

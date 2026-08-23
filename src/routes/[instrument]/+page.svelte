@@ -2,8 +2,8 @@
 	import { page } from '$app/state';
 	import { loadInstrument, getTranslation } from '$lib/data-loader/loadInstrument';
 	import type { InstrumentBundle } from '$lib/data-loader/loadInstrument';
-	import { startSession } from '$lib/stores/testSession';
-	import { currentLocale } from '$lib/stores/locale';
+	import { startSession } from '$lib/stores/testSession.svelte';
+	import { currentLocale } from '$lib/stores/locale.svelte';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
 
 	let bundle = $state<InstrumentBundle | null>(null);

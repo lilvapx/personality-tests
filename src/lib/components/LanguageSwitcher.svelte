@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currentLocale, setLocale } from '$lib/stores/locale';
+	import { currentLocale, setLocale } from '$lib/stores/locale.svelte';
 
 	const locales = ['de', 'en', 'lt'];
 </script>

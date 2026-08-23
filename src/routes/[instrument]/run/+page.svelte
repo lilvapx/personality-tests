@@ -2,9 +2,9 @@
 	import { page } from '$app/state';
 	import { loadInstrument, getTranslation } from '$lib/data-loader/loadInstrument';
 	import type { InstrumentBundle } from '$lib/data-loader/loadInstrument';
-	import { currentLocale } from '$lib/stores/locale';
-	import { responses, setResponse, getResponse, startSession, isComplete } from '$lib/stores/testSession';
-	import { setResult } from '$lib/stores/results';
+	import { currentLocale } from '$lib/stores/locale.svelte';
+	import { responses, setResponse, getResponse, startSession, isComplete } from '$lib/stores/testSession.svelte';
+	import { setResult } from '$lib/stores/results.svelte';
 	import { scoreTest } from '$lib/scoring';
 	import QuestionCard from '$lib/components/QuestionCard.svelte';
 	import ProgressBar from '$lib/components/ProgressBar.svelte';
