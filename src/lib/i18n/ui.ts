@@ -94,6 +94,12 @@ const ui = {
 		'result.copyHint': 'Kompletter Prompt mit deinen Ergebnissen — kopieren und in einen Chatbot einfügen, um dein Testergebnis kritisch zu reflektieren.',
 		'result.none': 'Kein Ergebnis',
 		'result.noneText': 'Du hast noch keinen Test abgeschlossen.',
+		'result.normWarnTitle': '⚠️ <strong>Wichtig zur Einordnung der Perzentile (P-Werte)</strong>',
+		'result.normWarn1': 'Die P-Werte vergleichen dich mit der <strong>ESCS-Referenzstichprobe</strong> (Eugene-Springfield, Oregon, USA — erhoben 1993–2007, überwiegend weiße Bevölkerung, n≈850).',
+		'result.normWarn2': 'Diese Stichprobe ist <strong>nicht repräsentativ</strong> für dich, dein Land oder deine Altersgruppe — die Perzentile sind daher nur eine <strong>grobe Orientierung</strong>, keine exakte Aussage.',
+		'result.normWarn3': 'Die Perzentile wurden aus Mittelwert + Standardabweichung unter <strong>Normalverteilungsannahme</strong> berechnet (statistisches Modell, keine direkten Vergleichsdaten).',
+		'result.normWarn4': 'Dieser Test ist ein <strong>Selbstauskunfts-Instrument ohne klinische Validierung</strong> — er ersetzt keine professionelle psychologische Diagnostik.',
+		'result.normHint': 'Werte 1–5 = Mittelwert der Antworten pro Skala. Perzentile (P) = Einordnung gegenüber der ESCS-Referenzstichprobe — siehe Hinweis oben.',
 
 		// About / Methodology
 		'about.title': 'Über — personality-tests',
@@ -216,6 +222,12 @@ const ui = {
 		'result.copyHint': 'Complete prompt with your results — copy and paste into a chatbot to critically reflect on your test result.',
 		'result.none': 'No results',
 		'result.noneText': 'You have not completed a test yet.',
+		'result.normWarnTitle': '⚠️ <strong>Important for interpreting percentiles (P values)</strong>',
+		'result.normWarn1': 'The P values compare you with the <strong>ESCS reference sample</strong> (Eugene-Springfield, Oregon, USA — collected 1993–2007, predominantly white population, n≈850).',
+		'result.normWarn2': 'This sample is <strong>not representative</strong> of you, your country, or your age group — the percentiles are therefore only a <strong>rough orientation</strong>, not an exact statement.',
+		'result.normWarn3': 'The percentiles were calculated from mean + standard deviation under the <strong>normal distribution assumption</strong> (statistical model, no direct comparison data).',
+		'result.normWarn4': 'This test is a <strong>self-report instrument without clinical validation</strong> — it does not replace professional psychological diagnostics.',
+		'result.normHint': 'Values 1–5 = mean of responses per scale. Percentiles (P) = comparison with the ESCS reference sample — see note above.',
 
 		'about.title': 'About — personality-tests',
 		'about.heading': 'Why this project exists',
@@ -336,6 +348,12 @@ const ui = {
 		'result.copyHint': 'Pilnas raginimas su tavo rezultatais — nukopijuok ir įklijuok į pokalbių robotą, kad kritiškai įvertintum testo rezultatą.',
 		'result.none': 'Nėra rezultatų',
 		'result.noneText': 'Dar nebaigei nė vieno testo.',
+		'result.normWarnTitle': '⚠️ <strong>Svarbu interpretuojant procentilius (P reikšmes)</strong>',
+		'result.normWarn1': 'P reikšmės lygina tave su <strong>ESCS etalonine imtimi</strong> (Eugene-Springfield, Oregonas, JAV — rinkta 1993–2007 m., daugiausia baltaodžių populiacija, n≈850).',
+		'result.normWarn2': 'Ši imtis <strong>nėra reprezentatyvi</strong> tau, tavo šaliai ar amžiaus grupei — todėl procentiliai yra tik <strong>apytikslė orientacija</strong>, o ne tiksli išvada.',
+		'result.normWarn3': 'Procentiliai apskaičiuoti iš vidurkio + standartinio nuokrypio pagal <strong>normaliojo skirstinio prielaidą</strong> (statistinis modelis, ne tiesioginiai palyginamieji duomenys).',
+		'result.normWarn4': 'Šis testas yra <strong>savęs vertinimo instrumentas be klinikinės validacijos</strong> — jis nepakeičia profesionalios psichologinės diagnostikos.',
+		'result.normHint': 'Reikšmės 1–5 = atsakymų vidurkis pagal skalę. Procentiliai (P) = palyginimas su ESCS etalonine imtimi — žr. pastabą aukščiau.',
 
 		'about.title': 'Apie — personality-tests',
 		'about.heading': 'Kodėl egzistuoja šis projektas',

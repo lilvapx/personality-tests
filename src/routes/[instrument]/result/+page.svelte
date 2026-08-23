@@ -7,6 +7,7 @@
 	import { downloadResultJson, downloadResultCsv, downloadResultAsJson } from '$lib/export/downloadResult';
 	import { loadInstrument } from '$lib/data-loader/loadInstrument';
 	import type { InstrumentBundle } from '$lib/data-loader/loadInstrument';
+	import { localeStore } from '$lib/stores/locale.svelte';
 	import { buildPrompt } from '$lib/scoring/prompt';
 	import { t } from '$lib/i18n/ui';
 
@@ -102,6 +103,27 @@
 		return p === null || p === undefined ? '–' : `${Math.round(p)}%`;
 	}
 
+	/**
+	 * Reaktive Labels: Domain-/Facet-Namen in der AKTUELLEN UI-Sprache.
+	 * Die im Ergebnis eingefrorenen Labels sind in der Test-Sprache —
+	 * beim Sprachwechsel soll die Auswertung aber mitwechseln.
+	 */
+	const uiLabels = $derived.by(() => {
+		if (!bundle) return { domains: {}, facets: {} };
+		const translation = bundle.i18n[localeStore.current] ?? bundle.i18n[bundle.locales[0]];
+		return {
+			domains: translation?.labels?.domains ?? {},
+			facets: translation?.labels?.facets ?? {}
+		};
+	});
+
+	function domainLabel(domain: { domain_id: string; label: string; label_en?: string }): string {
+		return uiLabels.domains[domain.domain_id] ?? domain.label;
+	}
+	function facetLabel(facet: { facet_id: string; label: string; label_en?: string }): string {
+		return uiLabels.facets[facet.facet_id] ?? facet.label;
+	}
+
 	/** Name + Original klein/kursiv dahinter (nur wenn abweichend) */
 	function nameWithOriginal(label: string, labelEn: string | undefined): string {
 		if (!labelEn || labelEn === label) return label;
@@ -137,12 +159,12 @@
 
 	<!-- ⚠️ WICHTIG: Perzentil-Kontext transparent kommunizieren -->
 	<div class="norm-warning">
-		<p class="norm-warning-title">⚠️ <strong>Wichtig zur Einordnung der Perzentile (P-Werte)</strong></p>
+		<p class="norm-warning-title">{@html t('result.normWarnTitle')}</p>
 		<ul>
-			<li>Die P-Werte vergleichen dich mit der <strong>ESCS-Referenzstichprobe</strong> (Eugene-Springfield, Oregon, USA — erhoben 1993–2007, überwiegend weiße Bevölkerung, n≈850).</li>
-			<li>Diese Stichprobe ist <strong>nicht repräsentativ</strong> für dich, dein Land oder deine Altersgruppe — die Perzentile sind daher nur eine <strong>grobe Orientierung</strong>, keine exakte Aussage.</li>
-			<li>Die Perzentile wurden aus Mittelwert + Standardabweichung unter <strong>Normalverteilungsannahme</strong> berechnet (statistisches Modell, keine direkten Vergleichsdaten).</li>
-			<li>Dieser Test ist ein <strong>Selbstauskunfts-Instrument ohne klinische Validierung</strong> — er ersetzt keine professionelle psychologische Diagnostik.</li>
+			<li>{@html t('result.normWarn1')}</li>
+			<li>{@html t('result.normWarn2')}</li>
+			<li>{@html t('result.normWarn3')}</li>
+			<li>{@html t('result.normWarn4')}</li>
 		</ul>
 	</div>
 
@@ -153,8 +175,8 @@
 		{#each resultStore.result.domains as domain}
 			<section class="domain-card">
 				<h2>
-					{domain.label}
-					{#if domain.label_en && domain.label_en !== domain.label}
+					{domainLabel(domain)}
+					{#if domain.label_en && domain.label_en !== domainLabel(domain)}
 						<span class="orig">({domain.label_en})</span>
 					{/if}
 				</h2>
@@ -178,8 +200,8 @@
 					{#each domain.facets as facet}
 						<div class="facet-row">
 							<span class="flabel">
-								{facet.label}
-								{#if facet.label_en && facet.label_en !== facet.label}
+								{facetLabel(facet)}
+								{#if facet.label_en && facet.label_en !== facetLabel(facet)}
 									<span class="orig">({facet.label_en})</span>
 								{/if}
 							</span>
@@ -200,7 +222,7 @@
 	</div>
 
 	<p class="norm-hint">
-		Werte 1–5 = Mittelwert der Antworten pro Skala. Perzentile (P) = Einordnung gegenüber der ESCS-Referenzstichprobe — siehe Hinweis oben.
+		{t('result.normHint')}
 	</p>
 
 	<div class="actions">
