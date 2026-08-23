@@ -1,17 +1,44 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import { resultStore } from '$lib/stores/results.svelte';
+	import { sessionStore } from '$lib/stores/testSession.svelte';
 	import { resetSession } from '$lib/stores/testSession.svelte';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
 	import { downloadResultJson, downloadResultCsv, downloadResultAsJson } from '$lib/export/downloadResult';
-	import { buildRawSummary } from '$lib/scoring/rawSummary';
+	import { loadInstrument } from '$lib/data-loader/loadInstrument';
+	import type { InstrumentBundle } from '$lib/data-loader/loadInstrument';
+	import { buildRawJson } from '$lib/scoring/rawSummary';
 	import { t } from '$lib/i18n/ui';
 
 	let copied = $state(false);
+	let bundle = $state<InstrumentBundle | null>(null);
 
-	/** Rohdaten-Text für die Copy-Textbox */
-	const rawText = $derived(
-		resultStore.result ? buildRawSummary(resultStore.result) : ''
-	);
+	const instrumentId = $derived(page.params.instrument);
+
+	// Bundle laden (für Items + Metadaten der Rohdaten-Ausgabe)
+	$effect(() => {
+		if (instrumentId) {
+			loadInstrument(instrumentId).then(b => {
+				bundle = b;
+			});
+		}
+	});
+
+	/** Rohdaten-JSON für die Copy-Textbox */
+	const rawJson = $derived.by(() => {
+		if (!resultStore.result || !bundle) return null;
+		return buildRawJson({
+			result: resultStore.result,
+			items: bundle.items,
+			responses: sessionStore.responses.map(r => ({ ...r })),
+			name: bundle.name,
+			version: bundle.version,
+			scaleMin: bundle.response_scale.min,
+			scaleMax: bundle.response_scale.max
+		});
+	});
+
+	const rawText = $derived(rawJson ? JSON.stringify(rawJson, null, 2) : '');
 
 	async function copyRaw() {
 		if (!rawText) return;
@@ -92,18 +119,6 @@
 
 	<DisclaimerBanner message={t('result.disclaimer')} />
 
-	<!-- Rohdaten-Textbox + Copy-Button -->
-	<div class="raw-box">
-		<div class="raw-header">
-			<h2>{t('result.copyTitle')}</h2>
-			<button class="btn small" onclick={copyRaw}>
-				{copied ? t('result.copied') : t('result.copy')}
-			</button>
-		</div>
-		<p class="raw-hint">{t('result.copyHint')}</p>
-		<textarea id="raw-summary" readonly rows="6" spellcheck="false">{rawText}</textarea>
-	</div>
-
 	<!-- Domains mit Facetten + Balken -->
 	<div class="domains">
 		{#each resultStore.result.domains as domain}
@@ -164,6 +179,18 @@
 		<a href="/methodology" class="btn secondary">{t('result.methodology')}</a>
 		<button class="btn secondary" onclick={exportJson}>{t('result.exportJson')}</button>
 		<button class="btn secondary" onclick={exportCsv}>{t('result.exportCsv')}</button>
+	</div>
+
+	<!-- Rohdaten-Textbox + Copy-Button (ganz unten) -->
+	<div class="raw-box">
+		<div class="raw-header">
+			<h2>{t('result.copyTitle')}</h2>
+			<button class="btn small" onclick={copyRaw}>
+				{copied ? t('result.copied') : t('result.copy')}
+			</button>
+		</div>
+		<p class="raw-hint">{t('result.copyHint')}</p>
+		<textarea id="raw-summary" readonly rows="14" spellcheck="false">{rawText}</textarea>
 	</div>
 {:else}
 	<h1>{t('result.none')}</h1>
