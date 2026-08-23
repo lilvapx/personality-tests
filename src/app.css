@@ -1,0 +1,37 @@
+/* Globale Styles — gelten für die ganze App */
+
+/* Border-Box überall: verhindert, dass Buttons/Cards mit Padding
+   über den Bildschirmrand laufen (Mobile-Fix) */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	line-height: 1.5;
+	color: #222;
+	background: #fafafa;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Verhindert ungewolltes Zoomen beim Tippen auf Inputs/Buttons (iOS) */
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 16px; /* iOS zoomt sonst bei <16px rein */
+}
+
+/* Konsistente Buttons */
+button {
+	-webkit-tap-highlight-color: transparent;
+}

@@ -50,6 +50,9 @@
 		font-weight: 500;
 		margin: 0;
 		line-height: 1.4;
+		min-height: 4.2em; /* stabile Höhe für 2-3 Zeilen — Buttons springen nicht mehr */
+		display: flex;
+		align-items: center;
 	}
 	.scale {
 		display: grid;

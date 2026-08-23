@@ -109,14 +109,17 @@
 
 		<div class="question-area">
 			{#if currentItem}
-				<QuestionCard
-					text={translation.items[currentItem.item_id]?.text ?? currentItem.item_id}
-					index={currentIndex}
-					total={total}
-					selected={getResponse(currentItem.item_id)}
-					labels={translation.response_scale.labels}
-					onSelect={(v) => handleSelect(currentItem.item_id, v)}
-				/>
+				<!-- #key erzwingt sauberen Remount bei Fragenwechsel → kein veraltetes Button-Highlight -->
+				{#key currentItem.item_id}
+					<QuestionCard
+						text={translation.items[currentItem.item_id]?.text ?? currentItem.item_id}
+						index={currentIndex}
+						total={total}
+						selected={getResponse(currentItem.item_id)}
+						labels={translation.response_scale.labels}
+						onSelect={(v) => handleSelect(currentItem.item_id, v)}
+					/>
+				{/key}
 			{/if}
 
 			<div class="nav">

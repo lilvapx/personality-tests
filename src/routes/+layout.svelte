@@ -3,6 +3,7 @@
 	import { t } from '$lib/i18n/ui';
 	import { localeStore, applySavedLocale } from '$lib/stores/locale.svelte';
 	import { onMount } from 'svelte';
+	import '../app.css';
 
 	onMount(() => {
 		applySavedLocale();

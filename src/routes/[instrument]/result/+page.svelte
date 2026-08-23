@@ -79,9 +79,10 @@
 	.btn.secondary { background: #eee; color: #333; }
 	.btn.secondary:hover { background: #ddd; }
 
-	/* Mobile: Buttons volle Breite */
+	/* Mobile: Buttons volle Breite, kein Überlauf */
 	@media (max-width: 640px) {
-		.actions { flex-direction: column; }
+		.actions { flex-direction: column; width: 100%; }
 		.btn { width: 100%; }
+		.meta { font-size: 0.75rem; word-break: break-word; }
 	}
 </style>
