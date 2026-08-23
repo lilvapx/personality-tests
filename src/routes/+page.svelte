@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { loadAvailableInstruments } from '$lib/data-loader/loadInstrument';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
+	import ImportButton from '$lib/components/ImportButton.svelte';
 	import { t, TRANSLATION_STATUS_SHORT } from '$lib/i18n/ui';
 	import { seo, websiteJsonLd, renderSeoHead } from '$lib/seo';
 	import type { TranslationStatus } from '$lib/scoring/types';
@@ -82,6 +83,11 @@
 		{/each}
 	</ul>
 {/if}
+
+<!-- Ergebnis-Import -->
+<div class="import-section">
+	<ImportButton />
+</div>
 
 <!-- Abgegrenztes Info-Feld drunter -->
 <aside class="info-box">
@@ -218,6 +224,14 @@
 	}
 
 	/* Info-Box */
+	.import-section {
+		display: flex;
+		justify-content: center;
+		margin-top: 1.5rem;
+	}
+	.import-section :global(.import-wrap) {
+		align-items: center;
+	}
 	.info-box {
 		margin-top: 2.5rem;
 		padding: 1.5rem 1.75rem;

@@ -3,7 +3,7 @@
  * Exportiert ein Testergebnis client-seitig als JSON oder CSV.
  * Kein Server involviert — erzeugt einen Blob und löst den Download aus.
  */
-import type { TestResult } from '$lib/scoring/types';
+import type { TestResult, ItemResponse } from '$lib/scoring/types';
 
 function download(filename: string, content: string, mime: string) {
 	const blob = new Blob([content], { type: mime });
@@ -21,10 +21,10 @@ function timestamp(): string {
 	return new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
 }
 
-/** Export als JSON (komplettes Ergebnis inkl. Facets) */
-export function downloadResultJson(result: TestResult) {
+/** Export als JSON (komplettes Ergebnis inkl. Facets + Antworten für Import) */
+export function downloadResultJson(result: TestResult, responses: ItemResponse[] = []) {
 	const filename = `${result.instrument_id}-${timestamp()}.json`;
-	download(filename, JSON.stringify(result, null, 2), 'application/json');
+	download(filename, JSON.stringify({ result, responses }, null, 2), 'application/json');
 }
 
 /** Export als CSV (eine Zeile pro Domain + Facet) */
