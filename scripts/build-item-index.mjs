@@ -59,6 +59,7 @@ for (const instId of readdirSync(instrumentsDir)) {
 		domains: meta.domains,
 		response_scale: meta.response_scale,
 		randomize_order: meta.randomize_order ?? true,
+		changelog: meta.changelog ?? [],
 		items,
 		scoring,
 		i18n,
@@ -74,7 +75,11 @@ for (const instId of readdirSync(instrumentsDir)) {
 		name: meta.name,
 		item_count: meta.item_count || items.length,
 		domains: meta.domains.map(d => d.id),
-		locales
+		locales,
+		// Status pro Locale (aus den Übersetzungsdateien) für Badges auf der Landing
+		translation_status: Object.fromEntries(
+			locales.map(loc => [loc, i18n[loc]?.translation_status ?? null])
+		)
 	});
 }
 

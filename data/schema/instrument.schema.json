@@ -96,6 +96,31 @@
 			},
 			"additionalProperties": false,
 			"description": "Antwortskala (z.B. Likert 1-5)"
+		},
+		"changelog": {
+			"type": "array",
+			"description": "Versionierungs-Historie: letzte Änderung zuerst. Für Reproduzierbarkeit bei späteren Korrekturen.",
+			"items": {
+				"type": "object",
+				"required": ["version", "date", "description"],
+				"properties": {
+					"version": {
+						"type": "string",
+						"description": "SemVer-Version dieser Änderung"
+					},
+					"date": {
+						"type": "string",
+						"format": "date",
+						"description": "Datum im ISO-8601-Format (YYYY-MM-DD)"
+					},
+					"description": {
+						"type": "string",
+						"description": "Was wurde geändert und warum (Reproduzierbarkeit)"
+					}
+				},
+				"additionalProperties": false
+			},
+			"minItems": 1
 		}
 	},
 	"additionalProperties": false

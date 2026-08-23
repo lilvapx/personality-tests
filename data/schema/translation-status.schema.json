@@ -1,0 +1,44 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/lilvapx/personality-tests/blob/main/data/schema/translation-status.schema.json",
+	"title": "Translation Status",
+	"description": "Zentraler Übersetzungsstatus pro Instrument: welche Sprachen existieren, wie gut sind sie validiert. Der Status wird im UI angezeigt (Intro-Seite, Badge).",
+	"type": "object",
+	"required": ["instrument_id", "translations"],
+	"properties": {
+		"instrument_id": {
+			"type": "string",
+			"pattern": "^[a-z0-9-]+$",
+			"description": "Referenz auf das Instrument (meta.json id)"
+		},
+		"translations": {
+			"type": "object",
+			"description": "Map: locale → Status-Objekt",
+			"propertyNames": {
+				"pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+			},
+			"additionalProperties": {
+				"type": "object",
+				"required": ["status"],
+				"properties": {
+					"status": {
+						"type": "string",
+						"enum": ["official_ipip", "community_verified", "community_draft", "machine_draft"],
+						"description": "Vierstufiger Qualitätsstatus: official_ipip = offizielle IPIP-Quelle; community_verified = von Muttersprachlern/Experten geprüft; community_draft = eigene/Community-Übersetzung, ungeprüft; machine_draft = maschinelle Übersetzung"
+					},
+					"updated": {
+						"type": "string",
+						"format": "date",
+						"description": "Letztes Änderungsdatum (YYYY-MM-DD)"
+					},
+					"note": {
+						"type": "string",
+						"description": "Optionaler Hinweis (z.B. Quelle, Validierungsstand)"
+					}
+				},
+				"additionalProperties": false
+			}
+		}
+	},
+	"additionalProperties": false
+}

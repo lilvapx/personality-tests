@@ -6,46 +6,156 @@
 	"source_url": "https://ipip.ori.org/new_ipip-120-items.htm",
 	"license_note": "IPIP-Items sind Public Domain (https://ipip.ori.org). Übersetzungen hier sind eigene Arbeit.",
 	"domains": [
-		{ "id": "E", "label": "Extraversion", "facets": [
-			{ "id": "E1", "label": "Friendliness" },
-			{ "id": "E2", "label": "Gregariousness" },
-			{ "id": "E3", "label": "Assertiveness" },
-			{ "id": "E4", "label": "Activity Level" },
-			{ "id": "E5", "label": "Excitement-Seeking" },
-			{ "id": "E6", "label": "Cheerfulness" }
-		]},
-		{ "id": "A", "label": "Agreeableness", "facets": [
-			{ "id": "A1", "label": "Trust" },
-			{ "id": "A2", "label": "Morality" },
-			{ "id": "A3", "label": "Altruism" },
-			{ "id": "A4", "label": "Cooperation" },
-			{ "id": "A5", "label": "Modesty" },
-			{ "id": "A6", "label": "Sympathy" }
-		]},
-		{ "id": "C", "label": "Conscientiousness", "facets": [
-			{ "id": "C1", "label": "Self-Efficacy" },
-			{ "id": "C2", "label": "Orderliness" },
-			{ "id": "C3", "label": "Dutifulness" },
-			{ "id": "C4", "label": "Achievement-Striving" },
-			{ "id": "C5", "label": "Self-Discipline" },
-			{ "id": "C6", "label": "Cautiousness" }
-		]},
-		{ "id": "N", "label": "Neuroticism", "facets": [
-			{ "id": "N1", "label": "Anxiety" },
-			{ "id": "N2", "label": "Anger" },
-			{ "id": "N3", "label": "Depression" },
-			{ "id": "N4", "label": "Self-Consciousness" },
-			{ "id": "N5", "label": "Immoderation" },
-			{ "id": "N6", "label": "Vulnerability" }
-		]},
-		{ "id": "O", "label": "Openness to Experience", "facets": [
-			{ "id": "O1", "label": "Imagination" },
-			{ "id": "O2", "label": "Artistic Interests" },
-			{ "id": "O3", "label": "Emotionality" },
-			{ "id": "O4", "label": "Adventurousness" },
-			{ "id": "O5", "label": "Intellect" },
-			{ "id": "O6", "label": "Liberalism" }
-		]}
+		{
+			"id": "E",
+			"label": "Extraversion",
+			"facets": [
+				{
+					"id": "E1",
+					"label": "Friendliness"
+				},
+				{
+					"id": "E2",
+					"label": "Gregariousness"
+				},
+				{
+					"id": "E3",
+					"label": "Assertiveness"
+				},
+				{
+					"id": "E4",
+					"label": "Activity Level"
+				},
+				{
+					"id": "E5",
+					"label": "Excitement-Seeking"
+				},
+				{
+					"id": "E6",
+					"label": "Cheerfulness"
+				}
+			]
+		},
+		{
+			"id": "A",
+			"label": "Agreeableness",
+			"facets": [
+				{
+					"id": "A1",
+					"label": "Trust"
+				},
+				{
+					"id": "A2",
+					"label": "Morality"
+				},
+				{
+					"id": "A3",
+					"label": "Altruism"
+				},
+				{
+					"id": "A4",
+					"label": "Cooperation"
+				},
+				{
+					"id": "A5",
+					"label": "Modesty"
+				},
+				{
+					"id": "A6",
+					"label": "Sympathy"
+				}
+			]
+		},
+		{
+			"id": "C",
+			"label": "Conscientiousness",
+			"facets": [
+				{
+					"id": "C1",
+					"label": "Self-Efficacy"
+				},
+				{
+					"id": "C2",
+					"label": "Orderliness"
+				},
+				{
+					"id": "C3",
+					"label": "Dutifulness"
+				},
+				{
+					"id": "C4",
+					"label": "Achievement-Striving"
+				},
+				{
+					"id": "C5",
+					"label": "Self-Discipline"
+				},
+				{
+					"id": "C6",
+					"label": "Cautiousness"
+				}
+			]
+		},
+		{
+			"id": "N",
+			"label": "Neuroticism",
+			"facets": [
+				{
+					"id": "N1",
+					"label": "Anxiety"
+				},
+				{
+					"id": "N2",
+					"label": "Anger"
+				},
+				{
+					"id": "N3",
+					"label": "Depression"
+				},
+				{
+					"id": "N4",
+					"label": "Self-Consciousness"
+				},
+				{
+					"id": "N5",
+					"label": "Immoderation"
+				},
+				{
+					"id": "N6",
+					"label": "Vulnerability"
+				}
+			]
+		},
+		{
+			"id": "O",
+			"label": "Openness to Experience",
+			"facets": [
+				{
+					"id": "O1",
+					"label": "Imagination"
+				},
+				{
+					"id": "O2",
+					"label": "Artistic Interests"
+				},
+				{
+					"id": "O3",
+					"label": "Emotionality"
+				},
+				{
+					"id": "O4",
+					"label": "Adventurousness"
+				},
+				{
+					"id": "O5",
+					"label": "Intellect"
+				},
+				{
+					"id": "O6",
+					"label": "Liberalism"
+				}
+			]
+		}
 	],
 	"item_count": 120,
 	"response_scale": {
@@ -54,5 +164,12 @@
 		"type": "likert"
 	},
 	"randomize_order": true,
-	"randomize_order_note": "Standard: Items werden pro Sitzung in zufälliger Reihenfolge präsentiert (reduziert Reihenfolge-Effekte). Seed wird pro Session erzeugt, Reihenfolge bleibt innerhalb der Sitzung stabil."
+	"randomize_order_note": "Standard: Items werden pro Sitzung in zufälliger Reihenfolge präsentiert (reduziert Reihenfolge-Effekte). Seed wird pro Session erzeugt, Reihenfolge bleibt innerhalb der Sitzung stabil.",
+	"changelog": [
+		{
+			"version": "1.0.0",
+			"date": "2026-08-23",
+			"description": "Initiale Version: 120 Items, 5 Domains, Scoring-Keying aus offizieller Quelle. Struktur: sprachneutrale items.json + i18n/ Übersetzungen."
+		}
+	]
 }

@@ -47,8 +47,8 @@
 		},
 		"translation_status": {
 			"type": "string",
-			"enum": ["official", "community", "draft", "machine_draft"],
-			"description": "Qualitätsstatus der Übersetzung (kann auch in _status.json gepflegt werden)"
+			"enum": ["official_ipip", "community_verified", "community_draft", "machine_draft"],
+			"description": "Vierstufiger Qualitätsstatus der Übersetzung: official_ipip = offizielle IPIP-Quelle; community_verified = von Muttersprachlern/Experten geprüft; community_draft = eigene/Community-Übersetzung, ungeprüft; machine_draft = maschinelle Übersetzung"
 		},
 		"back_translation_checked": {
 			"type": "boolean",

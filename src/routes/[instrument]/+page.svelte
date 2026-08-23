@@ -21,6 +21,8 @@
 	});
 
 	const translation = $derived(bundle ? getTranslation(bundle, localeStore.current) : null);
+	const translationStatus = $derived(translation?.translation_status ?? null);
+	const activeLocale = $derived(translation?.locale ?? null);
 </script>
 
 <svelte:head>
@@ -34,7 +36,11 @@
 	<h1>{bundle.name}</h1>
 	<p class="citation">{bundle.source_citation}</p>
 
-	<DisclaimerBanner message="Kein klinisches Instrument. Die Auswertung ist rein informativ und ersetzt keine professionelle Diagnostik." />
+	<DisclaimerBanner
+		message="Kein klinisches Instrument. Die Auswertung ist rein informativ und ersetzt keine professionelle Diagnostik."
+		status={translationStatus}
+		statusLocale={activeLocale}
+	/>
 
 	<h2>Über diesen Test</h2>
 	<ul class="facts">

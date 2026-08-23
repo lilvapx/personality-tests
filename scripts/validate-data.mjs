@@ -64,7 +64,8 @@ const schemaDir = join(DATA_DIR, 'schema');
 const instrumentSchema = loadJSON(join(schemaDir, 'instrument.schema.json'));
 const itemSchema = loadJSON(join(schemaDir, 'item.schema.json'));
 const translationSchema = loadJSON(join(schemaDir, 'translation.schema.json'));
-if (!instrumentSchema || !itemSchema || !translationSchema) {
+const translationStatusSchema = loadJSON(join(schemaDir, 'translation-status.schema.json'));
+if (!instrumentSchema || !itemSchema || !translationSchema || !translationStatusSchema) {
 	console.error('❌ Schemas konnten nicht geladen werden');
 	process.exit(1);
 }
@@ -120,12 +121,20 @@ for (const instId of readdirSync(instrumentsDir)) {
 	// i18n
 	const i18nDir = join(instDir, 'i18n');
 	const status = existsSync(join(i18nDir, '_status.json')) ? loadJSON(join(i18nDir, '_status.json')) : null;
+	if (status) validateSchema(status, translationStatusSchema, 'i18n/_status.json');
 	const locales = readdirSync(i18nDir).filter(f => f.endsWith('.json') && f !== '_status.json');
 	for (const locFile of locales) {
 		const locale = locFile.replace('.json', '');
 		const trans = loadJSON(join(i18nDir, locFile));
 		if (!trans) continue;
 		validateSchema(trans, translationSchema, `i18n/${locFile}`);
+
+		// Konsistenz: translation_status in der Übersetzung muss mit _status.json übereinstimmen
+		const statusEntry = status?.translations?.[locale];
+		if (statusEntry && trans.translation_status && statusEntry.status !== trans.translation_status) {
+			err(`i18n/${locFile}: translation_status (${trans.translation_status}) ≠ _status.json (${statusEntry.status})`);
+		}
+
 
 		const transIds = Object.keys(trans.items || {});
 		// Jedes Item braucht eine Übersetzung (außer lt.json ist Platzhalter)

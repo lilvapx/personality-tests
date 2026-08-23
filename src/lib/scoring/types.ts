@@ -51,8 +51,15 @@ export interface Translation {
 	response_scale: {
 		labels: Record<string, string>;
 	};
-	translation_status?: 'official' | 'community' | 'draft';
+	translation_status?: TranslationStatus;
 }
+
+/** Vierstufiger Qualitätsstatus einer Übersetzung */
+export type TranslationStatus =
+	| 'official_ipip' // offizielle IPIP-Quelle
+	| 'community_verified' // von Muttersprachlern/Experten geprüft
+	| 'community_draft' // eigene/Community-Übersetzung, ungeprüft
+	| 'machine_draft'; // maschinelle Übersetzung
 
 /** Scoring-Konfiguration */
 export interface ScoringConfig {

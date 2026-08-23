@@ -164,5 +164,12 @@
 		"type": "likert"
 	},
 	"randomize_order": true,
-	"randomize_order_note": "Standard: Items werden pro Sitzung randomisiert präsentiert"
+	"randomize_order_note": "Standard: Items werden pro Sitzung randomisiert präsentiert",
+	"changelog": [
+		{
+			"version": "1.0.0",
+			"date": "2026-08-23",
+			"description": "Initiale Version: 300 Items, 5 Domains, Scoring-Keying aus offizieller Quelle. Struktur: sprachneutrale items.json + i18n/ Übersetzungen."
+		}
+	]
 }

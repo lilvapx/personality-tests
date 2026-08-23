@@ -2,7 +2,7 @@
 	"instrument_id": "ipip-neo-300",
 	"translations": {
 		"en": {
-			"status": "official",
+			"status": "official_ipip",
 			"updated": "2026-08-23",
 			"note": "Original-Items aus IPIP Repository (Goldberg, 1999), Public Domain"
 		}
