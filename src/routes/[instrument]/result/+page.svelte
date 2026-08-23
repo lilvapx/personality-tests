@@ -14,6 +14,8 @@
 	let bundle = $state<InstrumentBundle | null>(null);
 
 	const instrumentId = $derived(page.params.instrument);
+	const scaleMin = $derived(bundle?.response_scale.min ?? 1);
+	const scaleMax = $derived(bundle?.response_scale.max ?? 5);
 
 	// Bundle laden (für Items + Metadaten der Rohdaten-Ausgabe)
 	$effect(() => {
@@ -105,6 +107,21 @@
 		if (!labelEn || labelEn === label) return label;
 		return label;
 	}
+
+	/**
+	 * Balken-Breite: Perzentil bevorzugen (0-100 → %), sonst normierter Rohwert.
+	 * Verhindert den „1%-Perzentil aber riesiger Balken“-Bug.
+	 */
+	function barWidth(score: number | null, percentile: number | null | undefined): string {
+		if (percentile !== null && percentile !== undefined) {
+			return `${Math.max(2, Math.min(100, percentile))}%`;
+		}
+		if (score === null) return '0%';
+		const span = scaleMax - scaleMin;
+		if (span <= 0) return '0%';
+		const norm = ((score - scaleMin) / span) * 100;
+		return `${Math.max(2, Math.min(100, norm))}%`;
+	}
 </script>
 
 <svelte:head>
@@ -147,7 +164,7 @@
 					<span class="dlabel">Ø</span>
 					<div class="track">
 						{#if domain.score !== null}
-							<div class="fill" style="width: {(domain.score / 5) * 100}%; background: {colors[domain.domain_id] ?? '#4a90d9'}"></div>
+							<div class="fill" style="width: {barWidth(domain.score, domain.percentile)}; background: {colors[domain.domain_id] ?? '#4a90d9'}"></div>
 							<span class="value">{domain.score.toFixed(2)}</span>
 						{:else}
 							<span class="value muted">–</span>
@@ -168,7 +185,7 @@
 							</span>
 							<div class="track small">
 								{#if facet.score !== null}
-									<div class="fill" style="width: {(facet.score / 5) * 100}%; background: {colors[domain.domain_id] ?? '#4a90d9'}"></div>
+									<div class="fill" style="width: {barWidth(facet.score, facet.percentile)}; background: {colors[domain.domain_id] ?? '#4a90d9'}"></div>
 									<span class="value">{facet.score.toFixed(2)}</span>
 								{:else}
 									<span class="value muted">–</span>
