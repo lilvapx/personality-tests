@@ -69,7 +69,7 @@
 		<li>{t('landing.about.p1')}</li>
 		<li>{t('landing.about.p2')}</li>
 		<li>{t('landing.about.p3')}</li>
-		<li>{t('landing.about.p4', { github: '<a href="https://github.com/lilvapx/personality-tests" target="_blank" rel="noopener">GitHub</a>' })}</li>
+		<li>{@html t('landing.about.p4', { github: '<a href="https://github.com/lilvapx/personality-tests" target="_blank" rel="noopener">GitHub</a>' })}</li>
 	</ul>
 	<p class="info-note">
 		{@html t('landing.about.note', { strong: '<strong>', '/strong': '</strong>' })}
