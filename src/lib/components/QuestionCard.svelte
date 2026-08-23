@@ -35,15 +35,19 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		padding: 1.5rem;
+		padding: 1.75rem;
 		background: var(--card-bg, #fff);
-		border-radius: 12px;
-		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		border: 1px solid var(--card-border);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-md);
 	}
 	.counter {
-		font-size: 0.85rem;
-		color: #888;
+		font-size: 0.8rem;
+		color: var(--text-muted);
 		margin: 0;
+		font-weight: 600;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
 	}
 	.text {
 		font-size: 1.15rem;

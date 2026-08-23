@@ -27,7 +27,17 @@
 	<meta name="description" content="Freie, quelloffene wissenschaftliche Persönlichkeitstests (IPIP-NEO). Keine Registrierung, keine Datenabgabe — alles läuft in deinem Browser." />
 </svelte:head>
 
-<h1>{t('landing.title')}</h1>
+<!-- Hero -->
+<section class="hero">
+	<p class="hero-eyebrow">🧬 {t('landing.eyebrow')}</p>
+	<h1 class="hero-title">{t('landing.title')}</h1>
+	<p class="hero-sub">{t('landing.subtitle')}</p>
+	<div class="hero-badges">
+		<span class="hero-badge">✓ {t('landing.badge1')}</span>
+		<span class="hero-badge">✓ {t('landing.badge2')}</span>
+		<span class="hero-badge">✓ {t('landing.badge3')}</span>
+	</div>
+</section>
 
 <!-- Testauswahl als Cards -->
 {#if instruments.length === 0}
@@ -53,7 +63,7 @@
 
 					<span class="meta">{inst.item_count} Items · {inst.domains.length} Domains</span>
 
-					<span class="cta">{t('landing.start')}</span>
+					<span class="cta">{t('landing.start')} →</span>
 				</a>
 			</li>
 		{/each}
@@ -79,8 +89,51 @@
 </aside>
 
 <style>
-	h1 { margin-bottom: 1.25rem; }
-	.loading { color: #888; }
+	/* Hero */
+	.hero {
+		text-align: center;
+		padding: 2.5rem 0.5rem 2rem;
+	}
+	.hero-eyebrow {
+		display: inline-block;
+		font-size: 0.8rem;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: var(--brand-600);
+		background: var(--brand-50);
+		padding: 0.3rem 0.9rem;
+		border-radius: 999px;
+		margin: 0 0 1rem;
+	}
+	.hero-title {
+		font-size: 2.4rem;
+		margin: 0 0 0.75rem;
+		letter-spacing: -0.03em;
+	}
+	.hero-sub {
+		font-size: 1.1rem;
+		color: var(--text-secondary);
+		max-width: 560px;
+		margin: 0 auto 1.25rem;
+	}
+	.hero-badges {
+		display: flex;
+		justify-content: center;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
+	.hero-badge {
+		font-size: 0.78rem;
+		font-weight: 600;
+		color: var(--text-secondary);
+		background: rgba(255,255,255,0.8);
+		border: 1px solid var(--card-border);
+		padding: 0.35rem 0.8rem;
+		border-radius: 999px;
+	}
+
+	.loading { color: var(--text-muted); text-align: center; padding: 2rem 0; }
 
 	/* Card-Grid: 2 Spalten auf Desktop, 1 auf Mobile */
 	.card-grid {
@@ -97,19 +150,20 @@
 		flex-direction: column;
 		gap: 0.75rem;
 		height: 100%;
-		padding: 1.25rem;
-		background: #fff;
-		border: 1px solid #e2e2e2;
-		border-radius: 14px;
+		padding: 1.4rem;
+		background: var(--card-bg);
+		border: 1px solid var(--card-border);
+		border-radius: var(--radius-lg);
 		text-decoration: none;
-		color: #222;
-		box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-		transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+		color: var(--text);
+		box-shadow: var(--shadow-sm);
+		transition: border-color 0.15s, box-shadow 0.2s, transform 0.2s;
 	}
 	.card:hover {
-		border-color: #4a90d9;
-		box-shadow: 0 4px 16px rgba(74,144,217,0.18);
-		transform: translateY(-2px);
+		border-color: var(--brand-400);
+		box-shadow: var(--shadow-lg);
+		transform: translateY(-3px);
+		text-decoration: none;
 	}
 
 	.card-head {
@@ -118,8 +172,8 @@
 		align-items: baseline;
 		gap: 0.75rem;
 	}
-	.name { font-weight: 700; font-size: 1.05rem; }
-	.duration { font-size: 0.75rem; color: #999; white-space: nowrap; }
+	.name { font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; }
+	.duration { font-size: 0.75rem; color: var(--text-muted); white-space: nowrap; }
 
 	.badges { display: flex; gap: 0.35rem; flex-wrap: wrap; }
 	.badge {
@@ -132,36 +186,46 @@
 	.badge.community_draft { background: #fef3c7; color: #92400e; }
 	.badge.machine_draft { background: #f1f1f1; color: #555; }
 
-	.meta { font-size: 0.8rem; color: #888; }
+	.meta { font-size: 0.8rem; color: var(--text-muted); }
 
 	.cta {
 		margin-top: auto;
-		padding: 0.55rem 1rem;
-		background: #4a90d9; color: #fff;
-		border-radius: 8px; font-size: 0.85rem; font-weight: 600;
+		padding: 0.6rem 1rem;
+		background: linear-gradient(120deg, var(--brand-500), var(--accent));
+		color: #fff;
+		border-radius: var(--radius-md);
+		font-size: 0.85rem; font-weight: 700;
 		text-align: center;
-		transition: background 0.15s;
+		box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+		transition: transform 0.15s, box-shadow 0.15s;
 	}
-	.card:hover .cta { background: #3a7bc0; }
+	.card:hover .cta {
+		transform: translateY(-1px);
+		box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+	}
 
 	/* Info-Box */
 	.info-box {
 		margin-top: 2.5rem;
-		padding: 1.25rem 1.5rem;
-		background: #f7f9fc;
-		border: 1px solid #e2e2e2;
-		border-radius: 14px;
+		padding: 1.5rem 1.75rem;
+		background: rgba(255, 255, 255, 0.85);
+		border: 1px solid var(--card-border);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-sm);
 	}
-	.info-box h2 { margin-top: 0; font-size: 1.05rem; }
+	.info-box h2 { margin-top: 0; font-size: 1.1rem; }
 	.info-box ul { margin: 0.75rem 0; padding-left: 1.25rem; }
-	.info-box li { margin: 0.35rem 0; }
-	.info-box a { color: #4a90d9; }
-	.info-note { margin-bottom: 0.75rem; font-size: 0.9rem; color: #555; }
+	.info-box li { margin: 0.35rem 0; color: var(--text-secondary); }
+	.info-box a { color: var(--brand-600); }
+	.info-note { margin-bottom: 0.75rem; font-size: 0.9rem; color: var(--text-secondary); }
 
 	/* Mobile-Optimierung */
 	@media (max-width: 640px) {
+		.hero { padding: 1.75rem 0.25rem 1.5rem; }
+		.hero-title { font-size: 1.8rem; }
+		.hero-sub { font-size: 1rem; }
 		.card-grid { grid-template-columns: 1fr; }
-		.card { padding: 1rem; }
-		h1 { font-size: 1.5rem; }
+		.card { padding: 1.1rem; }
+		.info-box { padding: 1.1rem 1.25rem; }
 	}
 </style>

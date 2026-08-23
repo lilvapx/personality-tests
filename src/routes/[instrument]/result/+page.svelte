@@ -161,10 +161,11 @@
 	.domains { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem; }
 
 	.domain-card {
-		background: #fff;
-		border: 1px solid #e2e2e2;
-		border-radius: 12px;
-		padding: 1.25rem;
+		background: var(--card-bg);
+		border: 1px solid var(--card-border);
+		border-radius: var(--radius-lg);
+		padding: 1.5rem;
+		box-shadow: var(--shadow-sm);
 	}
 	.domain-card h2 {
 		margin: 0 0 0.75rem 0;
@@ -176,21 +177,22 @@
 		font-size: 0.75em;
 		font-weight: 400;
 		font-style: italic;
-		color: #999;
+		color: var(--text-muted);
 		margin-left: 0.3em;
 	}
 
 	/* Domain-Zeile */
 	.domain-row { display: flex; align-items: center; gap: 0.6rem; }
-	.dlabel { width: 1.5rem; font-size: 0.8rem; color: #999; font-weight: 700; }
+	.dlabel { width: 1.5rem; font-size: 0.8rem; color: var(--text-muted); font-weight: 700; }
 	.track {
 		flex: 1;
 		height: 24px;
-		background: #f0f0f0;
+		background: #f0f2f7;
 		border-radius: 6px;
 		position: relative;
 		display: flex;
 		align-items: center;
+		overflow: hidden;
 	}
 	.fill { height: 100%; border-radius: 6px; transition: width 0.4s ease; }
 	.value { position: absolute; right: 8px; font-size: 0.8rem; font-weight: 700; color: #333; }
@@ -200,7 +202,7 @@
 		text-align: right;
 		font-size: 0.9rem;
 		font-weight: 700;
-		color: #4a90d9;
+		color: var(--brand-600);
 	}
 
 	/* Facetten */
@@ -236,18 +238,27 @@
 	.actions { display: flex; gap: 0.75rem; margin-top: 2.5rem; flex-wrap: wrap; }
 	.btn {
 		padding: 0.75rem 1.25rem;
-		background: #4a90d9; color: #fff;
-		border-radius: 8px; text-decoration: none; font-weight: 600;
+		background: linear-gradient(120deg, var(--brand-500), var(--accent));
+		color: #fff;
+		border-radius: var(--radius-md);
+		text-decoration: none;
+		font-weight: 700;
 		border: none;
 		cursor: pointer;
 		min-height: 44px;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
+		box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+		transition: transform 0.15s, box-shadow 0.15s;
 	}
-	.btn:hover { background: #3a7bc0; }
-	.btn.secondary { background: #eee; color: #333; }
-	.btn.secondary:hover { background: #ddd; }
+	.btn:hover {
+		background: linear-gradient(120deg, var(--brand-600), var(--accent));
+		transform: translateY(-1px);
+		box-shadow: 0 6px 16px rgba(79, 70, 229, 0.3);
+	}
+	.btn.secondary { background: #fff; color: var(--text); border: 1px solid var(--card-border); box-shadow: none; }
+	.btn.secondary:hover { background: var(--brand-50); border-color: var(--brand-400); }
 
 	/* Mobile */
 	@media (max-width: 640px) {

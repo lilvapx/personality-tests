@@ -21,6 +21,10 @@ const ui = {
 		// Landing
 		'landing.title': 'Wissenschaftliche Persönlichkeitstests',
 		'landing.subtitle': 'Freie, quelloffene Umsetzung etablierter Persönlichkeitsinventare. Keine Registrierung, keine Datenabgabe — alles läuft in deinem Browser.',
+		'landing.eyebrow': 'Big Five · IPIP-NEO',
+		'landing.badge1': '100% kostenlos',
+		'landing.badge2': 'Keine Datenabgabe',
+		'landing.badge3': 'Client-seitig',
 		'landing.loading': 'Lade Instrumente…',
 		'landing.minutes': 'Min.',
 		'landing.start': 'Test starten →',
@@ -120,6 +124,10 @@ const ui = {
 
 		'landing.title': 'Scientific personality tests',
 		'landing.subtitle': 'Free, open-source implementation of established personality inventories. No registration, no data collection — everything runs in your browser.',
+		'landing.eyebrow': 'Big Five · IPIP-NEO',
+		'landing.badge1': '100% free',
+		'landing.badge2': 'No data collection',
+		'landing.badge3': 'Client-side',
 		'landing.loading': 'Loading instruments…',
 		'landing.minutes': 'min',
 		'landing.start': 'Start test →',
@@ -214,6 +222,10 @@ const ui = {
 
 		'landing.title': 'Moksliniai asmenybės testai',
 		'landing.subtitle': 'Nemokama, atviro kodo įdiegtis žinomų asmenybės klausimynų. Jokios registracijos, jokių duomenų — viskas veikia tavo naršyklėje.',
+		'landing.eyebrow': 'Big Five · IPIP-NEO',
+		'landing.badge1': '100% nemokama',
+		'landing.badge2': 'Jokie duomenys nerenkami',
+		'landing.badge3': 'Kliento pusėje',
 		'landing.loading': 'Kraunama…',
 		'landing.minutes': 'min.',
 		'landing.start': 'Pradėti testą →',

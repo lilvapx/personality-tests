@@ -24,20 +24,20 @@
 	.track {
 		flex: 1;
 		height: 10px;
-		background: #eee;
+		background: #e8ecf4;
 		border-radius: 5px;
 		overflow: hidden;
 	}
 	.bar {
 		height: 100%;
-		background: #4a90d9;
+		background: linear-gradient(90deg, var(--brand-500), var(--accent));
 		border-radius: 5px;
 		transition: width 0.25s ease;
 	}
 	.pct {
 		font-size: 0.95rem;
 		font-weight: 700;
-		color: #4a90d9;
+		color: var(--brand-600);
 		min-width: 3.2rem;
 		text-align: right;
 	}
