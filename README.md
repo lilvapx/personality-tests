@@ -1,55 +1,46 @@
-# sv
+# personality-tests
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Wissenschaftliche Persönlichkeitstests — quelloffen, datensparsam, client-seitig.
 
-## Creating a project
+## Projekt-Statement
 
-If you're seeing this, you've probably already done this step. Congrats!
+Freie, quelloffene Umsetzung etablierter Persönlichkeitsinventare (IPIP-NEO-120, HEXACO-60).
+Keine Registrierung, keine Datenabgabe — alle Antworten und die Auswertung laufen lokal im Browser.
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Quellen
 
-To recreate this project with the same configuration:
+- **IPIP-NEO-120:** Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a
+  120-item public domain inventory: Development of the IPIP-NEO-120. *Journal of Research in Personality, 51*, 78–89.
+- **Items:** Public Domain via International Personality Item Pool — https://ipip.ori.org
+- **Deutsche Übersetzung:** Eigene Übersetzung (Status: draft), siehe `data/instruments/ipip-neo-120/i18n/de.json`
 
-```sh
-# recreate this project
-npx sv@0.17.0 create --template minimal --types ts --install npm personality-tests
-```
+## Lizenz-Überblick
 
-## Developing
+| Bestandteil | Lizenz |
+|---|---|
+| Code | MIT (`LICENSE`) |
+| IPIP-Items (en) | Public Domain |
+| Eigene Übersetzungen (de, lt) | CC BY-SA 4.0 |
+| Normdaten | Siehe `data/instruments/*/norms/SOURCE.md` |
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Details: `data/LICENSE.md`
 
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+## Entwicklung
 
 ```sh
-npm run build
+npm install
+npm run dev          # Dev-Server
+npm run validate:data  # Datenvalidierung
+npm run gen:data     # Frontend-Bundles generieren
+npm test             # Vitest
+npm run build        # Produktions-Build (Cloudflare Pages)
 ```
 
-You can preview the production build with `npm run preview`.
+## Deploy (Cloudflare Pages)
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+1. Cloudflare Dashboard → Workers & Pages → Create → Pages → Connect to Git
+2. Repo `lilvapx/personality-tests` wählen
+3. Build command: `npm run build`
+4. Output directory: `.svelte-kit/cloudflare`
 
-## Deploy auf Cloudflare Pages
-
-1. Cloudflare Dashboard → **Workers & Pages → Create → Pages → Connect to Git**
-2. Repo `lilvapx/personality-tests` auswählen
-3. Build-Einstellungen:
-   - **Build command:** `npm run build`
-   - **Output directory:** `.svelte-kit/cloudflare`
-4. Deploy — bei jedem Push auf `main` wird neu gebaut
-
-Lokal testen:
-- Dev: `npm run dev`
-- Production-Build lokal: `npm run build && npm run preview`
+Live: https://personality-tests.pages.dev
