@@ -12,7 +12,12 @@
 </main>
 
 <footer>
-	<p>Kein klinisches Instrument — nur zur Selbstreflexion.</p>
+	<p class="footer-note">Kein klinisches Instrument — nur zur Selbstreflexion.</p>
+	<nav class="footer-links">
+		<a href="/impressum">Impressum</a>
+		<span class="sep">·</span>
+		<a href="/datenschutz">Datenschutz</a>
+	</nav>
 </footer>
 
 <style>
@@ -24,7 +29,7 @@
 		border-bottom: 1px solid #eee;
 	}
 	.logo { font-weight: 700; text-decoration: none; color: #222; }
-	main { max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+	main { max-width: 720px; margin: 2rem auto; padding: 0 1rem; min-height: 60vh; }
 	footer {
 		text-align: center;
 		padding: 2rem;
@@ -32,4 +37,9 @@
 		font-size: 0.8rem;
 		border-top: 1px solid #eee;
 	}
+	.footer-note { margin: 0 0 0.5rem; }
+	.footer-links { display: flex; justify-content: center; gap: 0.5rem; }
+	.footer-links a { color: #666; text-decoration: none; }
+	.footer-links a:hover { color: #4a90d9; text-decoration: underline; }
+	.sep { color: #ccc; }
 </style>
