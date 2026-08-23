@@ -1,9 +1,20 @@
 <script lang="ts">
 	import LanguageSwitcher from '$lib/components/LanguageSwitcher.svelte';
+	import { t } from '$lib/i18n/ui';
+	import { localeStore, applySavedLocale } from '$lib/stores/locale.svelte';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		applySavedLocale();
+	});
 </script>
 
+<svelte:head>
+	<html lang={localeStore.current} />
+</svelte:head>
+
 <header>
-	<a href="/" class="logo">🧠 personality-tests</a>
+	<a href="/" class="logo">{t('nav.logo')}</a>
 	<LanguageSwitcher />
 </header>
 
@@ -12,11 +23,11 @@
 </main>
 
 <footer>
-	<p class="footer-note">Kein klinisches Instrument — nur zur Selbstreflexion.</p>
+	<p class="footer-note">{t('footer.note')}</p>
 	<nav class="footer-links">
-		<a href="/impressum">Impressum</a>
+		<a href="/impressum">{t('footer.impressum')}</a>
 		<span class="sep">·</span>
-		<a href="/datenschutz">Datenschutz</a>
+		<a href="/datenschutz">{t('footer.datenschutz')}</a>
 	</nav>
 </footer>
 

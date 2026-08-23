@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { loadAvailableInstruments } from '$lib/data-loader/loadInstrument';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
-	import { TRANSLATION_STATUS_SHORT } from '$lib/i18n/status-labels';
+	import { t, TRANSLATION_STATUS_SHORT } from '$lib/i18n/ui';
 	import type { TranslationStatus } from '$lib/scoring/types';
 
 	interface InstrumentSummary {
@@ -27,11 +27,11 @@
 	<meta name="description" content="Freie, quelloffene wissenschaftliche Persönlichkeitstests (IPIP-NEO). Keine Registrierung, keine Datenabgabe — alles läuft in deinem Browser." />
 </svelte:head>
 
-<h1>Wissenschaftliche Persönlichkeitstests</h1>
+<h1>{t('landing.title')}</h1>
 
 <!-- Testauswahl zuerst -->
 {#if instruments.length === 0}
-	<p class="loading">Lade Instrumente…</p>
+	<p class="loading">{t('landing.loading')}</p>
 {:else}
 	<ul class="instrument-list">
 		{#each instruments as inst}
@@ -39,7 +39,7 @@
 				<a href="/{inst.id}" class="instrument-card">
 					<span class="card-top">
 						<span class="name">{inst.name}</span>
-						<span class="duration">ca. {Math.round(inst.item_count / 10)} Min.</span>
+						<span class="duration">ca. {Math.round(inst.item_count / 10)} {t('landing.minutes')}</span>
 					</span>
 					<span class="meta">{inst.item_count} Items · {inst.domains.length} Domains · {inst.locales.join(', ')}</span>
 					{#if inst.translation_status}
@@ -47,12 +47,12 @@
 							{#each inst.locales as loc}
 								{@const st = inst.translation_status?.[loc]}
 								{#if st}
-									<span class="badge {st}">{loc}: {TRANSLATION_STATUS_SHORT[st]}</span>
+									<span class="badge {st}">{loc}: {t(TRANSLATION_STATUS_SHORT[st])}</span>
 								{/if}
 							{/each}
 						</span>
 					{/if}
-					<span class="cta">Test starten →</span>
+					<span class="cta">{t('landing.start')}</span>
 				</a>
 			</li>
 		{/each}
@@ -61,23 +61,20 @@
 
 <!-- Abgegrenztes Info-Feld drunter -->
 <aside class="info-box">
-	<h2>Über diese Tests</h2>
+	<h2>{t('landing.about.title')}</h2>
 	<p>
-		Freie, quelloffene Umsetzung etablierter Persönlichkeitsinventare —
-		derzeit die IPIP-NEO-Reihe (International Personality Item Pool).
+		{t('landing.about.text')}
 	</p>
 	<ul>
-		<li>✅ Keine Registrierung, keine Datenabgabe</li>
-		<li>✅ Alle Auswertungen laufen lokal in deinem Browser</li>
-		<li>✅ Ergebnisse werden nicht gespeichert — nur du siehst sie</li>
-		<li>✅ Quelloffen auf <a href="https://github.com/lilvapx/personality-tests" target="_blank" rel="noopener">GitHub</a></li>
+		<li>{t('landing.about.p1')}</li>
+		<li>{t('landing.about.p2')}</li>
+		<li>{t('landing.about.p3')}</li>
+		<li>{t('landing.about.p4', { github: '<a href="https://github.com/lilvapx/personality-tests" target="_blank" rel="noopener">GitHub</a>' })}</li>
 	</ul>
 	<p class="info-note">
-		Die Tests basieren auf wissenschaftlichen Modellen (Big Five / Fünf-Faktoren-Modell) und dienen
-		der Selbstreflexion. Sie sind <strong>kein klinisches Instrument</strong> und ersetzen keine
-		psychologische Diagnostik.
+		{@html t('landing.about.note', { strong: '<strong>', '/strong': '</strong>' })}
 	</p>
-	<DisclaimerBanner message="Hinweis: Übersetzungen mit dem Status „Entwurf“ sind ungeprüfte eigene/Community-Übersetzungen — die englischen Original-Items sind maßgeblich." />
+	<DisclaimerBanner message={t('landing.disclaimer')} />
 </aside>
 
 <style>

@@ -5,6 +5,7 @@
 	import FacetBreakdown from '$lib/components/FacetBreakdown.svelte';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
 	import { downloadResultJson, downloadResultCsv, downloadResultAsJson } from '$lib/export/downloadResult';
+	import { t } from '$lib/i18n/ui';
 
 	function restart() {
 		resetSession();
@@ -30,33 +31,33 @@
 </script>
 
 <svelte:head>
-	<title>Auswertung — personality-tests</title>
+	<title>{t('result.title')}</title>
 </svelte:head>
 
 {#if resultStore.result}
-	<h1>Dein Ergebnis</h1>
+	<h1>{t('result.heading')}</h1>
 	<p class="meta">
 		{resultStore.result.instrument_id} · {resultStore.result.locale} · {new Date(resultStore.result.completed_at).toLocaleString()}
 	</p>
 
-	<DisclaimerBanner message="Interpretiere die Werte mit Vorsicht — dies ist kein klinisches Instrument." />
+	<DisclaimerBanner message={t('result.disclaimer')} />
 
-	<h2>Domains</h2>
+	<h2>{t('result.domains')}</h2>
 	<ResultChart domains={resultStore.result.domains} max={5} />
 
-	<h2>Facetten</h2>
+	<h2>{t('result.facets')}</h2>
 	<FacetBreakdown domains={resultStore.result.domains} max={5} />
 
 	<div class="actions">
-		<a href="/" class="btn" onclick={restart}>Zur Übersicht</a>
-		<a href="/methodology" class="btn secondary">So wird ausgewertet</a>
-		<button class="btn secondary" onclick={exportJson}>JSON exportieren</button>
-		<button class="btn secondary" onclick={exportCsv}>CSV exportieren</button>
+		<a href="/" class="btn" onclick={restart}>{t('result.overview')}</a>
+		<a href="/methodology" class="btn secondary">{t('result.methodology')}</a>
+		<button class="btn secondary" onclick={exportJson}>{t('result.exportJson')}</button>
+		<button class="btn secondary" onclick={exportCsv}>{t('result.exportCsv')}</button>
 	</div>
 {:else}
-	<h1>Kein Ergebnis</h1>
-	<p>Du hast noch keinen Test abgeschlossen.</p>
-	<a href="/" class="btn">Zur Übersicht</a>
+	<h1>{t('result.none')}</h1>
+	<p>{t('result.noneText')}</p>
+	<a href="/" class="btn">{t('result.overview')}</a>
 {/if}
 
 <style>

@@ -1,29 +1,32 @@
+<script lang="ts">
+	import { t } from '$lib/i18n/ui';
+</script>
+
 <svelte:head>
-	<title>Über dieses Projekt — personality-tests</title>
+	<title>{t('about.title')}</title>
 </svelte:head>
 
-<h1>Warum dieses Projekt existiert</h1>
+<h1>{t('about.heading')}</h1>
 
 <p>
-	Die meisten Persönlichkeitstests im Netz sind entweder kostenpflichtig, intransparent
-	oder sammeln deine Antworten. Dieses Projekt ist anders:
+	{t('about.p1')}
 </p>
 
 <ul>
-	<li><strong>Open Source</strong> — kompletter Code + Testdaten auf GitHub</li>
-	<li><strong>Keine Datensammlung</strong> — alles läuft client-seitig im Browser, nichts wird gespeichert oder versendet</li>
-	<li><strong>Wissenschaftlich fundiert</strong> — basierend auf etablierten Inventaren (IPIP-NEO, HEXACO) mit Quellenangaben</li>
-	<li><strong>Transparente Auswertung</strong> — die Scoring-Logik ist einsehbar und testbar</li>
+	<li><strong>{t('about.l1')}</strong></li>
+	<li><strong>{t('about.l2')}</strong></li>
+	<li><strong>{t('about.l3')}</strong></li>
+	<li><strong>{t('about.l4')}</strong></li>
 </ul>
 
-<h2>Quellen</h2>
+<h2>{t('about.sources')}</h2>
 <ul>
 	<li>IPIP-NEO-120: Johnson, J. A. (2014). <em>Measuring thirty aspects of the Big Five personality via the International Personality Item Pool.</em></li>
-	<li>IPIP: <a href="https://ipip.ori.org">https://ipip.ori.org</a> — Items sind Public Domain</li>
+	<li>IPIP: <a href="https://ipip.ori.org">https://ipip.ori.org</a> — Public Domain</li>
 </ul>
 
-<h2>Lizenzen</h2>
+<h2>{t('about.license')}</h2>
 <ul>
-	<li>Code: MIT (siehe <code>LICENSE</code>)</li>
-	<li>Testdaten: Public Domain (IPIP-Items) + CC BY-SA 4.0 (eigene Übersetzungen, siehe <code>data/LICENSE.md</code>)</li>
+	<li>{@html t('about.licenseCode', { code: '<code>LICENSE</code>' })}</li>
+	<li>{@html t('about.licenseData', { code: '<code>data/LICENSE.md</code>' })}</li>
 </ul>

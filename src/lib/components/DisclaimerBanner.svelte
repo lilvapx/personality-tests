@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { TranslationStatus } from '$lib/scoring/types';
-	import { TRANSLATION_STATUS_LABELS, TRANSLATION_STATUS_SHORT } from '$lib/i18n/status-labels';
+	import { t, TRANSLATION_STATUS_LABELS, TRANSLATION_STATUS_SHORT } from '$lib/i18n/ui';
 
 	interface Props {
 		message?: string;
@@ -21,9 +21,9 @@
 	{#if status}
 		{@const info = TRANSLATION_STATUS_LABELS[status]}
 		<div class="status-row">
-			<span class="badge {info.tone}">{TRANSLATION_STATUS_SHORT[status]}</span>
+			<span class="badge {info.tone}">{t(TRANSLATION_STATUS_SHORT[status])}</span>
 			<span class="status-text">
-				{info.label}{statusLocale ? ` (${statusLocale})` : ''}: {info.description}
+				{t(info.labelKey)}{statusLocale ? ` (${statusLocale})` : ''}: {t(info.descKey)}
 			</span>
 		</div>
 	{/if}

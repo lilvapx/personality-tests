@@ -10,6 +10,7 @@
 	import QuestionCard from '$lib/components/QuestionCard.svelte';
 	import ProgressBar from '$lib/components/ProgressBar.svelte';
 	import { goto } from '$app/navigation';
+	import { t } from '$lib/i18n/ui';
 
 	let bundle = $state<InstrumentBundle | null>(null);
 	let notFound = $state(false);
@@ -62,12 +63,12 @@
 </script>
 
 <svelte:head>
-	<title>Testlauf — personality-tests</title>
+	<title>{t('run.title')}</title>
 </svelte:head>
 
 {#if notFound}
-	<h1>Instrument nicht gefunden</h1>
-	<p><a href="/">← Zur Übersicht</a></p>
+	<h1>{t('run.notfound')}</h1>
+	<p><a href="/">{t('run.back')}</a></p>
 {:else if bundle && translation}
 	{#if bundle.scoring}
 		<ProgressBar current={answeredCount} total={bundle.items.length} />
@@ -86,12 +87,12 @@
 		</div>
 
 		{#if complete}
-			<button class="finish-btn" onclick={finish}>Auswertung anzeigen →</button>
+			<button class="finish-btn" onclick={finish}>{t('run.finish')}</button>
 		{:else}
-			<p class="hint">Noch {bundle.items.length - answeredCount} Fragen offen.</p>
+			<p class="hint">{t('run.open', { n: bundle.items.length - answeredCount })}</p>
 		{/if}
 	{:else}
-		<p>Für dieses Instrument ist noch keine Scoring-Konfiguration hinterlegt.</p>
+		<p>{t('run.noScoring')}</p>
 	{/if}
 {/if}
 

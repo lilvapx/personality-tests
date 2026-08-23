@@ -5,6 +5,7 @@
 	import { startSession } from '$lib/stores/testSession.svelte';
 	import { localeStore } from '$lib/stores/locale.svelte';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
+	import { t, TRANSLATION_STATUS_LABELS } from '$lib/i18n/ui';
 
 	let bundle = $state<InstrumentBundle | null>(null);
 	let notFound = $state(false);
@@ -30,29 +31,28 @@
 </svelte:head>
 
 {#if notFound}
-	<h1>Instrument nicht gefunden</h1>
-	<p><a href="/">← Zur Übersicht</a></p>
+	<h1>{t('instrument.notfound')}</h1>
+	<p><a href="/">{t('instrument.back')}</a></p>
 {:else if bundle && translation}
 	<h1>{bundle.name}</h1>
 	<p class="citation">{bundle.source_citation}</p>
 
 	<DisclaimerBanner
-		message="Kein klinisches Instrument. Die Auswertung ist rein informativ und ersetzt keine professionelle Diagnostik."
+		message={t('result.disclaimer')}
 		status={translationStatus}
 		statusLocale={activeLocale}
 	/>
 
-	<h2>Über diesen Test</h2>
+	<h2>{t('instrument.about')}</h2>
 	<ul class="facts">
-		<li><strong>{bundle.items.length}</strong> Items</li>
-		<li><strong>{bundle.domains.length}</strong> Domains</li>
-		<li>Antwortskala: <strong>{bundle.response_scale.min}–{bundle.response_scale.max}</strong></li>
-		<li>Dauer: ca. {Math.round(bundle.items.length / 10)} Minuten</li>
+		<li><strong>{bundle.items.length}</strong> {t('instrument.items')}</li>
+		<li><strong>{bundle.domains.length}</strong> {t('instrument.domains')}</li>
+		<li>{t('instrument.scale')}: <strong>{bundle.response_scale.min}–{bundle.response_scale.max}</strong></li>
+		<li>{t('instrument.duration', { n: Math.round(bundle.items.length / 10) })}</li>
 	</ul>
 
 	<p>
-		Deine Antworten werden <strong>nur lokal in deinem Browser</strong> verarbeitet
-		und nach der Sitzung verworfen.
+		{@html t('instrument.privacy', { strong: '<strong>', '/strong': '</strong>' })}
 	</p>
 
 	<a
@@ -60,10 +60,10 @@
 		href="/{bundle?.id}/run"
 		onclick={() => bundle && startSession(bundle.id, localeStore.current)}
 	>
-		Test starten →
+		{t('instrument.start')}
 	</a>
 {:else}
-	<p>Lade…</p>
+	<p>{t('instrument.loading')}</p>
 {/if}
 
 <style>
