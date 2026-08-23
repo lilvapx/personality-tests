@@ -6,6 +6,7 @@
 	import { localeStore } from '$lib/stores/locale.svelte';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
 	import { t, TRANSLATION_STATUS_LABELS } from '$lib/i18n/ui';
+	import { renderSeoHead } from '$lib/seo';
 
 	let bundle = $state<InstrumentBundle | null>(null);
 	let notFound = $state(false);
@@ -24,10 +25,33 @@
 	const translation = $derived(bundle ? getTranslation(bundle, localeStore.current) : null);
 	const translationStatus = $derived(translation?.translation_status ?? null);
 	const activeLocale = $derived(translation?.locale ?? null);
+
+	const seoHead = $derived(
+		bundle
+			? renderSeoHead({
+					title: `${bundle.name} — Persönlichkeitstest (Big Five)`,
+					description: `${bundle.name}: ${bundle.items.length} Items, ${bundle.domains.length} Domains (Big Five). Kostenlos, ohne Registrierung, Auswertung direkt im Browser.`,
+					path: `/${bundle.id}`,
+					type: 'website',
+					jsonLd: [
+						{
+							'@context': 'https://schema.org',
+							'@type': 'WebPage',
+							name: bundle.name,
+							url: `https://personality-tests.pages.dev/${bundle.id}`,
+							description: `${bundle.name} — ${bundle.items.length} Items, Big-Five-Persönlichkeitstest.`,
+							audience: { '@type': 'Audience', audienceType: 'Erwachsene' },
+							publisher: { '@type': 'Organization', name: 'Zygimantas Grebeniuk' }
+						}
+					]
+				})
+			: ''
+	);
 </script>
 
 <svelte:head>
 	<title>{bundle?.name ?? 'Instrument'} — personality-tests</title>
+	{#if seoHead}{@html seoHead}{/if}
 </svelte:head>
 
 {#if notFound}

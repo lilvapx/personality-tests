@@ -1,9 +1,18 @@
 <script lang="ts">
 	import { t } from '$lib/i18n/ui';
+	import { renderSeoHead } from '$lib/seo';
+
+	const seoHead = renderSeoHead({
+		title: 'Methodik — So funktionieren die Auswertungen',
+		description: 'So werden die Persönlichkeitstests ausgewertet: Item-Scoring, Reverse-Keying, Facetten- und Domain-Scores, Perzentile und Normdaten.',
+		path: '/methodology',
+		type: 'website'
+	});
 </script>
 
 <svelte:head>
 	<title>{t('methodology.title')}</title>
+	{@html seoHead}
 </svelte:head>
 
 <h1>{t('methodology.heading')}</h1>

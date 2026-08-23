@@ -2,6 +2,7 @@
 	import { loadAvailableInstruments } from '$lib/data-loader/loadInstrument';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
 	import { t, TRANSLATION_STATUS_SHORT } from '$lib/i18n/ui';
+	import { seo, websiteJsonLd, renderSeoHead } from '$lib/seo';
 	import type { TranslationStatus } from '$lib/scoring/types';
 
 	interface InstrumentSummary {
@@ -20,11 +21,23 @@
 			instruments = list;
 		});
 	});
+
+	// SEO-Head (Meta, OG, JSON-LD) — unsichtbar im UI
+	const seoHead = $derived(
+		renderSeoHead({
+			title: 'personality-tests — Selbsttests zur Persönlichkeit',
+			description: 'Freie, quelloffene wissenschaftliche Persönlichkeitstests (Big Five / IPIP-NEO). Keine Registrierung, keine Datenabgabe — alles läuft in deinem Browser.',
+			path: '/',
+			type: 'website',
+			jsonLd: websiteJsonLd()
+		})
+	);
 </script>
 
 <svelte:head>
 	<title>personality-tests — Selbsttests zur Persönlichkeit</title>
 	<meta name="description" content="Freie, quelloffene wissenschaftliche Persönlichkeitstests (IPIP-NEO). Keine Registrierung, keine Datenabgabe — alles läuft in deinem Browser." />
+	{@html seoHead}
 </svelte:head>
 
 <!-- Hero -->

@@ -4,6 +4,7 @@
 <svelte:head>
 	<title>Datenschutzerklärung — personality-tests</title>
 	<meta name="robots" content="index, follow" />
+	<meta name="description" content="Datenschutzerklärung von personality-tests: Testantworten werden nur lokal im Browser verarbeitet, keine Test-Cookies, Werbung (Google AdSense) nur mit Einwilligung." />
 </svelte:head>
 
 <h1>Datenschutzerklärung</h1>

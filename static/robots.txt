@@ -1,3 +1,13 @@
 # allow crawling everything by default
 User-agent: *
 Disallow:
+
+# Keine Test-/Auswertungsseiten indexieren (individuelle Ergebnisse)
+User-agent: *
+Disallow: /ipip-neo-120/run
+Disallow: /ipip-neo-300/run
+Disallow: /ipip-neo-120/result
+Disallow: /ipip-neo-300/result
+
+# Sitemap
+Sitemap: https://personality-tests.pages.dev/sitemap.xml

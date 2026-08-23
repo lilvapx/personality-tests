@@ -1,9 +1,18 @@
 <script lang="ts">
 	import { t } from '$lib/i18n/ui';
+	import { renderSeoHead } from '$lib/seo';
+
+	const seoHead = renderSeoHead({
+		title: 'Über personality-tests — freie Big-Five-Tests',
+		description: 'Wer steckt hinter personality-tests? Freie, quelloffene Persönlichkeitstests auf Basis des International Personality Item Pool (IPIP).',
+		path: '/about',
+		type: 'website'
+	});
 </script>
 
 <svelte:head>
 	<title>{t('about.title')}</title>
+	{@html seoHead}
 </svelte:head>
 
 <h1>{t('about.heading')}</h1>

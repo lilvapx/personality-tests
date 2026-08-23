@@ -101,6 +101,7 @@
 
 <svelte:head>
 	<title>{t('run.title')}</title>
+	<meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
 {#if notFound}

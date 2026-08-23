@@ -44,6 +44,7 @@
 
 <svelte:head>
 	<title>{t('result.title')}</title>
+	<meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
 {#if resultStore.result}
