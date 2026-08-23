@@ -1,0 +1,25 @@
+# Cloudflare Pages Headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+#
+# Hinweis: Der SvelteKit-Adapter (@sveltejs/adapter-cloudflare) kopiert diese
+# Datei in den Build-Output und haengt seine generierten Header an
+# (/_app/immutable/* -> Cache-Control: public, immutable).
+# Header-Regeln gelten nur fuer STATIC assets, nicht fuer die _worker.js (SSR).
+# CSP muss deshalb im Worker selbst gesetzt werden (siehe SRC-Notiz) oder
+# entfaellt fuer SSR-Routen.
+
+# Statische Asset-Dateien (gehashte Immutables + restliche /_app-Dateien)
+/_app/*
+  X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Alle statischen Pfade
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# robots.txt spezifisch (kein X-Frame noetig, aber schadet nicht)
+/robots.txt
+  X-Robots-Tag: noindex
