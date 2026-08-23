@@ -1,0 +1,14 @@
+{
+	"locale": "lt",
+	"items": {},
+	"response_scale": {
+		"labels": {
+			"1": "Visiškai netiesa",
+			"2": "Iš dalies netiesa",
+			"3": "Nei taip, nei ne",
+			"4": "Iš dalies tiesa",
+			"5": "Visiškai tiesa"
+		}
+	},
+	"translation_status": "draft"
+}

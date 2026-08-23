@@ -21,3 +21,6 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Generierte Daten-Bundles (kommen aus scripts/build-item-index.mjs)
+src/lib/data-loader/generated/

@@ -1,0 +1,20 @@
+{
+	"instrument_id": "ipip-neo-120",
+	"translations": {
+		"en": {
+			"status": "draft",
+			"updated": "2026-08-23",
+			"note": "Platzhalter-Texte im IPIP-Stil; finale Fassung aus offizieller IPIP-Item-Liste übernehmen"
+		},
+		"de": {
+			"status": "draft",
+			"updated": "2026-08-23",
+			"note": "Eigene Übersetzung, noch nicht reviewt"
+		},
+		"lt": {
+			"status": "draft",
+			"updated": "2026-08-23",
+			"note": "Platzhalter: Skalen-Labels vorhanden, Item-Texte fehlen noch"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/lilvapx/personality-tests/blob/main/data/schema/item.schema.json",
+	"title": "Item",
+	"description": "Ein einzelnes Test-Item. Sprachneutral: enthält nur ID, Domain/Facet-Zuordnung und Keying. Der Text kommt aus i18n/[locale].json.",
+	"type": "object",
+	"required": ["item_id", "domain", "keying"],
+	"properties": {
+		"item_id": {
+			"type": "string",
+			"description": "Stabile ID, z.B. 'ipip-neo-120-001'"
+		},
+		"domain": {
+			"type": "string",
+			"description": "Domain-ID aus meta.json, z.B. 'O'"
+		},
+		"facet": {
+			"type": "string",
+			"description": "Facet-ID aus meta.json, z.B. 'O1' (optional, falls Instrument keine Facetten hat)"
+		},
+		"keying": {
+			"type": "string",
+			"enum": ["plus", "minus"],
+			"description": "'plus' = zustimmen erhöht Score, 'minus' = zustimmen senkt Score (reversed)"
+		}
+	},
+	"additionalProperties": false
+}

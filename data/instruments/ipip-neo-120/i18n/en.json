@@ -1,0 +1,375 @@
+{
+	"locale": "en",
+	"items": {
+		"ipip-neo-120-001": {
+			"text": "Am comfortable around people"
+		},
+		"ipip-neo-120-002": {
+			"text": "Keep others at a distance"
+		},
+		"ipip-neo-120-003": {
+			"text": "Am a very sociable person"
+		},
+		"ipip-neo-120-004": {
+			"text": "Am hard to get to know"
+		},
+		"ipip-neo-120-005": {
+			"text": "Love large parties"
+		},
+		"ipip-neo-120-006": {
+			"text": "Prefer to be alone"
+		},
+		"ipip-neo-120-007": {
+			"text": "Enjoy being part of a crowd"
+		},
+		"ipip-neo-120-008": {
+			"text": "Avoid crowds"
+		},
+		"ipip-neo-120-009": {
+			"text": "Take charge of situations"
+		},
+		"ipip-neo-120-010": {
+			"text": "Wait for others to lead"
+		},
+		"ipip-neo-120-011": {
+			"text": "Try to lead others"
+		},
+		"ipip-neo-120-012": {
+			"text": "Hold back in group settings"
+		},
+		"ipip-neo-120-013": {
+			"text": "Am always busy"
+		},
+		"ipip-neo-120-014": {
+			"text": "Like to take it easy"
+		},
+		"ipip-neo-120-015": {
+			"text": "Have a lot of energy"
+		},
+		"ipip-neo-120-016": {
+			"text": "Do things at a slow pace"
+		},
+		"ipip-neo-120-017": {
+			"text": "Seek adventure"
+		},
+		"ipip-neo-120-018": {
+			"text": "Prefer quiet hobbies"
+		},
+		"ipip-neo-120-019": {
+			"text": "Enjoy being reckless"
+		},
+		"ipip-neo-120-020": {
+			"text": "Dislike loud environments"
+		},
+		"ipip-neo-120-021": {
+			"text": "Radiate joy"
+		},
+		"ipip-neo-120-022": {
+			"text": "Am often down in the dumps"
+		},
+		"ipip-neo-120-023": {
+			"text": "Have a cheerful outlook"
+		},
+		"ipip-neo-120-024": {
+			"text": "Rarely get excited"
+		},
+		"ipip-neo-120-025": {
+			"text": "Trust what people say"
+		},
+		"ipip-neo-120-026": {
+			"text": "Distrust people"
+		},
+		"ipip-neo-120-027": {
+			"text": "Believe that others have good intentions"
+		},
+		"ipip-neo-120-028": {
+			"text": "Suspect hidden motives"
+		},
+		"ipip-neo-120-029": {
+			"text": "Would never cheat on my taxes"
+		},
+		"ipip-neo-120-030": {
+			"text": "Use flattery to get ahead"
+		},
+		"ipip-neo-120-031": {
+			"text": "Stick to the rules"
+		},
+		"ipip-neo-120-032": {
+			"text": "Know how to get around the rules"
+		},
+		"ipip-neo-120-033": {
+			"text": "Make people feel welcome"
+		},
+		"ipip-neo-120-034": {
+			"text": "Am indifferent to the feelings of others"
+		},
+		"ipip-neo-120-035": {
+			"text": "Take time out for others"
+		},
+		"ipip-neo-120-036": {
+			"text": "Am hard to please"
+		},
+		"ipip-neo-120-037": {
+			"text": "Am easy to satisfy"
+		},
+		"ipip-neo-120-038": {
+			"text": "Love a good fight"
+		},
+		"ipip-neo-120-039": {
+			"text": "Can't stand confrontations"
+		},
+		"ipip-neo-120-040": {
+			"text": "Insult people"
+		},
+		"ipip-neo-120-041": {
+			"text": "Dislike being the center of attention"
+		},
+		"ipip-neo-120-042": {
+			"text": "Think highly of myself"
+		},
+		"ipip-neo-120-043": {
+			"text": "Rarely toot my own horn"
+		},
+		"ipip-neo-120-044": {
+			"text": "Have a high opinion of myself"
+		},
+		"ipip-neo-120-045": {
+			"text": "Feel others' emotions"
+		},
+		"ipip-neo-120-046": {
+			"text": "Am not interested in other people's problems"
+		},
+		"ipip-neo-120-047": {
+			"text": "Am concerned about others"
+		},
+		"ipip-neo-120-048": {
+			"text": "Am unmoved by others' suffering"
+		},
+		"ipip-neo-120-049": {
+			"text": "Complete tasks successfully"
+		},
+		"ipip-neo-120-050": {
+			"text": "Have little to contribute"
+		},
+		"ipip-neo-120-051": {
+			"text": "Excel in what I do"
+		},
+		"ipip-neo-120-052": {
+			"text": "Do not work well under pressure"
+		},
+		"ipip-neo-120-053": {
+			"text": "Like to tidy up"
+		},
+		"ipip-neo-120-054": {
+			"text": "Leave things lying around"
+		},
+		"ipip-neo-120-055": {
+			"text": "Follow a schedule"
+		},
+		"ipip-neo-120-056": {
+			"text": "Neglect my duties"
+		},
+		"ipip-neo-120-057": {
+			"text": "Follow through on my promises"
+		},
+		"ipip-neo-120-058": {
+			"text": "Find ways around the rules"
+		},
+		"ipip-neo-120-059": {
+			"text": "Do more than what's expected"
+		},
+		"ipip-neo-120-060": {
+			"text": "Break my promises"
+		},
+		"ipip-neo-120-061": {
+			"text": "Work hard"
+		},
+		"ipip-neo-120-062": {
+			"text": "Do just enough to get by"
+		},
+		"ipip-neo-120-063": {
+			"text": "Set high standards for myself"
+		},
+		"ipip-neo-120-064": {
+			"text": "Put little time and effort into my work"
+		},
+		"ipip-neo-120-065": {
+			"text": "Get chores done right away"
+		},
+		"ipip-neo-120-066": {
+			"text": "Waste my time"
+		},
+		"ipip-neo-120-067": {
+			"text": "Am always prepared"
+		},
+		"ipip-neo-120-068": {
+			"text": "Have difficulty starting tasks"
+		},
+		"ipip-neo-120-069": {
+			"text": "Avoid mistakes"
+		},
+		"ipip-neo-120-070": {
+			"text": "Act without thinking"
+		},
+		"ipip-neo-120-071": {
+			"text": "Choose my words with care"
+		},
+		"ipip-neo-120-072": {
+			"text": "Often make careless mistakes"
+		},
+		"ipip-neo-120-073": {
+			"text": "Worry about things"
+		},
+		"ipip-neo-120-074": {
+			"text": "Am relaxed most of the time"
+		},
+		"ipip-neo-120-075": {
+			"text": "Get stressed out easily"
+		},
+		"ipip-neo-120-076": {
+			"text": "Am not easily bothered by things"
+		},
+		"ipip-neo-120-077": {
+			"text": "Get angry easily"
+		},
+		"ipip-neo-120-078": {
+			"text": "Rarely get irritated"
+		},
+		"ipip-neo-120-079": {
+			"text": "Get irritated easily"
+		},
+		"ipip-neo-120-080": {
+			"text": "Am a calm person"
+		},
+		"ipip-neo-120-081": {
+			"text": "Often feel blue"
+		},
+		"ipip-neo-120-082": {
+			"text": "Feel comfortable with myself"
+		},
+		"ipip-neo-120-083": {
+			"text": "Dislike myself"
+		},
+		"ipip-neo-120-084": {
+			"text": "Am very pleased with myself"
+		},
+		"ipip-neo-120-085": {
+			"text": "Am easily intimidated"
+		},
+		"ipip-neo-120-086": {
+			"text": "Am not embarrassed easily"
+		},
+		"ipip-neo-120-087": {
+			"text": "Am afraid to draw attention to myself"
+		},
+		"ipip-neo-120-088": {
+			"text": "Am comfortable in unfamiliar situations"
+		},
+		"ipip-neo-120-089": {
+			"text": "Go on binges"
+		},
+		"ipip-neo-120-090": {
+			"text": "Rarely overindulge"
+		},
+		"ipip-neo-120-091": {
+			"text": "Do crazy things"
+		},
+		"ipip-neo-120-092": {
+			"text": "Easily resist temptations"
+		},
+		"ipip-neo-120-093": {
+			"text": "Panic easily"
+		},
+		"ipip-neo-120-094": {
+			"text": "Feel that I'm able to deal with new things"
+		},
+		"ipip-neo-120-095": {
+			"text": "Become overwhelmed by events"
+		},
+		"ipip-neo-120-096": {
+			"text": "Readily overcome setbacks"
+		},
+		"ipip-neo-120-097": {
+			"text": "Have a vivid imagination"
+		},
+		"ipip-neo-120-098": {
+			"text": "Do not have a good imagination"
+		},
+		"ipip-neo-120-099": {
+			"text": "Enjoy wild flights of fantasy"
+		},
+		"ipip-neo-120-100": {
+			"text": "Rarely look for a deeper meaning"
+		},
+		"ipip-neo-120-101": {
+			"text": "Believe in the importance of art"
+		},
+		"ipip-neo-120-102": {
+			"text": "Do not like poetry"
+		},
+		"ipip-neo-120-103": {
+			"text": "See beauty in things that others might not notice"
+		},
+		"ipip-neo-120-104": {
+			"text": "Do not enjoy going to art museums"
+		},
+		"ipip-neo-120-105": {
+			"text": "Experience my emotions intensely"
+		},
+		"ipip-neo-120-106": {
+			"text": "Seldom get emotional"
+		},
+		"ipip-neo-120-107": {
+			"text": "Am passionate about causes"
+		},
+		"ipip-neo-120-108": {
+			"text": "Am not easily affected by my emotions"
+		},
+		"ipip-neo-120-109": {
+			"text": "Enjoy hearing new ideas"
+		},
+		"ipip-neo-120-110": {
+			"text": "Prefer to stick with things that I know"
+		},
+		"ipip-neo-120-111": {
+			"text": "Am interested in many things"
+		},
+		"ipip-neo-120-112": {
+			"text": "Dislike changes"
+		},
+		"ipip-neo-120-113": {
+			"text": "Love to read challenging material"
+		},
+		"ipip-neo-120-114": {
+			"text": "Avoid difficult reading material"
+		},
+		"ipip-neo-120-115": {
+			"text": "Like to solve complex problems"
+		},
+		"ipip-neo-120-116": {
+			"text": "Will not probe deeply into a subject"
+		},
+		"ipip-neo-120-117": {
+			"text": "Tend to vote for liberal political candidates"
+		},
+		"ipip-neo-120-118": {
+			"text": "Believe that too much tax money goes to support artists"
+		},
+		"ipip-neo-120-119": {
+			"text": "Believe in one true religion"
+		},
+		"ipip-neo-120-120": {
+			"text": "Tend to vote for conservative political candidates"
+		}
+	},
+	"response_scale": {
+		"labels": {
+			"1": "Very inaccurate",
+			"2": "Moderately inaccurate",
+			"3": "Neither accurate nor inaccurate",
+			"4": "Moderately accurate",
+			"5": "Very accurate"
+		}
+	},
+	"translation_status": "draft"
+}

@@ -1,0 +1,94 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/lilvapx/personality-tests/blob/main/data/schema/instrument.schema.json",
+	"title": "Instrument Meta",
+	"description": "Metadaten eines Persönlichkeitstest-Instruments. Sprachneutral — keine Item-Texte hier.",
+	"type": "object",
+	"required": ["id", "version", "name", "source_citation", "domains"],
+	"properties": {
+		"id": {
+			"type": "string",
+			"pattern": "^[a-z0-9-]+$",
+			"description": "Eindeutige ID, z.B. 'ipip-neo-120'"
+		},
+		"version": {
+			"type": "string",
+			"description": "Version des Instruments, z.B. '1.0.0'"
+		},
+		"name": {
+			"type": "string",
+			"description": "Kanonischer Name (englisch, da sprachneutral)"
+		},
+		"source_citation": {
+			"type": "string",
+			"description": "Vollständige Quellenangabe (APA-Stil)"
+		},
+		"source_url": {
+			"type": "string",
+			"format": "uri",
+			"description": "Link zur Originalquelle"
+		},
+		"license_note": {
+			"type": "string",
+			"description": "Hinweis zur Lizenz des Instruments"
+		},
+		"domains": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["id", "label"],
+				"properties": {
+					"id": {
+						"type": "string",
+						"description": "Domain-Kürzel, z.B. 'O', 'C', 'E', 'A', 'N'"
+					},
+					"label": {
+						"type": "string",
+						"description": "Kanonisches Label (englisch)"
+					},
+					"facets": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"required": ["id", "label"],
+							"properties": {
+								"id": {
+									"type": "string",
+									"description": "Facet-Kürzel, z.B. 'O1'"
+								},
+								"label": {
+									"type": "string",
+									"description": "Facet-Label (englisch)"
+								}
+							},
+							"additionalProperties": false
+						},
+						"description": "Facetten dieser Domain (optional, z.B. bei IPIP-NEO)"
+					}
+				},
+				"additionalProperties": false
+			},
+			"minItems": 1
+		},
+		"item_count": {
+			"type": "integer",
+			"minimum": 1,
+			"description": "Anzahl Items (Konsistenzcheck gegen items.json)"
+		},
+		"response_scale": {
+			"type": "object",
+			"required": ["min", "max", "type"],
+			"properties": {
+				"min": { "type": "integer" },
+				"max": { "type": "integer" },
+				"type": {
+					"type": "string",
+					"enum": ["likert", "binary", "custom"]
+				}
+			},
+			"additionalProperties": false,
+			"description": "Antwortskala (z.B. Likert 1-5)"
+		}
+	},
+	"additionalProperties": false
+}

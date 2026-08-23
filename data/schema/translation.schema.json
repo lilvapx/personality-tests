@@ -1,0 +1,55 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/lilvapx/personality-tests/blob/main/data/schema/translation.schema.json",
+	"title": "Translation",
+	"description": "Übersetzungsdatei pro Sprache: item_id → Fragetext + Skalen-Labels. Enthält nur Text, keine Scoring-Logik.",
+	"type": "object",
+	"required": ["locale", "items", "response_scale"],
+	"properties": {
+		"locale": {
+			"type": "string",
+			"pattern": "^[a-z]{2}(-[A-Z]{2})?$",
+			"description": "BCP-47 Locale, z.B. 'de', 'en', 'lt'"
+		},
+		"items": {
+			"type": "object",
+			"propertyNames": {
+				"pattern": "^[a-z0-9-]+$"
+			},
+			"additionalProperties": {
+				"type": "object",
+				"required": ["text"],
+				"properties": {
+					"text": {
+						"type": "string",
+						"minLength": 1,
+						"description": "Fragetext in dieser Sprache"
+					}
+				},
+				"additionalProperties": false
+			},
+			"description": "Map: item_id → { text }"
+		},
+		"response_scale": {
+			"type": "object",
+			"required": ["labels"],
+			"properties": {
+				"labels": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string",
+						"minLength": 1
+					},
+					"description": "Skalen-Labels, z.B. { \"1\": \"Stimme gar nicht zu\", \"5\": \"Stimme voll zu\" }"
+				}
+			},
+			"additionalProperties": false
+		},
+		"translation_status": {
+			"type": "string",
+			"enum": ["official", "community", "draft"],
+			"description": "Qualitätsstatus der Übersetzung (kann auch in _status.json gepflegt werden)"
+		}
+	},
+	"additionalProperties": false
+}

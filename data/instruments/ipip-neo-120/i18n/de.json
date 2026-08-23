@@ -1,0 +1,375 @@
+{
+	"locale": "de",
+	"items": {
+		"ipip-neo-120-001": {
+			"text": "Fühle mich in Gesellschaft wohl"
+		},
+		"ipip-neo-120-002": {
+			"text": "Halte andere auf Abstand"
+		},
+		"ipip-neo-120-003": {
+			"text": "Bin ein sehr geselliger Mensch"
+		},
+		"ipip-neo-120-004": {
+			"text": "Bin schwer kennenzulernen"
+		},
+		"ipip-neo-120-005": {
+			"text": "Liebe große Partys"
+		},
+		"ipip-neo-120-006": {
+			"text": "Bin lieber für mich allein"
+		},
+		"ipip-neo-120-007": {
+			"text": "Genieße es, Teil einer Menschenmenge zu sein"
+		},
+		"ipip-neo-120-008": {
+			"text": "Meide Menschenmengen"
+		},
+		"ipip-neo-120-009": {
+			"text": "Übernehme in Situationen die Führung"
+		},
+		"ipip-neo-120-010": {
+			"text": "Warte, bis andere führen"
+		},
+		"ipip-neo-120-011": {
+			"text": "Versuche, andere anzuführen"
+		},
+		"ipip-neo-120-012": {
+			"text": "Halte mich in Gruppen zurück"
+		},
+		"ipip-neo-120-013": {
+			"text": "Bin immer beschäftigt"
+		},
+		"ipip-neo-120-014": {
+			"text": "Mache es gerne ruhig angehen"
+		},
+		"ipip-neo-120-015": {
+			"text": "Habe viel Energie"
+		},
+		"ipip-neo-120-016": {
+			"text": "Bin eher langsam unterwegs"
+		},
+		"ipip-neo-120-017": {
+			"text": "Suche Abenteuer"
+		},
+		"ipip-neo-120-018": {
+			"text": "Bevorzuge ruhige Hobbys"
+		},
+		"ipip-neo-120-019": {
+			"text": "Genieße es, leichtsinnig zu sein"
+		},
+		"ipip-neo-120-020": {
+			"text": "Mag keine lauten Umgebungen"
+		},
+		"ipip-neo-120-021": {
+			"text": "Verbreite Freude"
+		},
+		"ipip-neo-120-022": {
+			"text": "Bin oft niedergeschlagen"
+		},
+		"ipip-neo-120-023": {
+			"text": "Habe eine fröhliche Einstellung"
+		},
+		"ipip-neo-120-024": {
+			"text": "Gerät selten in Begeisterung"
+		},
+		"ipip-neo-120-025": {
+			"text": "Vertraue dem, was Leute sagen"
+		},
+		"ipip-neo-120-026": {
+			"text": "Misstraue Menschen"
+		},
+		"ipip-neo-120-027": {
+			"text": "Glaube, dass andere gute Absichten haben"
+		},
+		"ipip-neo-120-028": {
+			"text": "Vermute hinter allem verborgene Motive"
+		},
+		"ipip-neo-120-029": {
+			"text": "Würde niemals meine Steuern hinterziehen"
+		},
+		"ipip-neo-120-030": {
+			"text": "Nutze Schmeichelei, um voranzukommen"
+		},
+		"ipip-neo-120-031": {
+			"text": "Halte mich an die Regeln"
+		},
+		"ipip-neo-120-032": {
+			"text": "Weiß, wie man Regeln umgeht"
+		},
+		"ipip-neo-120-033": {
+			"text": "Lasse Menschen sich willkommen fühlen"
+		},
+		"ipip-neo-120-034": {
+			"text": "Bin gleichgültig gegenüber den Gefühlen anderer"
+		},
+		"ipip-neo-120-035": {
+			"text": "Nehme mir Zeit für andere"
+		},
+		"ipip-neo-120-036": {
+			"text": "Bin schwer zufriedenzustellen"
+		},
+		"ipip-neo-120-037": {
+			"text": "Bin leicht zufriedenzustellen"
+		},
+		"ipip-neo-120-038": {
+			"text": "Lebe Streit regelrecht aus"
+		},
+		"ipip-neo-120-039": {
+			"text": "Kann Konfrontationen nicht ausstehen"
+		},
+		"ipip-neo-120-040": {
+			"text": "Beleidige Menschen"
+		},
+		"ipip-neo-120-041": {
+			"text": "Mag es nicht, im Mittelpunkt zu stehen"
+		},
+		"ipip-neo-120-042": {
+			"text": "Halte viel von mir selbst"
+		},
+		"ipip-neo-120-043": {
+			"text": "Tue selten so, als wäre ich großartig"
+		},
+		"ipip-neo-120-044": {
+			"text": "Habe eine hohe Meinung von mir"
+		},
+		"ipip-neo-120-045": {
+			"text": "Fühle die Emotionen anderer mit"
+		},
+		"ipip-neo-120-046": {
+			"text": "Interessiere mich nicht für die Probleme anderer"
+		},
+		"ipip-neo-120-047": {
+			"text": "Bin besorgt um andere"
+		},
+		"ipip-neo-120-048": {
+			"text": "Bleibe vom Leid anderer unberührt"
+		},
+		"ipip-neo-120-049": {
+			"text": "Schließe Aufgaben erfolgreich ab"
+		},
+		"ipip-neo-120-050": {
+			"text": "Habe wenig beizutragen"
+		},
+		"ipip-neo-120-051": {
+			"text": "Bin in dem, was ich tue, gut"
+		},
+		"ipip-neo-120-052": {
+			"text": "Arbeite unter Druck nicht gut"
+		},
+		"ipip-neo-120-053": {
+			"text": "Räume gerne auf"
+		},
+		"ipip-neo-120-054": {
+			"text": "Lasse Dinge herumliegen"
+		},
+		"ipip-neo-120-055": {
+			"text": "Halte mich an einen Zeitplan"
+		},
+		"ipip-neo-120-056": {
+			"text": "Vernachlässige meine Pflichten"
+		},
+		"ipip-neo-120-057": {
+			"text": "Halte meine Versprechen"
+		},
+		"ipip-neo-120-058": {
+			"text": "Finde Wege, Regeln zu umgehen"
+		},
+		"ipip-neo-120-059": {
+			"text": "Mache mehr, als erwartet wird"
+		},
+		"ipip-neo-120-060": {
+			"text": "Breche meine Versprechen"
+		},
+		"ipip-neo-120-061": {
+			"text": "Arbeite hart"
+		},
+		"ipip-neo-120-062": {
+			"text": "Mache gerade genug, um durchzukommen"
+		},
+		"ipip-neo-120-063": {
+			"text": "Setze hohe Maßstäbe für mich"
+		},
+		"ipip-neo-120-064": {
+			"text": "Investiere wenig Zeit und Mühe in meine Arbeit"
+		},
+		"ipip-neo-120-065": {
+			"text": "Erledige Aufgaben sofort"
+		},
+		"ipip-neo-120-066": {
+			"text": "Verschwende meine Zeit"
+		},
+		"ipip-neo-120-067": {
+			"text": "Bin immer vorbereitet"
+		},
+		"ipip-neo-120-068": {
+			"text": "Fällt mir schwer, Aufgaben zu beginnen"
+		},
+		"ipip-neo-120-069": {
+			"text": "Vermeide Fehler"
+		},
+		"ipip-neo-120-070": {
+			"text": "Handle ohne nachzudenken"
+		},
+		"ipip-neo-120-071": {
+			"text": "Wähle meine Worte mit Bedacht"
+		},
+		"ipip-neo-120-072": {
+			"text": "Mache oft fahrlässige Fehler"
+		},
+		"ipip-neo-120-073": {
+			"text": "Mache mir Sorgen über Dinge"
+		},
+		"ipip-neo-120-074": {
+			"text": "Bin die meiste Zeit entspannt"
+		},
+		"ipip-neo-120-075": {
+			"text": "Gerate schnell unter Stress"
+		},
+		"ipip-neo-120-076": {
+			"text": "Lasse mich von Dingen nicht leicht aus der Ruhe bringen"
+		},
+		"ipip-neo-120-077": {
+			"text": "Werde schnell wütend"
+		},
+		"ipip-neo-120-078": {
+			"text": "Bin selten gereizt"
+		},
+		"ipip-neo-120-079": {
+			"text": "Bin schnell gereizt"
+		},
+		"ipip-neo-120-080": {
+			"text": "Bin ein ruhiger Mensch"
+		},
+		"ipip-neo-120-081": {
+			"text": "Fühle mich oft niedergeschlagen"
+		},
+		"ipip-neo-120-082": {
+			"text": "Fühle mich wohl mit mir"
+		},
+		"ipip-neo-120-083": {
+			"text": "Mag mich selbst nicht"
+		},
+		"ipip-neo-120-084": {
+			"text": "Bin sehr zufrieden mit mir"
+		},
+		"ipip-neo-120-085": {
+			"text": "Bin leicht einzuschüchtern"
+		},
+		"ipip-neo-120-086": {
+			"text": "Bin nicht leicht verlegen"
+		},
+		"ipip-neo-120-087": {
+			"text": "Fürchte, Aufmerksamkeit auf mich zu ziehen"
+		},
+		"ipip-neo-120-088": {
+			"text": "Fühle mich in ungewohnten Situationen wohl"
+		},
+		"ipip-neo-120-089": {
+			"text": "Neige zu Ausschweifungen"
+		},
+		"ipip-neo-120-090": {
+			"text": "Übertreibe selten"
+		},
+		"ipip-neo-120-091": {
+			"text": "Mache verrückte Dinge"
+		},
+		"ipip-neo-120-092": {
+			"text": "Widerstehe Versuchungen leicht"
+		},
+		"ipip-neo-120-093": {
+			"text": "Gerate schnell in Panik"
+		},
+		"ipip-neo-120-094": {
+			"text": "Habe das Gefühl, mit Neuem klarzukommen"
+		},
+		"ipip-neo-120-095": {
+			"text": "Werde von Ereignissen überwältigt"
+		},
+		"ipip-neo-120-096": {
+			"text": "Überwinde Rückschläge mühelos"
+		},
+		"ipip-neo-120-097": {
+			"text": "Habe eine lebhafte Fantasie"
+		},
+		"ipip-neo-120-098": {
+			"text": "Habe keine gute Vorstellungskraft"
+		},
+		"ipip-neo-120-099": {
+			"text": "Genieße wilde Gedankenflüge"
+		},
+		"ipip-neo-120-100": {
+			"text": "Suche selten nach einer tieferen Bedeutung"
+		},
+		"ipip-neo-120-101": {
+			"text": "Glaube an die Bedeutung der Kunst"
+		},
+		"ipip-neo-120-102": {
+			"text": "Mag keine Gedichte"
+		},
+		"ipip-neo-120-103": {
+			"text": "Sehe Schönheit in Dingen, die anderen nicht auffällt"
+		},
+		"ipip-neo-120-104": {
+			"text": "Gehe nicht gerne ins Kunstmuseum"
+		},
+		"ipip-neo-120-105": {
+			"text": "Erlebe meine Gefühle intensiv"
+		},
+		"ipip-neo-120-106": {
+			"text": "Werde selten emotional"
+		},
+		"ipip-neo-120-107": {
+			"text": "Bin leidenschaftlich bei Herzensangelegenheiten"
+		},
+		"ipip-neo-120-108": {
+			"text": "Lasse mich von Gefühlen nicht leicht mitreißen"
+		},
+		"ipip-neo-120-109": {
+			"text": "Genieße es, neue Ideen zu hören"
+		},
+		"ipip-neo-120-110": {
+			"text": "Bleibe lieber bei dem, was ich kenne"
+		},
+		"ipip-neo-120-111": {
+			"text": "Interessiere mich für viele Dinge"
+		},
+		"ipip-neo-120-112": {
+			"text": "Mag keine Veränderungen"
+		},
+		"ipip-neo-120-113": {
+			"text": "Lese gerne anspruchsvolle Literatur"
+		},
+		"ipip-neo-120-114": {
+			"text": "Meide anspruchsvolle Lektüre"
+		},
+		"ipip-neo-120-115": {
+			"text": "Löse gerne komplexe Probleme"
+		},
+		"ipip-neo-120-116": {
+			"text": "Gehe Themen nicht auf den Grund"
+		},
+		"ipip-neo-120-117": {
+			"text": "Neige zu liberalen politischen Ansichten"
+		},
+		"ipip-neo-120-118": {
+			"text": "Finde, dass zu viel Steuergeld an Künstler geht"
+		},
+		"ipip-neo-120-119": {
+			"text": "Glaube an eine einzige wahre Religion"
+		},
+		"ipip-neo-120-120": {
+			"text": "Neige zu konservativen politischen Ansichten"
+		}
+	},
+	"response_scale": {
+		"labels": {
+			"1": "Trifft gar nicht zu",
+			"2": "Trifft eher nicht zu",
+			"3": "Weder noch",
+			"4": "Trifft eher zu",
+			"5": "Trifft voll zu"
+		}
+	},
+	"translation_status": "draft"
+}
