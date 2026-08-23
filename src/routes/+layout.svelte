@@ -1,13 +1,22 @@
 <script lang="ts">
 	import LanguageSwitcher from '$lib/components/LanguageSwitcher.svelte';
+	import ConsentBanner from '$lib/components/ConsentBanner.svelte';
 	import { t } from '$lib/i18n/ui';
 	import { localeStore, applySavedLocale } from '$lib/stores/locale.svelte';
+	import { initConsent, consentStore } from '$lib/stores/consent.svelte';
+	import { initAdsense } from '$lib/stores/adsense.svelte';
 	import { onMount } from 'svelte';
 	import '../app.css';
 
 	onMount(() => {
 		applySavedLocale();
+		initConsent();
+		initAdsense();
 	});
+
+	function openConsentSettings() {
+		consentStore.showSettings = true;
+	}
 </script>
 
 <svelte:head>
@@ -28,6 +37,8 @@
 	<slot />
 </main>
 
+<ConsentBanner />
+
 <footer class="site-footer">
 	<div class="footer-inner">
 		<p class="footer-note">{t('footer.note')}</p>
@@ -35,6 +46,8 @@
 			<a href="/impressum">{t('footer.impressum')}</a>
 			<span class="sep">·</span>
 			<a href="/datenschutz">{t('footer.datenschutz')}</a>
+			<span class="sep">·</span>
+			<button class="link-btn" onclick={openConsentSettings}>{t('consent.settings')}</button>
 		</nav>
 	</div>
 </footer>
@@ -94,6 +107,17 @@
 	.footer-links { display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; }
 	.footer-links a { color: var(--text-secondary); text-decoration: none; padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); }
 	.footer-links a:hover { color: var(--brand-600); background: var(--brand-50); text-decoration: none; }
+	.link-btn {
+		background: none;
+		border: none;
+		color: var(--text-secondary);
+		font-size: inherit;
+		font-family: inherit;
+		cursor: pointer;
+		padding: 0.25rem 0.5rem;
+		border-radius: var(--radius-sm);
+	}
+	.link-btn:hover { color: var(--brand-600); background: var(--brand-50); }
 	.sep { color: #d5dbe5; }
 
 	/* Mobile */

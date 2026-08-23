@@ -37,6 +37,19 @@ const ui = {
 		'landing.about.note': 'Die Tests basieren auf wissenschaftlichen Modellen (Big Five / Fünf-Faktoren-Modell) und dienen der Selbstreflexion. Sie sind {strong}kein klinisches Instrument{/strong} und ersetzen keine psychologische Diagnostik.',
 		'landing.disclaimer': 'Hinweis: Übersetzungen mit dem Status „Entwurf“ sind ungeprüfte eigene/Community-Übersetzungen — die englischen Original-Items sind maßgeblich.',
 
+		// Consent-Banner
+		'consent.text': 'Diese Website verwendet {strong}keine Tracking-Cookies{/strong} für die Tests selbst. Für Werbeanzeigen (Google AdSense) werden mit deiner Zustimmung Cookies gesetzt. Du kannst jederzeit widerrufen.',
+		'consent.acceptAll': 'Alle akzeptieren',
+		'consent.necessaryOnly': 'Nur notwendige',
+		'consent.settings': 'Einstellungen',
+		'consent.settingsTitle': 'Cookie-Einstellungen',
+		'consent.necessary': 'Notwendige Speicherungen',
+		'consent.necessaryDesc': 'Immer aktiv: Sprache und Einwilligungs-Status. {strong}Keine personenbezogenen Daten{/strong}, rein funktional.',
+		'consent.ads': 'Personalisierte Werbung (AdSense)',
+		'consent.adsDesc': 'Google setzt Cookies, um dir relevante Anzeigen zu zeigen und die Nutzung zu analysieren. {strong}Nur mit deiner Zustimmung{/strong}.',
+		'consent.save': 'Speichern',
+		'consent.privacyLink': 'Datenschutzerklärung',
+
 		// Instrument-Intro
 		'instrument.notfound': 'Instrument nicht gefunden',
 		'instrument.back': '← Zur Übersicht',
@@ -140,6 +153,19 @@ const ui = {
 		'landing.about.note': 'These tests are based on scientific models (Big Five / five-factor model) and serve self-reflection. They are {strong}not a clinical instrument{/strong} and do not replace professional psychological diagnostics.',
 		'landing.disclaimer': 'Note: Translations marked as "draft" are unverified community translations — the English original items are authoritative.',
 
+		// Consent banner
+		'consent.text': 'This website uses {strong}no tracking cookies{/strong} for the tests themselves. For advertising (Google AdSense), cookies are set with your consent. You can withdraw at any time.',
+		'consent.acceptAll': 'Accept all',
+		'consent.necessaryOnly': 'Necessary only',
+		'consent.settings': 'Settings',
+		'consent.settingsTitle': 'Cookie settings',
+		'consent.necessary': 'Necessary storage',
+		'consent.necessaryDesc': 'Always active: language and consent status. {strong}No personal data{/strong}, purely functional.',
+		'consent.ads': 'Personalized advertising (AdSense)',
+		'consent.adsDesc': 'Google sets cookies to show you relevant ads and analyze usage. {strong}Only with your consent{/strong}.',
+		'consent.save': 'Save',
+		'consent.privacyLink': 'Privacy policy',
+
 		'instrument.notfound': 'Instrument not found',
 		'instrument.back': '← Back to overview',
 		'instrument.about': 'About this test',
@@ -237,6 +263,19 @@ const ui = {
 		'landing.about.p4': '✅ Atviras kodas {github}',
 		'landing.about.note': 'Šie testai paremti moksliniais modeliais (Big Five / penkių faktorių modelis) ir skirti savirefleksijai. Jie {strong}nėra klinikinė priemonė{/strong} ir nepakeičia profesionalios psichologinės diagnostikos.',
 		'landing.disclaimer': 'Pastaba: vertimai, pažymėti kaip „juodraštis“, yra nepatikrinti bendruomenės vertimai — autentiški yra angliški originalūs teiginiai.',
+
+		// Sutikimo juosta
+		'consent.text': 'Ši svetainė testams {strong}nenaudoja stebėjimo slapukų{/strong}. Reklamai („Google AdSense“) slapukai nustatomi tik gavus tavo sutikimą. Gali bet kada atšaukti.',
+		'consent.acceptAll': 'Priimti viską',
+		'consent.necessaryOnly': 'Tik būtini',
+		'consent.settings': 'Nustatymai',
+		'consent.settingsTitle': 'Slapukų nustatymai',
+		'consent.necessary': 'Būtinas saugojimas',
+		'consent.necessaryDesc': 'Visada aktyvu: kalba ir sutikimo būsena. {strong}Jokių asmens duomenų{/strong}, tik funkciniai.',
+		'consent.ads': 'Personalizuota reklama („AdSense“)',
+		'consent.adsDesc': '„Google“ nustato slapukus, kad rodytų tau aktualius skelbimus ir analizuotų naudojimą. {strong}Tik su tavo sutikimu{/strong}.',
+		'consent.save': 'Išsaugoti',
+		'consent.privacyLink': 'Privatumo politika',
 
 		'instrument.notfound': 'Instrumentas nerastas',
 		'instrument.back': '← Atgal į sąrašą',

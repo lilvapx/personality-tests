@@ -14,8 +14,9 @@
 <p>
 	Diese Website verfolgt einen <strong>datensparsamen Ansatz</strong>:
 	Deine Testantworten und die Auswertung werden <strong>ausschließlich in deinem Browser</strong> verarbeitet.
-	Es werden <strong>keine Personenbezogenen Daten</strong> an uns übermittelt, gespeichert oder ausgewertet.
-	Es gibt <strong>keine Registrierung, keine Cookies, kein Tracking, keine Analyse-Tools</strong>.
+	Es werden <strong>keine Testdaten an uns übermittelt</strong> — keine Registrierung, keine Konten.
+	Für <strong>Werbeanzeigen (Google AdSense)</strong> werden Cookies nur mit deiner ausdrücklichen Einwilligung gesetzt
+	(mehr dazu unter Punkt 5).
 </p>
 
 <h2>2. Hosting &amp; Infrastruktur</h2>
@@ -25,8 +26,6 @@
 	Daten (z.B. IP-Adresse, User-Agent, aufgerufene Seiten) zur Auslieferung der Inhalte und zur Sicherheit
 	(DDoS-Schutz). Details: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a>.
 </p>
-
-<h2>3. Verarbeitung von Testantworten</h2>
 <p>
 	Alle Testantworten, die du während eines Tests eingibst, werden <strong>nur lokal im Speicher deines Browsers</strong>
 	gehalten (Client-seitige Verarbeitung). Sobald du die Seite verlässt oder den Tab schließt, sind die Daten weg.
@@ -36,26 +35,43 @@
 
 <h2>4. Cookies &amp; lokale Speicherung</h2>
 <p>
-	Diese Website verwendet <strong>keine Cookies</strong> und keine vergleichbaren Tracking-Technologien.
-	Ausschließlich deine <strong>Spracheinstellung</strong> wird im lokalen Speicher deines Browsers (localStorage)
-	abgelegt, damit die gewählte Sprache beim nächsten Besuch erhalten bleibt. Diese Information verlässt
-deinen Browser nicht und enthält keine personenbezogenen Daten.
+	Diese Website verwendet <strong>keine Cookies</strong> für den Testbetrieb und keine vergleichbaren Tracking-Technologien.
+	Ausschließlich deine <strong>Spracheinstellung</strong> und deine <strong>Einwilligungs-Entscheidung</strong> werden im lokalen Speicher
+	deines Browsers (localStorage) abgelegt, damit die gewählte Sprache und der Consent-Status beim nächsten Besuch erhalten bleiben.
+	Diese Informationen verlassen deinen Browser nicht und enthalten keine personenbezogenen Daten.
 </p>
 
-<h2>5. Externe Links</h2>
+<h2>5. Werbung (Google AdSense)</h2>
 <p>
-	Diese Website verlinkt auf externe Quellen (z.B. IPIP-Originalquellen, wissenschaftliche Literatur).
+	Diese Website nutzt den Werbedienst <strong>Google AdSense</strong> (Google Ireland Limited, Gordon House, Barrow Street,
+	Dublin 4, Irland). Anzeigen werden <strong>nur nach deiner ausdrücklichen Einwilligung</strong> geladen.
+</p>
+<p>
+	Beim Ausspielen von Anzeigen kann Google Cookies und ähnliche Technologien verwenden, um Anzeigen zu personalisieren
+	und die Nutzung zu analysieren. Dabei können Daten (z.B. IP-Adresse, Cookie-IDs, besuchte Seiten) an Google übertragen
+	und in den USA verarbeitet werden. Details: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+</p>
+<p>
+	Du kannst deine Einwilligung jederzeit widerrufen, z.B. über die <strong>Cookie-Einstellungen</strong> (Link unten) oder
+die <a href="https://adssettings.google.com/" target="_blank" rel="noopener">Google-Anzeigeneinstellungen</a>.
+</p>
+
+<h2>6. Externe Links</h2>
+<p>
+	Diese Website verlinkt auf externe Quellen (z.B. IPIP-Originalquellen, wissenschaftliche Literatur, Google).
 	Für die Datenverarbeitung auf diesen externen Seiten sind ausschließlich deren Betreiber verantwortlich.
 </p>
 
-<h2>6. Deine Rechte</h2>
+<h2>7. Deine Rechte</h2>
 <p>
-	Da wir keinerlei personenbezogene Daten verarbeiten, bestehen keine Auskunfts-, Berichtigungs- oder
-	Löschungsansprüche gegenüber uns, die sich auf die Nutzung dieser Website beziehen würden.
-	Für die Datenverarbeitung durch Cloudflare gelten deren Datenschutzbestimmungen.
+	Dir stehen die Rechte aus der Datenschutz-Grundverordnung zu: Auskunft (Art. 15), Berichtigung (Art. 16),
+	Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21).
+	Soweit wir keine personenbezogenen Daten verarbeiten (Testbetrieb), bestehen keine Ansprüche auf die Nutzung
+	des Testbetriebs. Für die Datenverarbeitung durch Google (AdSense) und Cloudflare (Hosting) gelten deren
+	Datenschutzbestimmungen.
 </p>
 
-<h2>7. Verantwortliche Stelle</h2>
+<h2>8. Verantwortliche Stelle</h2>
 <p>
 	Zygimantas Grebeniuk<br />
 	Loensweg 31<br />
@@ -65,7 +81,7 @@ deinen Browser nicht und enthält keine personenbezogenen Daten.
 </p>
 
 <p class="muted small">
-	Diese Datenschutzerklärung ist ein Entwurf — bitte bei Bedarf rechtlich prüfen lassen (z.B. durch einen Datenschutzbeauftragten oder Anwalt).
+	Diese Datenschutzerklärung wurde für die Nutzung von Google AdSense erweitert. Bitte bei Bedarf rechtlich prüfen lassen.
 </p>
 
 <style>
