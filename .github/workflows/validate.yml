@@ -28,5 +28,12 @@ jobs:
       - name: Generierte Daten bauen
         run: node scripts/build-item-index.mjs
 
+      - name: No network calls in session/scoring code
+        run: |
+          if grep -rE "fetch\(|XMLHttpRequest" src/lib/stores/ src/lib/scoring/; then
+            echo "Netzwerkaufruf in sensiblem Code gefunden!"
+            exit 1
+          fi
+
       - name: Unit-Tests (Scoring + Datenintegrität)
         run: npx vitest run
