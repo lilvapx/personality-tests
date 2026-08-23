@@ -3,7 +3,33 @@
 	import { resetSession } from '$lib/stores/testSession.svelte';
 	import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
 	import { downloadResultJson, downloadResultCsv, downloadResultAsJson } from '$lib/export/downloadResult';
+	import { buildRawSummary } from '$lib/scoring/rawSummary';
 	import { t } from '$lib/i18n/ui';
+
+	let copied = $state(false);
+
+	/** Rohdaten-Text für die Copy-Textbox */
+	const rawText = $derived(
+		resultStore.result ? buildRawSummary(resultStore.result) : ''
+	);
+
+	async function copyRaw() {
+		if (!rawText) return;
+		try {
+			await navigator.clipboard.writeText(rawText);
+			copied = true;
+			setTimeout(() => (copied = false), 2000);
+		} catch {
+			// Fallback: Textarea selektieren
+			const ta = document.querySelector<HTMLTextAreaElement>('#raw-summary');
+			if (ta) {
+				ta.select();
+				document.execCommand('copy');
+				copied = true;
+				setTimeout(() => (copied = false), 2000);
+			}
+		}
+	}
 
 	function restart() {
 		resetSession();
@@ -65,6 +91,18 @@
 	</div>
 
 	<DisclaimerBanner message={t('result.disclaimer')} />
+
+	<!-- Rohdaten-Textbox + Copy-Button -->
+	<div class="raw-box">
+		<div class="raw-header">
+			<h2>{t('result.copyTitle')}</h2>
+			<button class="btn small" onclick={copyRaw}>
+				{copied ? t('result.copied') : t('result.copy')}
+			</button>
+		</div>
+		<p class="raw-hint">{t('result.copyHint')}</p>
+		<textarea id="raw-summary" readonly rows="6" spellcheck="false">{rawText}</textarea>
+	</div>
 
 	<!-- Domains mit Facetten + Balken -->
 	<div class="domains">
@@ -235,6 +273,52 @@
 	}
 
 	.norm-hint { margin-top: 1rem; font-size: 0.75rem; color: #999; }
+
+	/* Rohdaten-Textbox */
+	.raw-box {
+		background: var(--card-bg);
+		border: 1px solid var(--card-border);
+		border-radius: var(--radius-lg);
+		padding: 1.25rem;
+		margin-top: 1.5rem;
+		box-shadow: var(--shadow-sm);
+	}
+	.raw-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.raw-header h2 {
+		margin: 0;
+		font-size: 1rem;
+	}
+	.raw-hint {
+		margin: 0.35rem 0 0.75rem 0;
+		font-size: 0.8rem;
+		color: var(--text-muted);
+	}
+	#raw-summary {
+		width: 100%;
+		min-height: 8rem;
+		padding: 0.75rem;
+		font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+		font-size: 0.78rem;
+		line-height: 1.5;
+		color: #333;
+		background: #fafbfc;
+		border: 1px solid var(--card-border);
+		border-radius: var(--radius-md);
+		resize: vertical;
+		box-sizing: border-box;
+	}
+	.btn.small {
+		padding: 0.4rem 0.9rem;
+		font-size: 0.8rem;
+		min-height: 36px;
+		box-shadow: none;
+	}
 
 	.actions { display: flex; gap: 0.75rem; margin-top: 2.5rem; flex-wrap: wrap; }
 	.btn {

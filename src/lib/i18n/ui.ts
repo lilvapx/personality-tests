@@ -83,6 +83,10 @@ const ui = {
 		'result.methodology': 'So wird ausgewertet',
 		'result.exportJson': 'JSON exportieren',
 		'result.exportCsv': 'CSV exportieren',
+		'result.copy': 'Kopieren',
+		'result.copied': '✓ Kopiert!',
+		'result.copyTitle': 'Rohdaten (für KI/ChatGPT)',
+		'result.copyHint': 'Kurze Zusammenfassung deiner Ergebnisse — zum Einfügen in einen Chatbot oder zur Archivierung.',
 		'result.none': 'Kein Ergebnis',
 		'result.noneText': 'Du hast noch keinen Test abgeschlossen.',
 
@@ -196,6 +200,10 @@ const ui = {
 		'result.methodology': 'How scoring works',
 		'result.exportJson': 'Export JSON',
 		'result.exportCsv': 'Export CSV',
+		'result.copy': 'Copy',
+		'result.copied': '✓ Copied!',
+		'result.copyTitle': 'Raw data (for AI/ChatGPT)',
+		'result.copyHint': 'Short summary of your results — to paste into a chatbot or for archiving.',
 		'result.none': 'No results',
 		'result.noneText': 'You have not completed a test yet.',
 
@@ -307,6 +315,10 @@ const ui = {
 		'result.methodology': 'Kaip skaičiuojama',
 		'result.exportJson': 'Eksportuoti JSON',
 		'result.exportCsv': 'Eksportuoti CSV',
+		'result.copy': 'Kopijuoti',
+		'result.copied': '✓ Nukopijuota!',
+		'result.copyTitle': 'Neapdoroti duomenys (KI/ChatGPT)',
+		'result.copyHint': 'Trumpa tavo rezultatų santrauka — įklijuokite į pokalbių robotą arba archyvavimui.',
 		'result.none': 'Nėra rezultatų',
 		'result.noneText': 'Dar nebaigei nė vieno testo.',
 
